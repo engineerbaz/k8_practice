@@ -1,0 +1,43 @@
+Script started on 2019-02-13 23:48:32+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ gits [K[K status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mgit_Commands[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git ci[Konfig --all[K[K[K[K[K--list 
+[?1h=user.name=engineerbaz[m
+user.email=engineerbaz@gmail.com[m
+color.ui=true[m
+core.repositoryformatversion=0[m
+core.filemode=true[m
+core.bare=false[m
+core.logallrefupdates=true[m
+remote.origin.url=https://github.com/engineerbaz/k8_practice.git[m
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*[m
+[K[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ f[Kd[Kgit al[Kdd .
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git commit -m "adding test file for saving script"
+[master 64d7ecd] adding test file for saving script
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 git_Commands
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git pusj[Kh -u origin master 
+Username for 'https://github.com': engineerbaz
+Password for 'https://engineerbaz@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 4 threads.
+Compressing objects:  50% (1/2)   Compressing objects: 100% (2/2)   Compressing objects: 100% (2/2), done.
+Writing objects:  50% (1/2)   Writing objects: 100% (2/2)   Writing objects: 100% (2/2), 273 bytes | 273.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+To https://github.com/engineerbaz/k8_practice.git
+   0356b85..64d7ecd  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ls
+2020ckad.txt  3rd.txt  4th  git_Commands  read.txt
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cat git_Commands 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ exit
+exit
+
+Script done on 2020-02-13 23:52:19+0500
