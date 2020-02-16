@@ -1,2 +1,0 @@
-this is test file from Command line for Git
-this is done from web GH

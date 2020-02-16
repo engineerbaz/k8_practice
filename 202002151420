@@ -1,0 +1,31 @@
+Script started on 2020-02-15 14:21:41+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get namespp[Kac[K[K[K[K[K[K[K[K[K[K[Kit_Commands [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khit[K[K[Khistory | grep bash
+ 1016  cat /home/baz/.[01;31m[Kbash[m[K_history 
+ 1085  history | grep [01;31m[Kbash[m[K
+ 1086  history | grep [01;31m[Kbash[m[Krc
+ 1088  tail .[01;31m[Kbash[m[K_history 
+ 1089  cat .[01;31m[Kbash[m[K_history 
+ 1091  tail .[01;31m[Kbash[m[K_history 
+ 1092  ls .[01;31m[Kbash[m[K_history 
+ 1100  tail .[01;31m[Kbash[m[K_history
+ 1101  tail /home/baz/.[01;31m[Kbash[m[K_history
+ 1149  tail .[01;31m[Kbash[m[K_history 
+ 1150  cat .[01;31m[Kbash[m[K_history 
+ 1151  cat /home/baz/.[01;31m[Kbash[m[K_history 
+ 1153  cat /home/baz/.[01;31m[Kbash[m[K_history 
+ 1537  tail .[01;31m[Kbash[m[K_history
+ 1538  cat .[01;31m[Kbash[m[K_history > commands-20191229-a
+ 1795  history | grep [01;31m[Kbash[m[K
+ 1797  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1988  history | grep [01;31m[Kbash[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ !1797
+source <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get [K[K[K[K[K[K[K[K[K[K[K[Kkubectl get nameeeeees[K[K[K[K[K[K[K[Kmespaces
+^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ exit
+exit
+
+Script done on 2020-02-15 14:26:19+0500
