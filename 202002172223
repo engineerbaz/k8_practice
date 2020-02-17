@@ -1,0 +1,641 @@
+Script started on 2020-02-17 22:25:35+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod
+NAME      READY   STATUS      RESTARTS   AGE
+06nginx   0/1     Error       0          29h
+07nginx   0/1     Error       0          29h
+13nginx   0/1     Completed   1          29h
+17shell   0/1     Error       0          29h
+19bb      0/1     Completed   0          28h
+21bb      0/1     Completed   0          28h
+29mc      0/3     Completed   0          25h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl creat[K[K[K[K[Kdd[Kelete pod 29mc --gracr[Ke-period=0
+pod "29mc" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ history | grep bash
+ 1284  tail .[01;31m[Kbash[m[K_history
+ 1285  cat .[01;31m[Kbash[m[K_history > commands-20191229-a
+ 1542  history | grep [01;31m[Kbash[m[K
+ 1544  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1735  history | grep [01;31m[Kbash[m[K
+ 1736  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1745  history | grep [01;31m[Kbash[m[K
+ 1746  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1791  history | grep [01;31m[Kbash[m[Ki
+ 1792  history | grep [01;31m[Kbash[m[K
+ 1793  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1981  history | grep [01;31m[Kbash[m[K
+ 1982  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1992  history | grep [01;31m[Kbash[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ !1982
+source <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod
+NAME      READY   STATUS      RESTARTS   AGE
+06nginx   0/1     Error       0          29h
+07nginx   0/1     Error       0          29h
+13nginx   0/1     Completed   1          29h
+17shell   0/1     Error       0          29h
+19bb      0/1     Completed   0          28h
+21bb      0/1     Completed   0          28h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get[K[K[Kc[Kr[Kcreate -f 29mc.yaml 
+pod/29mc created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl c[Kget pod
+NAME      READY   STATUS              RESTARTS   AGE
+06nginx   0/1     Error               0          30h
+07nginx   0/1     Error               0          29h
+13nginx   0/1     Completed           1          29h
+17shell   0/1     Error               0          29h
+19bb      0/1     Completed           0          28h
+21bb      0/1     Completed           0          28h
+29mc      0/3     ContainerCreating   0          4s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod
+NAME      READY   STATUS              RESTARTS   AGE
+06nginx   0/1     Error               0          30h
+07nginx   0/1     Error               0          29h
+13nginx   0/1     Completed           1          29h
+17shell   0/1     Error               0          29h
+19bb      0/1     Completed           0          28h
+21bb      0/1     Completed           0          28h
+29mc      0/3     ContainerCreating   0          7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl get pod
+NAME      READY   STATUS              RESTARTS   AGE
+06nginx   0/1     Error               0          30h
+07nginx   0/1     Error               0          29h
+13nginx   0/1     Completed           1          29h
+17shell   0/1     Error               0          29h
+19bb      0/1     Completed           0          28h
+21bb      0/1     Completed           0          28h
+29mc      0/3     ContainerCreating   0          10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl get pod
+NAME      READY   STATUS      RESTARTS   AGE
+06nginx   0/1     Error       0          30h
+07nginx   0/1     Error       0          29h
+13nginx   0/1     Completed   1          29h
+17shell   0/1     Error       0          29h
+19bb      0/1     Completed   0          28h
+21bb      0/1     Completed   0          28h
+29mc      3/3     Running     0          18s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 29mc -c bb[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktop pod  [K29mc --containers 
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl top pod 29mc --containers > file.lo g
+Error from server (NotFound): the server could not find the requested resource (get services http:heapster:)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cat file.log 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl 34mc [K[K[K[Kr[K[Kre[Kun 34mc --re[K[Kimage=busyboc[Kx --restart= Never --[Ko yaml [K[K[K[K[K[K[K-dry-run -o yaml > 34mc.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 34mc.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                   34mc.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 34mc[9;3Hname: 34mc[10dspec:[11;3Hcontainers:[12;3H- image: busybox[13;5Hname: 34mc[14;5Hresources: {}[15;3HdnsPolicy: ClusterFirst[16;3HrestartPolicy: Never[17dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[14d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[13;15H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[14;35r[14;1HM[1;38r[14;1H[?12l[?25h[?25l[36d[K[14d [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25lg[?12l[?25h[?25ls[?12l[?25h[?25lL[?12l[?25h[?25l [?12l[?25h[?25l:[?12l[?25h[?25l7[15;36r8[15dM[1;38r[15;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lw[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lr[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25l;[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25l'[?12l[?25h[?25lH[?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25lI[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l'[?12l[?25h[?25l [?12l[?25h[?25l>[?12l[?25h[?25l>[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25l/[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25l/[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lx[?12l[?25h[?25l.[?12l[?25h[?25l$ndex.h[K[?12l[?25h[?25lt[?12l[?25h[?25lm[?12l[?25h[?25ll[?12l[?25h[?25l;[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25le[?12l[?25h[?25lp[?12l[?25h[?25l [?12l[?25h[?25l5[?12l[?25h[?25l;[?12l[?25h[?25ld[?12l[?25h[?25lo[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25l"[?12l[?25h[?25l7[16;36r8[16dM[1;38r[15;1H    - while true; do echo 'Hi Im from main container' >> /var/log/index.h$[16;1H[?12l[?25h[?25l[17d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[17d[?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[15;36r[36;1H
+[1;38r[15;1H$ndex.html; sleep 5;done"[?12l[?25h[?25l    - while true; do echo 'Hi Im from main container' >> /var/log/index.h$[16;1H[?12l[?25h[?25l[17d[?12l[?25h[?25l[16;18H[?12l[?25h[?25l7[17;36r8[17dM[1;38r[17;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K  [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25l7[18;36r8[18dM[1;38r[18;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25lg[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25lg[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25lx[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[20;36r8[20dM[1;38r[20;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l7[21;36r8[21dM[1;38r[21;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[22;36r8[22dM[1;38r[22;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25l-[?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l7[23;36r8[23dM[1;38r[23;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lP[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/usr/share/nginx/html [?12l[?25h[?25l[22;21H[?12l[?25h[?25l[A[?12l[?25h[?25l[20;24H[?12l[?25h[?25l[19;11H[?12l[?25h[?25l[18;17H[?12l[?25h[?25l[Ar[?12l[?25h[?25l[A[?12l[?25h[?25l[15;40H[?12l[?25h[?25l[14;10H[?12l[?25h[?25l[13;15H[?12l[?25h[?25l[Aybox[?12l[?25h[?25l[11;14H[?12l[?25h[?25l7[12;36r8[12dM[1;38r[12;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25ll[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[13;36r8[13dM[1;38r[13;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l(B[0;7me(B[m[?12l[?25h[?25l(B[0;7mm(B[m[?12l[?25h[?25l(B[0;7ma(B[m[?12l[?25h[?25l(B[0;7mn(B[m[?12l[?25h[?25lname[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[14d[?12l[?25h[?25l[13;9H[?12l[?25h[?25l7[14;36r8[14dM[1;38r[14;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[13;9H[?12l[?25h[?25l[As:[?12l[?25h[?25l[Ars:[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[K  [?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[13;9H[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25ls[?12l[?25h[?25l-[?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l7[14;36r8[14dM[1;38r[14;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25lt[?12l[?25h[?25ly[?12l[?25h[?25lD[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l{[?12l[?25h[?25l}[?12l[?25h[?25l[15;14H[?12l[?25h[?25l[16;17H[?12l[?25h[?25l[17d[?12l[?25h[?25l[18;10H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[17;15H[?12l[?25h[?25l7[18;36r8[18dM[1;38r[18;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25lm[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l[[?12l[?25h[?25l"[?12l[?25h[?25l/[?12l[?25h[?25lb[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l/[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l"[?12l[?25h[?25l][?12l[?25h[?25l[19;10H[?12l[?25h[?25l[18;26H[?12l[?25h[?25l[19;10H[?12l[?25h[?25l[20d[?12l[?25h[?25l[20;36r[36;1H
+[1;38r[19;14H- while true; do echo 'Hi Im from main container' >> /var/lo$[19;10H[?12l[?25h[?25l     - while true; do echo 'Hi Im from main container' >> /var/l[19;11H[?12l[?25h[?25l[    - while true; do echo 'Hi Im from main container' >> /var/[19;12H[?12l[?25h[?25l   - while true; do echo 'Hi Im from main container' >> /var/l[19;12H[?12l[?25h[?25l  - while true; do echo 'Hi Im from main container' >> /var/lo[19;12H[?12l[?25h[?25l - while true; do echo 'Hi Im from main container' >> /var/log[19;12H[?12l[?25h[?25l- while true; do echo 'Hi Im from main container' >> /var/log/[19;12H[?12l[?25h[?25l while true; do echo 'Hi Im from main container' >> /var/log/i[19;12H[?12l[?25h[?25l" while true; do echo 'Hi Im from main container' >> /var/log/[19;13H[?12l[?25h[?25l [?12l[?25h[?25lwhile true; do echo 'Hi Im from main container' >> /var/log/i[19;13H[?12l[?25h[?25l[?12l[?25h[?25l"[?12l[?25h[?25l-while true; do echo 'Hi Im from main container' >> /var/log/[19;14H[?12l[?25h[?25lcwhile true; do echo 'Hi Im from main container' >> /var/log[19;15H[?12l[?25h[?25l"while true; do echo 'Hi Im from main container' >> /var/lo[19;16H[?12l[?25h[?25l,while true; do echo 'Hi Im from main container' >> /var/l[19;17H[?12l[?25h[?25l while true; do echo 'Hi Im from main container' >> /var/[19;18H[?12l[?25h[?25l"while true; do echo 'Hi Im from main container' >> /var[19;19H[?12l[?25h[?25lw[?12l[?25h[?25lh[?12l[?25h[?25li[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25lr[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25l;[?12l[?25h[?25l [?12l[?25h[?25ld[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25l [?12l[?25h[?25l'[?12l[?25h[?25lH[?12l[?25h[?25li[?12l[?25h[?25l [?12l[?25h[?25lI[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lf[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25l'[?12l[?25h[?25l [?12l[?25h[?25l>[?12l[?25h[?25l>[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25l$> /var/log/index.html; sleep 5;done"[K[8G[?12l[?25h[?25l/[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25l/[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 34mc.yaml                                (B[m[36;30H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 28 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 34mc.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 28 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                   34mc.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 34mc[9;3Hname: 34mc[10dspec:[12;3Hvolumes:[13;3H- name: ms-mount[14;5HemptyDir: {}[15;3Hcontainers:[16;3H- image: busybox[17;5Hname: 34mc[18;5Hcommmand: ["/bin/sh"][19;5Hargs: ["-c", "while true; do echo 'Hi Im from main container' >> /var$[20;5Hresources: {}[21;3H- name: sidecar[22;5Himage: nginx[23;5Hports:[24;5H- containerPort: 80[25;5HvolumeMounts:[26;5H- name: mc-mount[27;7HmountPath: /usr/share/nginx/html[28;3HdnsPolicy: ClusterFirst[29;3HrestartPolicy: Never[30dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[11;35r[35;1H
+[1;38r[10;6H[?12l[?25h[?25l[11d[?12l[?25h[?25l[A[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25ls[?12l[?25h[?25l[1P[?12l[?25h[?25lc-mount[13G[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[36d[K[16;13H[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[A[?12l[?25h[?25l[19d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lr[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A$> /var/log/index.html; sleep 5;done"[K[?12l[?25h[?25l][?12l[?25h[?25l7[19;36r8[19dM[1;38r[18;1H    args: ["-c", "while true; do echo 'Hi Im from main container' >> /var$[19;1H[?12l[?25h[?25l[20d[?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[20;36r8[20dM[1;38r[20;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lc[?12l[?25h[?25l-[?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l7[21;36r8[21dM[1;38r[21;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lP[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25l/[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25l[22;18H[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25;11H[?12l[?25h[?25l[26;24H[?12l[?25h[?25l[27;18H[?12l[?25h[?25l[28;21H[?12l[?25h[?25l[29;26H[?12l[?25h[?25l[30d[?12l[?25h[?25l[31;23H[?12l[?25h[?25l[32;11H[?12l[?25h[?25l[33d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 34mc.yaml                                (B[m[36;30H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 30 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create  [K-f 34mc.yaml 
+error: error validating "34mc.yaml": error validating data: ValidationError(Pod.spec.containers[0]): unknown field "commmand" in io.k8s.api.core.v1.Container; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 34mc.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 30 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                         34mc.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 34mc[9;3Hname: 34mc[10dspec:[11;3Hvolumes:[12;3H- name: mc-mount[13;5HemptyDir: {}[14;3Hcontainers:[15;3H- image: busybox[16;5Hname: 34mc[17;5Hcommmand: ["/bin/sh"][18;5Hargs: ["-c", "while true; do echo 'Hi Im from main container' >> /var/log/index.html; sleep 5;done"][19;5HvolumeMounts:[20;5H- name: mc-mount[21;7HmountPath: /var/log[22;5Hresources: {}[23;3H- name: sidecar[24;5Himage: nginx[25;5Hports:[26;5H- containerPort: 80[27;5HvolumeMounts:[28;5H- name: mc-mount[29;7HmountPath: /usr/share/nginx/html[30;3HdnsPolicy: ClusterFirst[31;3HrestartPolicy: Never[32dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[17;26H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[36d[K[17;16H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[17;7H[1Pm[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 34mc.yaml                                (B[m[36;30H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 30 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 34mc.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C
+pod/34mc created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 34mc.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[Ckubectl run 34mc --image=busybox --restart=NNever --dry-run -o yaml > 34mc.yaml[Acat file.log [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl top pod 29mc --containers > file.logg[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl get pod
+NAME      READY   STATUS              RESTARTS   AGE
+06nginx   0/1     Error               0          30h
+07nginx   0/1     Error               0          30h
+13nginx   0/1     Completed           1          30h
+17shell   0/1     Error               0          29h
+19bb      0/1     Completed           0          28h
+21bb      0/1     Completed           0          28h
+29mc      3/3     Running             0          17m
+34mc      0/2     ContainerCreating   0          5s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod
+NAME      READY   STATUS      RESTARTS   AGE
+06nginx   0/1     Error       0          30h
+07nginx   0/1     Error       0          30h
+13nginx   0/1     Completed   1          30h
+17shell   0/1     Error       0          29h
+19bb      0/1     Completed   0          28h
+21bb      0/1     Completed   0          28h
+29mc      3/3     Running     0          26m
+34mc      2/2     Running     0          8m26s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get podcreate -f 34mc.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 30 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                   34mc.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 34mc[9;3Hname: 34mc[10dspec:[11;3Hvolumes:[12;3H- name: mc-mount[13;5HemptyDir: {}[14;3Hcontainers:[15;3H- image: busybox[16;5Hname: 34mc[17;5Hcommand: ["/bin/sh"][18;5Hargs: ["-c", "while true; do echo 'Hi Im from main container' >> /var$[19;5HvolumeMounts:[20;5H- name: mc-mount[21;7HmountPath: /var/log[22;5Hresources: {}[23;3H- name: sidecar[24;5Himage: nginx[25;5Hports:[26;5H- containerPort: 80[27;5HvolumeMounts:[28;5H- name: mc-mount[29;7HmountPath: /usr/share/nginx/html[30;3HdnsPolicy: ClusterFirst[31;3HrestartPolicy: Never[32dstatus: {}[3d[?12l[?25h[?25l[7d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[9d[?12l[?25h[?25l[6d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[36d[K[3d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[8d[?12l[?25h[?25l[17d[?12l[?25h[?25l[19d[?12l[?25h[?25l[27d[?12l[?25h[?25l[33d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[31d[?12l[?25h[?25l[A[?12l[?25h[?25l[28d[?12l[?25h[?25l[A[?12l[?25h[?25l[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[37d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ e[Kkubectl ec[Kxec -it 34mc m[K-c 34mc -- sj[Kh
+/ # / # [Jcat /v/ # cat /var/[Jlo/ # cat /var/log/[Jmain.txt
+cat: can't open '/var/log/main.txt': No such file or directory
+/ # / # cat /var/log/main.txt[Jt /var/log/main.txt[J[18D /var/log/main.txt[J[18D /var/log/main.txt[J[18Dt /var/log/main.txt[18Do /var/log/main.txt[18Du /var/log/main.txt[18Dc /var/log/main.txt[18Dh /var/log/main.txt[18D  /var/log/main.txt[18D /var/log/main.txt
+/ # exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 34mc -c 34mc -- sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K -c sidecaar[K[Kr
+error: you must specify at least one command for the container
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 34mc -c sidecar --sh[K[K sh
+# cat /us	r/share/ngin/html/index.html
+cat: /usr/share/ngin/html/index.html: No such file or directory
+# ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp  var
+boot  etc  lib	 media	opt  root  sbin  sys  usr
+# find main.txt
+find: 'main.txt': No such file or directory
+# lo	c  ocate main.txt
+sh: 4: locate: not found
+# ll /us	r/share/nginx/html
+sh: 5: ll: not found
+# touch txt_sidecar.txt
+# exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 34mc -c sidecar -- sh[K34mc -- sh
+/ # / # [Jll
+sh: ll: not found
+/ # / # ll[Jls
+sh: llls: not found
+/ # ls
+[1;34mbin[m   [1;34mdev[m   [1;34metc[m   [1;34mhome[m  [1;34mproc[m  [1;34mroot[m  [1;34msys[m   [1;34mtmp[m   [1;34musr[m   [1;34mvar[m
+/ # cat [J[J[J[Jll [J[Js /va/ # ls /var/[J
+log/    run/    spool/  www/
+/ # ls /var/[Jl/ # ls /var/log/[J
+[0;0mindex.html[m  [0;0mmain.txt[m
+/ # cat/ # ls /var/log/[J /var/log/[J[10D /var/log/[J[10Dc /var/log/[10Dd /var/log/[10D /var/log/
+/var/log # ls
+[0;0mindex.html[m  [0;0mmain.txt[m
+/var/log # cat main/var/log # cat main.txt [J
+/var/log # ex[Jcho/var/log # echo [J> [J[J:[J"ki" > main[J[J/var/log # echo "ki" > main.txt [J
+/var/log # ls
+[0;0mindex.html[m  [0;0mmain.txt[m
+/var/log # exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 34mc -c 34mc -- sh[3@sidecar[C[C[C[C[C[C
+# ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp	       usr
+boot  etc  lib	 media	opt  root  sbin  sys  txt_sidecar.txt  var
+# ls /us	r/share/m ng ginx/html
+index.html  main.txt
+# ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp	       usr
+boot  etc  lib	 media	opt  root  sbin  sys  txt_sidecar.txt  var
+# car t ma	
+cat: ma: No such file or directory
+# ^[[B^[[A        cat main.txt
+cat: main.txt: No such file or directory
+# ^[[A^[[A        cat /us	r/share/m nginx/html/index     main.txt
+ki
+# ' apt-get update && apt-get install -y curl
+0% [Working]0% [Connecting to deb.debian.org] [Connecting to security.debian.org (133                                                                         0% [Waiting for headers] [Waiting for headers]                                              Get:1 http://deb.debian.org/debian buster InRelease [122 kB]
+0% [1 InRelease 0 B/122 kB 0%] [Waiting for headers]                                                    0% [1 InRelease 39.1 kB/122 kB 32%]0% [Connecting to security-cdn.debian.org (151.101.240.204)]                                                            Get:3 http://deb.debian.org/debian buster-updates InRelease [49.3 kB]
+                                                            0% [Waiting for headers] [3 InRelease 0 B/49.3 kB 0%]0% [Waiting for headers] [3 InRelease 6740 B/49.3 kB 14%]                                                         0% [Waiting for headers]                        Get:2 http://security-cdn.debian.org/debian-security buster/updates InRelease [65.4 kB]
+0% [2 InRelease 730 B/65.4 kB 1%] [Waiting for headers]0% [2 InRelease 12.9 kB/65.4 kB 20%] [Waiting for headers]                                                          Get:4 http://deb.debian.org/debian buster/main amd64 Packages [7907 kB]
+0% [2 InRelease 12.9 kB/65.4 kB 20%] [4 Packages 0 B/7907 kB 0%]                                                                0% [4 Packages 259 kB/7907 kB 3%]19% [4 Packages 361 kB/7907 kB 5%]                                  Get:5 http://security-cdn.debian.org/debian-security buster/updates/main amd64 Packages [177 kB]
+20% [5 Packages 2068 B/177 kB 1%] [4 Packages 488 kB/7907 kB 6%]24% [5 Packages 105 kB/177 kB 59%] [4 Packages 784 kB/7907 kB 10%]                                                                  27% [4 Packages 1000 kB/7907 kB 13%]27% [5 Packages store 0 B] [4 Packages 1001 kB/7907 kB 13%]                                                           29% [4 Packages 1032 kB/7907 kB 13%]33% [4 Packages 1429 kB/7907 kB 18%]37% [4 Packages 1795 kB/7907 kB 23%]40% [4 Packages 2107 kB/7907 kB 27%]44% [4 Packages 2506 kB/7907 kB 32%]47% [4 Packages 2906 kB/7907 kB 37%]                          528 kB/s 9s51% [4 Packages 3305 kB/7907 kB 42%]                          528 kB/s 8s55% [4 Packages 3688 kB/7907 kB 47%]                          528 kB/s 7s58% [4 Packages 4040 kB/7907 kB 51%]                          528 kB/s 7s62% [4 Packages 4435 kB/7907 kB 56%]                          528 kB/s 6s66% [4 Packages 4834 kB/7907 kB 61%]                          528 kB/s 5s68% [4 Packages 5044 kB/7907 kB 64%]                          528 kB/s 5s71% [4 Packages 5311 kB/7907 kB 67%]                          528 kB/s 4s74% [4 Packages 5633 kB/7907 kB 71%]                          528 kB/s 4s77% [4 Packages 6032 kB/7907 kB 76%]                          528 kB/s 3s81% [4 Packages 6431 kB/7907 kB 81%]                          528 kB/s 2s85% [4 Packages 6830 kB/7907 kB 86%]                          528 kB/s 2s88% [4 Packages 7167 kB/7907 kB 91%]                          709 kB/s 1s88% [4 Packages 7175 kB/7907 kB 91%]                          709 kB/s 1s95% [Working]                                                 709 kB/s 0s95% [4 Packages store 0 B]                                    709 kB/s 0s                                                                         Get:6 http://deb.debian.org/debian buster-updates/main amd64 Packages [5792 B]
+95% [4 Packages store 0 B] [6 Packages 0 B/5792 B 0%]         709 kB/s 0s96% [4 Packages store 0 B]                                    709 kB/s 0s96% [4 Packages store 0 B]                                    709 kB/s 0s96% [4 Packages store 0 B]                                    709 kB/s 0s98% [Working]                                                 709 kB/s 0s98% [6 Packages store 0 B]                                    709 kB/s 0s100% [Working]                                                709 kB/s 0s                                                                         Fetched 8326 kB in 15s (562 kB/s)
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Reading package lists... 0%Reading package lists... 0%Reading package lists... 0%Reading package lists... 97%Reading package lists... 97%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+The following additional packages will be installed:
+  ca-certificates krb5-locales libcurl4 libgssapi-krb5-2 libk5crypto3
+  libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2 libldap-common
+  libnghttp2-14 libpsl5 librtmp1 libsasl2-2 libsasl2-modules
+  libsasl2-modules-db libssh2-1 openssl publicsuffix
+Suggested packages:
+  krb5-doc krb5-user libsasl2-modules-gssapi-mit
+  | libsasl2-modules-gssapi-heimdal libsasl2-modules-ldap
+  libsasl2-modules-otp libsasl2-modules-sql
+The following NEW packages will be installed:
+  ca-certificates curl krb5-locales libcurl4 libgssapi-krb5-2
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap-2.4-2
+  libldap-common libnghttp2-14 libpsl5 librtmp1 libsasl2-2
+  libsasl2-modules libsasl2-modules-db libssh2-1 openssl publicsuffix
+0 upgraded, 20 newly installed, 0 to remove and 9 not upgraded.
+Need to get 3471 kB of archives.
+After this operation, 7724 kB of additional disk space will be used.
+0% [Working]0% [Waiting for headers]                        Get:1 http://deb.debian.org/debian buster/main amd64 krb5-locales all 1.17-3 [95.4 kB]
+0% [1 krb5-locales 715 B/95.4 kB 1%]1% [1 krb5-locales 46.5 kB/95.4 kB 49%]                                       3% [Working]            Get:2 http://deb.debian.org/debian buster/main amd64 openssl amd64 1.1.1d-0+deb10u2 [843 kB]
+3% [2 openssl 0 B/843 kB 0%]6% [2 openssl 135 kB/843 kB 16%]10% [2 openssl 278 kB/843 kB 33%]15% [2 openssl 523 kB/843 kB 62%]22% [2 openssl 795 kB/843 kB 94%]                                 24% [Waiting for headers]                         Get:3 http://deb.debian.org/debian buster/main amd64 ca-certificates all 20190110 [157 kB]
+24% [3 ca-certificates 0 B/157 kB 0%]                                     28% [Working]             Get:4 http://deb.debian.org/debian buster/main amd64 libkeyutils1 amd64 1.6-6 [15.0 kB]
+28% [4 libkeyutils1 1329 B/15.0 kB 9%]                                      30% [Working]             Get:5 http://deb.debian.org/debian buster/main amd64 libkrb5support0 amd64 1.17-3 [65.6 kB]
+30% [5 libkrb5support0 0 B/65.6 kB 0%]                                      32% [Working]             Get:6 http://deb.debian.org/debian buster/main amd64 libk5crypto3 amd64 1.17-3 [121 kB]
+32% [6 libk5crypto3 0 B/121 kB 0%]                                  36% [Waiting for headers]                         Get:7 http://deb.debian.org/debian buster/main amd64 libkrb5-3 amd64 1.17-3 [370 kB]
+36% [7 libkrb5-3 1041 B/370 kB 0%]42% [7 libkrb5-3 250 kB/370 kB 68%]                                   45% [Working]             Get:8 http://deb.debian.org/debian buster/main amd64 libgssapi-krb5-2 amd64 1.17-3 [158 kB]
+45% [8 libgssapi-krb5-2 0 B/158 kB 0%]                                      50% [Waiting for headers]                         Get:9 http://deb.debian.org/debian buster/main amd64 libsasl2-modules-db amd64 2.1.27+dfsg-1+deb10u1 [69.1 kB]
+50% [9 libsasl2-modules-db 164 B/69.1 kB 0%]53% [Waiting for headers]                                     316 kB/s 4s                                                                         Get:10 http://deb.debian.org/debian buster/main amd64 libsasl2-2 amd64 2.1.27+dfsg-1+deb10u1 [106 kB]
+53% [10 libsasl2-2 504 B/106 kB 0%]                           316 kB/s 4s56% [Waiting for headers]                                     316 kB/s 4s                                                                         Get:11 http://deb.debian.org/debian buster/main amd64 libldap-common all 2.4.47+dfsg-3+deb10u1 [89.6 kB]
+56% [11 libldap-common 0 B/89.6 kB 0%]                        316 kB/s 4s59% [Working]                                                 316 kB/s 4s                                                                         Get:12 http://deb.debian.org/debian buster/main amd64 libldap-2.4-2 amd64 2.4.47+dfsg-3+deb10u1 [225 kB]
+59% [12 libldap-2.4-2 292 B/225 kB 0%]                        316 kB/s 4s62% [12 libldap-2.4-2 131 kB/225 kB 58%]                      316 kB/s 3s65% [Waiting for headers]                                     316 kB/s 3s                                                                         Get:13 http://deb.debian.org/debian buster/main amd64 libnghttp2-14 amd64 1.36.0-2+deb10u1 [85.0 kB]
+65% [13 libnghttp2-14 1220 B/85.0 kB 1%]                      316 kB/s 3s68% [Working]                                                 316 kB/s 3s                                                                         Get:14 http://deb.debian.org/debian buster/main amd64 libpsl5 amd64 0.20.2-2 [53.7 kB]
+68% [14 libpsl5 1845 B/53.7 kB 3%]                            316 kB/s 3s71% [Waiting for headers]                                     316 kB/s 3s                                                                         Get:15 http://deb.debian.org/debian buster/main amd64 librtmp1 amd64 2.4+20151223.gitfa8646d.1-2 [60.5 kB]
+71% [15 librtmp1 69 B/60.5 kB 0%]                             316 kB/s 3s                                                                         Get:16 http://deb.debian.org/debian buster/main amd64 libssh2-1 amd64 1.8.0-2.1 [140 kB]
+73% [16 libssh2-1 5016 B/140 kB 4%]                           316 kB/s 3s77% [Working]                                                 316 kB/s 2s                                                                         Get:17 http://deb.debian.org/debian buster/main amd64 libcurl4 amd64 7.64.0-4 [332 kB]
+77% [17 libcurl4 759 B/332 kB 0%]                             316 kB/s 2s82% [17 libcurl4 200 kB/332 kB 60%]                           316 kB/s 1s86% [Waiting for headers]                                     316 kB/s 1s                                                                         Get:18 http://deb.debian.org/debian buster/main amd64 curl amd64 7.64.0-4 [264 kB]
+86% [18 curl 25 B/264 kB 0%]                                  316 kB/s 1s91% [18 curl 240 kB/264 kB 91%]                               316 kB/s 0s93% [Waiting for headers]                                     316 kB/s 0s                                                                         Get:19 http://deb.debian.org/debian buster/main amd64 libsasl2-modules amd64 2.1.27+dfsg-1+deb10u1 [104 kB]
+93% [19 libsasl2-modules 512 B/104 kB 0%]                     316 kB/s 0s96% [Working]                                                 316 kB/s 0s                                                                         Get:20 http://deb.debian.org/debian buster/main amd64 publicsuffix all 20190415.1030-1 [116 kB]
+96% [20 publicsuffix 0 B/116 kB 0%]                           316 kB/s 0s100% [Working]                                                316 kB/s 0s                                                                         Fetched 3471 kB in 10s (334 kB/s)
+debconf: delaying package configuration, since apt-utils is not installed
+Selecting previously unselected package krb5-locales.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 7203 files and directories currently installed.)
+Preparing to unpack .../00-krb5-locales_1.17-3_all.deb ...
+Unpacking krb5-locales (1.17-3) ...
+Selecting previously unselected package openssl.
+Preparing to unpack .../01-openssl_1.1.1d-0+deb10u2_amd64.deb ...
+Unpacking openssl (1.1.1d-0+deb10u2) ...
+Selecting previously unselected package ca-certificates.
+Preparing to unpack .../02-ca-certificates_20190110_all.deb ...
+Unpacking ca-certificates (20190110) ...
+Selecting previously unselected package libkeyutils1:amd64.
+Preparing to unpack .../03-libkeyutils1_1.6-6_amd64.deb ...
+Unpacking libkeyutils1:amd64 (1.6-6) ...
+Selecting previously unselected package libkrb5support0:amd64.
+Preparing to unpack .../04-libkrb5support0_1.17-3_amd64.deb ...
+Unpacking libkrb5support0:amd64 (1.17-3) ...
+Selecting previously unselected package libk5crypto3:amd64.
+Preparing to unpack .../05-libk5crypto3_1.17-3_amd64.deb ...
+Unpacking libk5crypto3:amd64 (1.17-3) ...
+Selecting previously unselected package libkrb5-3:amd64.
+Preparing to unpack .../06-libkrb5-3_1.17-3_amd64.deb ...
+Unpacking libkrb5-3:amd64 (1.17-3) ...
+Selecting previously unselected package libgssapi-krb5-2:amd64.
+Preparing to unpack .../07-libgssapi-krb5-2_1.17-3_amd64.deb ...
+Unpacking libgssapi-krb5-2:amd64 (1.17-3) ...
+Selecting previously unselected package libsasl2-modules-db:amd64.
+Preparing to unpack .../08-libsasl2-modules-db_2.1.27+dfsg-1+deb10u1_amd64.deb ...
+Unpacking libsasl2-modules-db:amd64 (2.1.27+dfsg-1+deb10u1) ...
+Selecting previously unselected package libsasl2-2:amd64.
+Preparing to unpack .../09-libsasl2-2_2.1.27+dfsg-1+deb10u1_amd64.deb ...
+Unpacking libsasl2-2:amd64 (2.1.27+dfsg-1+deb10u1) ...
+Selecting previously unselected package libldap-common.
+Preparing to unpack .../10-libldap-common_2.4.47+dfsg-3+deb10u1_all.deb ...
+Unpacking libldap-common (2.4.47+dfsg-3+deb10u1) ...
+Selecting previously unselected package libldap-2.4-2:amd64.
+Preparing to unpack .../11-libldap-2.4-2_2.4.47+dfsg-3+deb10u1_amd64.deb ...
+Unpacking libldap-2.4-2:amd64 (2.4.47+dfsg-3+deb10u1) ...
+Selecting previously unselected package libnghttp2-14:amd64.
+Preparing to unpack .../12-libnghttp2-14_1.36.0-2+deb10u1_amd64.deb ...
+Unpacking libnghttp2-14:amd64 (1.36.0-2+deb10u1) ...
+Selecting previously unselected package libpsl5:amd64.
+Preparing to unpack .../13-libpsl5_0.20.2-2_amd64.deb ...
+Unpacking libpsl5:amd64 (0.20.2-2) ...
+Selecting previously unselected package librtmp1:amd64.
+Preparing to unpack .../14-librtmp1_2.4+20151223.gitfa8646d.1-2_amd64.deb ...
+Unpacking librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2) ...
+Selecting previously unselected package libssh2-1:amd64.
+Preparing to unpack .../15-libssh2-1_1.8.0-2.1_amd64.deb ...
+Unpacking libssh2-1:amd64 (1.8.0-2.1) ...
+Selecting previously unselected package libcurl4:amd64.
+Preparing to unpack .../16-libcurl4_7.64.0-4_amd64.deb ...
+Unpacking libcurl4:amd64 (7.64.0-4) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../17-curl_7.64.0-4_amd64.deb ...
+Unpacking curl (7.64.0-4) ...
+Selecting previously unselected package libsasl2-modules:amd64.
+Preparing to unpack .../18-libsasl2-modules_2.1.27+dfsg-1+deb10u1_amd64.deb ...
+Unpacking libsasl2-modules:amd64 (2.1.27+dfsg-1+deb10u1) ...
+Selecting previously unselected package publicsuffix.
+Preparing to unpack .../19-publicsuffix_20190415.1030-1_all.deb ...
+Unpacking publicsuffix (20190415.1030-1) ...
+Setting up libkeyutils1:amd64 (1.6-6) ...
+Setting up libpsl5:amd64 (0.20.2-2) ...
+Setting up libsasl2-modules:amd64 (2.1.27+dfsg-1+deb10u1) ...
+Setting up libnghttp2-14:amd64 (1.36.0-2+deb10u1) ...
+Setting up krb5-locales (1.17-3) ...
+Setting up libldap-common (2.4.47+dfsg-3+deb10u1) ...
+Setting up libkrb5support0:amd64 (1.17-3) ...
+Setting up libsasl2-modules-db:amd64 (2.1.27+dfsg-1+deb10u1) ...
+Setting up librtmp1:amd64 (2.4+20151223.gitfa8646d.1-2) ...
+Setting up libk5crypto3:amd64 (1.17-3) ...
+Setting up libsasl2-2:amd64 (2.1.27+dfsg-1+deb10u1) ...
+Setting up libssh2-1:amd64 (1.8.0-2.1) ...
+Setting up libkrb5-3:amd64 (1.17-3) ...
+Setting up openssl (1.1.1d-0+deb10u2) ...
+Setting up publicsuffix (20190415.1030-1) ...
+Setting up libldap-2.4-2:amd64 (2.4.47+dfsg-3+deb10u1) ...
+Setting up ca-certificates (20190110) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (No usable dialog-like program is installed, so the dialog based frontend cannot be used. at /usr/share/perl5/Debconf/FrontEnd/Dialog.pm line 76.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.28.1 /usr/local/share/perl/5.28.1 /usr/lib/x86_64-linux-gnu/perl5/5.28 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.28 /usr/share/perl/5.28 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Updating certificates in /etc/ssl/certs...
+128 added, 0 removed; done.
+Setting up libgssapi-krb5-2:amd64 (1.17-3) ...
+Setting up libcurl4:amd64 (7.64.0-4) ...
+Setting up curl (7.64.0-4) ...
+Processing triggers for libc-bin (2.28-10) ...
+Processing triggers for ca-certificates (20190110) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+done.
+# apt-get update && apt-get install -y curl                                         cur	l localhost
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+Hi Im from main container
+# ls
+bin   dev  home  lib64	mnt  proc  run	 srv  tmp	       usr
+boot  etc  lib	 media	opt  root  sbin  sys  txt_sidecar.txt  var
+# exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 34mc -c sidecar -- sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+exit
+
+Script done on 2020-02-17 23:11:33+0500

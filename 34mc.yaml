@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 34mc
+  name: 34mc
+spec:  
+  volumes:
+  - name: mc-mount
+    emptyDir: {}
+  containers:
+  - image: busybox
+    name: 34mc
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo 'Hi Im from main container' >> /var/log/index.html; sleep 5;done"]
+    volumeMounts:
+    - name: mc-mount
+      mountPath: /var/log
+    resources: {}
+  - name: sidecar
+    image: nginx
+    ports:
+    - containerPort: 80
+    volumeMounts:
+    - name: mc-mount
+      mountPath: /usr/share/nginx/html 
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
