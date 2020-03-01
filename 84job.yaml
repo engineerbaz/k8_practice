@@ -1,0 +1,19 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: 84job
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - command:
+        - echo
+        - ' Hello I am from Job'
+        image: busybox
+        name: 84job
+        resources: {}
+      restartPolicy: Never
+status: {}

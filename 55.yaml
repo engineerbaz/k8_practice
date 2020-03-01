@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 55-dep-1
+  name: 55-dep-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: 55-dep-1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: 55-dep-1
+    spec:
+      containers:
+      - image: nginx
+        name: 55-dep-1
+        resources: {}
+status: {}

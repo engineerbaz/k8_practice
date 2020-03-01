@@ -1,0 +1,1384 @@
+Script started on 2020-02-28 19:37:35+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ j=kub[K[K[K[K[Kkubectl ge[K[K[K[K[K[K[K[K[K[K!1574[K5
+source <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get [K[K[K[K[K[K[K[K[K[K[K[Kcc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create deployment 67dep ---[Kimage=ngi nx"[K:1.7.1 --dry-run -o yaml > 67-dep.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cat 67-dep.yaml 
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: 67dep
+  name: 67dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 67dep
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: 67dep
+    spec:
+      containers:
+      - image: nginx:1.7.1
+        name: nginx
+        resources: {}
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nan[K[K[Kvim 67-dep.yaml 
+
+Command 'vim' not found, but can be installed with:
+
+sudo apt install vim       
+sudo apt install vim-gtk3  
+sudo apt install vim-tiny  
+sudo apt install neovim    
+sudo apt install vim-athena
+sudo apt install vim-gtk   
+sudo apt install vim-nox   
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ vim 67-dep.yaml [1P
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"67-dep.yaml" 24L, 390C[1;1HapiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: 67dep
+  name: 67dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:[12;7Happ: 67dep
+  strategy: {}
+  template:
+    metadata:[16;7HcreationTimestamp: null[17;7Hlabels:[18;9Happ: 67dep
+    spec:[20;7Hcontainers:[21;7H- image: nginx:1.7.1[22;9Hname: nginx[23;9Hresources: {}
+status: {}
+[94m~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[20;1H
+
+
+[22;1H[m        name: ngin[23;9H[?25l[38;1H[1m-- INSERT --[m[38;13H[K[23;9H[?25h[?25lpresources: {}[23;10H[?25h[?25loresources: {}[23;11H[?25h[?25lrresources: {}[23;12H[?25h[?25ltresources: {}[23;13H[?25h[?25lsresources: {}[23;14H[?25h[?25l:resources: {}[23;15H[?25h[?25l[24;37r[24;1H[L[1;38r[23;15H[K[24;1Hresources: {}[?25h[?25l        resources: {}[24;9H[?25h[?25l-resources: {}[24;10H[?25h[?25l resources: {}[24;11H[?25h[?25lcresources: {}[24;12H[?25h[?25loresources: {}[24;13H[?25h[?25lnresources: {}[24;14H[?25h[?25ltresources: {}[24;15H[?25h[?25laresources: {}[24;16H[?25h[?25liresources: {}[24;17H[?25h[?25lnresources: {}[24;18H[?25h[?25leresources: {}[24;19H[?25h[?25lrresources: {}[24;20H[?25h[?25lPresources: {}[24;21H[?25h[?25loresources: {}[24;22H[?25h[?25lrresources: {}[24;23H[?25h[?25ltresources: {}[24;24H[?25h[?25lsresources: {}[24;25H[?25h[?25l:resources: {}[24;26H[?25h[?25l resources: {}[24;27H[?25h[?25l8resources: {}[24;28H[?25h[?25l0resources: {}[24;29H[?25h[?25l[25;37r[25;1H[L[1;38r[24;29H[K[25;1Hresources: {}[?25h[?25l        resources: {}[25;9H[?25h[38;1H[K[25;8H[?25l[?25h[?25l[38;1H:[?2004h[?25hwq[?25l[?2004l"67-dep.yaml" 26L, 420C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ vi 67-dep.yaml [1@m[C[C[C[C[C[C[C[C[C[C[C[C[Ccat[C[C[C[C[C[C[C[C[C[C[C[C[C
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: 67dep
+  name: 67dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 67dep
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: 67dep
+    spec:
+      containers:
+      - image: nginx:1.7.1
+        name: nginx
+        ports:
+	- containerPorts: 80
+	resources: {}
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 677[K-dep.yaml 
+error: error parsing 67-dep.yaml: error converting YAML to JSON: yaml: line 24: found character that cannot start any token
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 67-dep.yaml [14Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[1P[1@n[1@a[1@n[1@o
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  67-dep.yaml                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.7.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPorts: 80[27;9Hresources: {}[28dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[26;29H[?12l[?25h[?25l[36d[K[26;28H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[26;24H: 80[K[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 67-dep.yaml                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 67-dep.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C
+error: error parsing 67-dep.yaml: error converting YAML to JSON: yaml: line 24: found character that cannot start any token
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 67-dep.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  67-dep.yaml                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.7.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[27;9Hresources: {}[28dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[23;27H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified[36d(B[m[K[1;73H[23;24H17.1[?12l[?25h[?25l[24;20H[?12l[?25h[?25l[25;15H[?12l[?25h[?25l[26;25H[?12l[?25h[?25l[27;22H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 67-dep.yaml                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 67-dep.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C
+error: error parsing 67-dep.yaml: error converting YAML to JSON: yaml: line 24: found character that cannot start any token
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 67-dep.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  67-dep.yaml                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.17.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[27;9Hresources: {}[28dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[26;9H[?12l[?25h[?25l-[?12l[?25h[?25l[36d[K[27;10H[?12l[?25h[?25l[28d[?12l[?25h[?25l}[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[37d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 67-dep.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 26 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  67-dep.yaml                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.17.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[27;9Hresources: {}[28dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[36d[K[29d[?12l[?25h[?25l[A[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[28d[K[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 67-dep.yaml                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 25 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 67-dep.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C
+error: error parsing 67-dep.yaml: error converting YAML to JSON: yaml: line 24: found character that cannot start any token
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 67-dep.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C[14Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"67-dep.yaml" 25L, 409C[1;1HapiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: 67dep
+  name: 67dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:[12;7Happ: 67dep
+  strategy: {}
+  template:
+    metadata:[16;7HcreationTimestamp: null[17;7Hlabels:[18;9Happ: 67dep
+    spec:[20;7Hcontainers:[21;7H- image: nginx:1.17.1[22;9Hname: nginx[23;9Hports:[24;9H- containerPort: 80[25;9Hresources: {}
+[94m~                                                                                                                                                     [27;1H~                                                                                                                                                     [28;1H~                                                                                                                                                     [29;1H~                                                                                                                                                     [30;1H~                                                                                                                                                     [31;1H~                                                                                                                                                     [32;1H~                                                                                                                                                     [33;1H~                                                                                                                                                     [34;1H~                                                                                                                                                     [35;1H~                                                                                                                                                     [36;1H~                                                                                                                                                     [37;1H~                                                                                                                                                     [1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[24;8H[25;8H[24;8H[25;8H[?25l[m[38;1H[1m-- INSERT --[m[38;13H[K[25;1H[?25h[?25lresources: {}[25;14H[K[25;1H[?25h[?25lesources: {}[25;13H[K[25;1H[?25h[?25lsources: {}[25;12H[K[25;1H[?25h[?25lources: {}[25;11H[K[25;1H[?25h[?25lurces: {}[25;10H[K[25;1H[?25h[?25lrces: {}[25;9H[K[25;1H[?25h[?25lces: {}[25;8H[K[25;1H[?25h[?25les: {}[25;7H[K[25;1H[?25h[?25ls: {}[25;6H[K[25;1H[?25h[?25l: {}[25;5H[K[25;1H[?25h[?25l {}[25;4H[K[25;1H[?25h[?25l{}[25;3H[K[25;1H[?25h[?25l}[25;2H[K[25;1H[?25h[?25l[25;1H[K[25;1H[?25h[38;1H[K[25;1H[?25l[?25h[?25l[38;1H:[?2004h[?25hwq[?25l[?2004l"67-dep.yaml" 25L, 395C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ vi 67-dep.yaml [15@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C
+error: error parsing 67-dep.yaml: error converting YAML to JSON: yaml: line 24: found character that cannot start any token
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 67-dep.yaml [15Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[15@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 25 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        67-dep.yaml                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.17.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[36d[K[28d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[27d[?12l[?25h[?25l[26;28H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 67-dep.yaml                              (B[m[36;32H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 24 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 67-dep.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pvi[C[C[C[C[C[C[C[C[C[C[C[C[C[15@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C
+error: error parsing 67-dep.yaml: error converting YAML to JSON: yaml: line 24: found character that cannot start any token
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 67-dep.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                        67-dep.yaml                                                                   [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.17.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                        67[3;1H(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.17.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[36;67H(B[0;7m[ Read 2[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                        67[3;1H(B[mapiVersion: apps/v1[4dkind: Deployment[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Happ: 67dep[9;3Hname: 67dep[10dspec:[11;3Hreplicas: 1[12;3Hselector:[13;5HmatchLabels:[14;7Happ: 67dep[15;3Hstrategy: {}[16;3Htemplate:[17;5Hmetadata:[18;7HcreationTimestamp: null[19;7Hlabels:[20;9Happ: 67dep[21;5Hspec:[22;7Hcontainers:[23;7H- image: nginx:1.17.1[24;9Hname: nginx[25;9Hports:[26;9H- containerPort: 80[37d[1;35H(B[0;7m67-dep.yaml[73G  [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[25;15H[?12l[?25h[?25l[26d[?12l[?25h[?25l[26;9H[?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[26d[8P[?12l[?25h[?25l - containerPort: 80 [?12l[?25h[?25l  - containerPort: 80  [?12l[?25h[?25l   - containerPort: 80   [?12l[?25h[?25l    - containerPort: 80[5G[?12l[?25h[?25l     - containerPort: 80[6G[?12l[?25h[?25l      - containerPort: 80[7G[?12l[?25h[?25l[7G - containerPort: 80[8G[?12l[?25h[?25l[8G - containerPort: 80[26;9H[?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l[27d[?12l[?25h[?25l[?12l[?25h[?25l[26;28H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l[27d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l{[?12l[?25h[?25l}[?12l[?25h[?25l[28d[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 67-dep.yaml                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 26 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 67-dep.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[C[C[C
+deployment.apps/67dep created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl set image 
+07nginx.yaml  202002232000  29mc.yaml     file55.yaml   
+13nginx.txt   202002262250  34mc.yaml     file.log      
+202002151420  202002281600  55.yaml       .git/         
+202002172223  202002281936  67-dep.yaml   typescript    
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl set image 
+07nginx.yaml  202002232000  29mc.yaml     file55.yaml   
+13nginx.txt   202002262250  34mc.yaml     file.log      
+202002151420  202002281600  55.yaml       .git/         
+202002172223  202002281936  67-dep.yaml   typescript    
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl set image dp[Keploy/67dep nging=nginx: 1.17.1
+error: unable to find container named "nging"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl set image deploy/67dep nging=nginx:11.17.1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C=nginx:1.[1P17.1[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx=nginx:1.17.1[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl set image deploy/67dep nginx=nginx:11.17.1[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kl describe deploy 67dep | grep Image
+    [01;31m[KImage[m[K:        nginx:1.17.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe deploy 67dep | grep Imageset image deploy/67dep nginx=nginx:11.17.1[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg=nginx:1[C[C[C[C[C[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx=nginx:1[C[C[C[C[C[K4
+deployment.extensions/67dep image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl set image deploy/67dep nginx=nginx:11.17.4[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[1Pdescribe deploy 67dep | grep Image
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+    [01;31m[KImage[m[K:        nginx:1.17.4
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl d[Kget deployments.[K[K
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE
+67dep   1/1     1            1           115s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          10d
+34mc                     0/2     Error       0          10d
+37-ng-1                  0/1     Error       0          4d23h
+37-ng-2                  0/1     Error       0          4d23h
+37-ng-3                  0/1     Error       0          4d23h
+67dep-6dfdd9cbff-49sgc   1/1     Running     0          19s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po 67dep-6dfdd9cbff-49sgc 
+NAME                     READY   STATUS    RESTARTS   AGE
+67dep-6dfdd9cbff-49sgc   1/1     Running   0          26s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe pod 67dep-6dfdd9cbff-49sgc  
+Name:           67dep-6dfdd9cbff-49sgc
+Namespace:      default
+Priority:       0
+Node:           minikube/10.0.2.15
+Start Time:     Fri, 28 Feb 2020 19:47:41 +0500
+Labels:         app=67dep
+                pod-template-hash=6dfdd9cbff
+Annotations:    <none>
+Status:         Running
+IP:             172.17.0.6
+Controlled By:  ReplicaSet/67dep-6dfdd9cbff
+Containers:
+  nginx:
+    Container ID:   docker://dc309b78b0a7b4e8ce4547851ae05c49b490bcf27d6b018d5ed3e748e9f335b1
+    Image:          nginx:1.17.4
+    Image ID:       docker-pullable://nginx@sha256:77ebc94e0cec30b20f9056bac1066b09fbdc049401b71850922c63fc0cc1762e
+    Port:           80/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Fri, 28 Feb 2020 19:47:42 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  34s   default-scheduler  Successfully assigned default/67dep-6dfdd9cbff-49sgc to minikube
+  Normal  Pulled     33s   kubelet, minikube  Container image "nginx:1.17.4" already present on machine
+  Normal  Created    33s   kubelet, minikube  Created container nginx
+  Normal  Started    32s   kubelet, minikube  Started container nginx
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe pod 67dep-6dfdd9cbff-49sgc   | grep Image
+    [01;31m[KImage[m[K:          nginx:1.17.4
+    [01;31m[KImage[m[K ID:       docker-pullable://nginx@sha256:77ebc94e0cec30b20f9056bac1066b09fbdc049401b71850922c63fc0cc1762e
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl describe pod 67dep-6dfdd9cbff-49sgc   | grep Image[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl ri[Kollout history depli[Koyment 67dep 
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get his[K[K[K[K[K[K[K[K[K[Ktl get deployments.[K[K[K[K[K[K 67dep --show-labels 
+NAME    READY   UP-TO-DATE   AVAILABLE   AGE   LABELS
+67dep   1/1     1            1           40m   app=67dep
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get deploy 67dep --show-labels [2@rollout history deployment 67dep[C
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl ri=oll[K[K[K[K[Kollout undo deployment 67dep 
+deployment.extensions/67dep rolled back
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout undo deployment 67dep [3@history[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+2         <none>
+3         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe deployments.[K[K[Kts.[K[K 67dep | grep Im age
+    [01;31m[KImage[m[K:        nginx:1.17.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl ser=[K[Kt image deploy/67dep 67-dep.yaml  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[Kdep[K[K[K[K[Knginx=nginx: 1.16.1
+deployment.extensions/67dep image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe deploy 67dep | gep [K[K[Krep Image
+    [01;31m[KImage[m[K:        nginx:1.16.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl hist[K[K[K[K[K[Kl rollout history deployment 67dep 
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+2         <none>
+3         <none>
+4         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout undo deployment 67dep --to[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K 67dep --to-revission=3
+deployment.extensions/67dep rolled back
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout undo deploy 67dep --to-revission=3[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Phistory deployment 67dep 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdescribe deploy 67dep | grep Image
+    [01;31m[KImage[m[K:        nginx:1.17.1
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe deploy 67dep | grep Imagerollout undo deploy 67dep --to-revission=3[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kt status deploy 67dep
+deployment "67dep" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout status deploy 67depdescribe deploy 67dep | grep Imagerollout undo deploy 67dep --to-revission=3[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Phistory deployment 67dep 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdescribe deploy 67dep | grep Imageset image deploy/67dep nginx=nginx:11.16.1[K[K[K00
+deployment.extensions/67dep image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout status deploy nginx
+Error from server (NotFound): deployments.extensions "nginx" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl  get pd
+error: the server doesn't have a resource type "pd"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl  get pd[Kod
+NAME                     READY   STATUS             RESTARTS   AGE
+06nginx                  0/1     Error              0          12d
+07nginx                  0/1     Error              0          12d
+13nginx                  0/1     Completed          1          12d
+17shell                  0/1     Error              0          12d
+19bb                     0/1     Completed          0          12d
+21bb                     0/1     Completed          0          12d
+29mc                     0/3     Completed          0          10d
+34mc                     0/2     Error              0          10d
+37-ng-1                  0/1     Error              0          5d
+37-ng-2                  0/1     Error              0          5d
+37-ng-3                  0/1     Error              0          5d
+67dep-77585865c6-6ns4n   0/1     ImagePullBackOff   0          22s
+67dep-f4677c588-jb8dh    1/1     Running            0          57s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout undo deploy 67dep 
+deployment.extensions/67dep rolled back
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl d[Krollout status deployment 67dep 
+deployment "67dep" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout status deployment 67dep [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Khistory 
+error: required resource not specified
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout history deploy 67dep
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+2         <none>
+4         <none>
+6         <none>
+7         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ l[Kkubectl rollout history deploy 67s[Kdep --re
+--recursive         --request-timeout=  --revision=
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout history deploy 67dep --revission=7
+deployment.extensions/67dep with revision #7
+Pod Template:
+  Labels:	app=67dep
+	pod-template-hash=f4677c588
+  Containers:
+   nginx:
+    Image:	nginx:1.17.1
+    Port:	80/TCP
+    Host Port:	0/TCP
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout pause dpq-qqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq qqqqqqqqqqqqqqqqqq
+error: the server doesn't have a resource type "dpq-qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout pause deployment awb[K[K[Kweb[K[K[K67dep 
+deployment.extensions/67dep paused
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl d[Kset image deploy/67dep nginx=nginx: latest
+deployment.extensions/67dep image updated
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout history deployment 67dep 
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+2         <none>
+4         <none>
+6         <none>
+7         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout resume deployment 67dep
+deployment.extensions/67dep resumed
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout deploou[K[K[K[K[K[K[K[K history deployment 67dep
+deployment.extensions/67dep 
+REVISION  CHANGE-CAUSE
+2         <none>
+4         <none>
+6         <none>
+7         <none>
+8         <none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout history deployment 67dep -- re[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+07nginx.yaml  202002232000  29mc.yaml     file55.yaml   
+13nginx.txt   202002262250  34mc.yaml     file.log      
+202002151420  202002281600  55.yaml       .git/         
+202002172223  202002281936  67-dep.yaml   typescript    
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout history deployment 67dep -r [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- re[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl history deployaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Error: unknown command "history" for "kubectl"
+Run 'kubectl --help' for usage.
+unknown command "history" for "kubectl"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ku[Kubectl rollout history deploy 67dep --revi son[K[Kion=9
+error: unable to find the specified revision
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout history deploy 67dep --revission=9[K8
+deployment.extensions/67dep with revision #8
+Pod Template:
+  Labels:	app=67dep
+	pod-template-hash=7db4cf66f7
+  Containers:
+   nginx:
+    Image:	nginx:latest
+    Port:	80/TCP
+    Host Port:	0/TCP
+    Environment:	<none>
+    Mounts:	<none>
+  Volumes:	<none>
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl autoscale deploy 67dep --max=20 l-- mi[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K--m in=19 --cpu-percent=85
+horizontalpodautoscaler.autoscaling/67dep autoscaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get hps
+error: the server doesn't have a resource type "hps"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get hpsa
+error: the server doesn't have a resource type "hpsa"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get hpsa[K[Ka
+NAME    REFERENCE          TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+67dep   Deployment/67dep   <unknown>/85%   19        20        0          9s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get hpa
+NAME    REFERENCE          TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+67dep   Deployment/67dep   <unknown>/85%   19        20        19         8m31s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get hpa[K[K[Kpod -l [K[K-show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE     LABELS
+06nginx                  0/1     Error       0          12d     run=06nginx
+07nginx                  0/1     Error       0          12d     run=07nginx
+13nginx                  0/1     Completed   1          12d     run=13nginx
+17shell                  0/1     Error       0          12d     run=17shell
+19bb                     0/1     Completed   0          12d     run=19bb
+21bb                     0/1     Completed   0          12d     run=21bb
+29mc                     0/3     Completed   0          10d     run=29mc
+34mc                     0/2     Error       0          10d     run=34mc
+37-ng-1                  0/1     Error       0          5d      app=nginx
+37-ng-2                  0/1     Error       0          5d      app=red
+37-ng-3                  0/1     Error       0          5d      env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-2ldxz   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6p8wf   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-8mm59   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          12m     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-d4hrh   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhqp6   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fvcs6   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gdm4j   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nlt8s   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nw544   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-p8xbf   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-s69bm   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-svlvh   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tt8v4   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-vkt5b   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-zgfbc   1/1     Running     0          8m26s   app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE     LABELS
+06nginx                  0/1     Error       0          12d     run=06nginx
+07nginx                  0/1     Error       0          12d     run=07nginx
+13nginx                  0/1     Completed   1          12d     run=13nginx
+17shell                  0/1     Error       0          12d     run=17shell
+19bb                     0/1     Completed   0          12d     run=19bb
+21bb                     0/1     Completed   0          12d     run=21bb
+29mc                     0/3     Completed   0          10d     run=29mc
+34mc                     0/2     Error       0          10d     run=34mc
+37-ng-1                  0/1     Error       0          5d      app=nginx
+37-ng-2                  0/1     Error       0          5d      app=red
+37-ng-3                  0/1     Error       0          5d      env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-2ldxz   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6p8wf   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-8mm59   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          13m     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-d4hrh   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhqp6   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fvcs6   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gdm4j   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nlt8s   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nw544   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-p8xbf   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-s69bm   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-svlvh   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tt8v4   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-vkt5b   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-zgfbc   1/1     Running     0          8m33s   app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE     LABELS
+06nginx                  0/1     Error       0          12d     run=06nginx
+07nginx                  0/1     Error       0          12d     run=07nginx
+13nginx                  0/1     Completed   1          12d     run=13nginx
+17shell                  0/1     Error       0          12d     run=17shell
+19bb                     0/1     Completed   0          12d     run=19bb
+21bb                     0/1     Completed   0          12d     run=21bb
+29mc                     0/3     Completed   0          10d     run=29mc
+34mc                     0/2     Error       0          10d     run=34mc
+37-ng-1                  0/1     Error       0          5d      app=nginx
+37-ng-2                  0/1     Error       0          5d      app=red
+37-ng-3                  0/1     Error       0          5d      env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-2ldxz   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6p8wf   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-8mm59   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          13m     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-d4hrh   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhqp6   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fvcs6   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gdm4j   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nlt8s   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nw544   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-p8xbf   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-s69bm   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-svlvh   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tt8v4   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-vkt5b   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-zgfbc   1/1     Running     0          8m36s   app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE     LABELS
+06nginx                  0/1     Error       0          12d     run=06nginx
+07nginx                  0/1     Error       0          12d     run=07nginx
+13nginx                  0/1     Completed   1          12d     run=13nginx
+17shell                  0/1     Error       0          12d     run=17shell
+19bb                     0/1     Completed   0          12d     run=19bb
+21bb                     0/1     Completed   0          12d     run=21bb
+29mc                     0/3     Completed   0          10d     run=29mc
+34mc                     0/2     Error       0          10d     run=34mc
+37-ng-1                  0/1     Error       0          5d      app=nginx
+37-ng-2                  0/1     Error       0          5d      app=red
+37-ng-3                  0/1     Error       0          5d      env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-2ldxz   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6p8wf   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-8mm59   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          13m     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-d4hrh   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhqp6   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fvcs6   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gdm4j   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nlt8s   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nw544   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-p8xbf   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-s69bm   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-svlvh   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tt8v4   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-vkt5b   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-zgfbc   1/1     Running     0          8m45s   app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels hpa[Ksa[Kautoscale deploy 67dep --max=20 --min=19 --cpu-percent=85[C[C[1P --cpu-percent=85[1P --cpu-percent=852 --cpu-percent=85[1P[1@5[1P
+Error from server (AlreadyExists): horizontalpodautoscalers.autoscaling "67dep" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl autoscale deploy 67dep --max=5 --min=2 --cpu-percent=85[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl get pod --show-labels hpa[Ksa[Kautoscale deploy 67dep --max=20 --min=19 --cpu-percent=85[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl scale deployment 67dep --sc[K[Kreplicas=4
+deployment.extensions/67dep scaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl scale deployment 67dep --replicas=4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kkubectl get pod --show-labels 
+NAME                     READY   STATUS        RESTARTS   AGE     LABELS
+06nginx                  0/1     Error         0          12d     run=06nginx
+07nginx                  0/1     Error         0          12d     run=07nginx
+13nginx                  0/1     Completed     1          12d     run=13nginx
+17shell                  0/1     Error         0          12d     run=17shell
+19bb                     0/1     Completed     0          12d     run=19bb
+21bb                     0/1     Completed     0          12d     run=21bb
+29mc                     0/3     Completed     0          10d     run=29mc
+34mc                     0/2     Error         0          10d     run=34mc
+37-ng-1                  0/1     Error         0          5d      app=nginx
+37-ng-2                  0/1     Error         0          5d      app=red
+37-ng-3                  0/1     Error         0          5d      env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running       0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-2ldxz   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6p8wf   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-8mm59   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running       0          14m     app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-d4hrh   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhqp6   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fvcs6   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gdm4j   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running       0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running       0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nlt8s   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-nw544   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-p8xbf   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-s69bm   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-svlvh   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tt8v4   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-vkt5b   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-zgfbc   1/1     Terminating   0          9m48s   app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE    LABELS
+06nginx                  0/1     Error       0          12d    run=06nginx
+07nginx                  0/1     Error       0          12d    run=07nginx
+13nginx                  0/1     Completed   1          12d    run=13nginx
+17shell                  0/1     Error       0          12d    run=17shell
+19bb                     0/1     Completed   0          12d    run=19bb
+21bb                     0/1     Completed   0          12d    run=21bb
+29mc                     0/3     Completed   0          10d    run=29mc
+34mc                     0/2     Error       0          10d    run=34mc
+37-ng-1                  0/1     Error       0          5d1h   app=nginx
+37-ng-2                  0/1     Error       0          5d1h   app=red
+37-ng-3                  0/1     Error       0          5d1h   env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6w85b   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-7vjvd   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          68m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-drbcw   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhnph   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gxmhz   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-hxv2l   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jmk6z   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jqnz4   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-kbktk   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-mvl49   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-n5wmc   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-rhx25   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tczrs   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-w4sqh   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-wr477   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels scale deployment 67dep --replicas=4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kkubectl get pod --show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE    LABELS
+06nginx                  0/1     Error       0          12d    run=06nginx
+07nginx                  0/1     Error       0          12d    run=07nginx
+13nginx                  0/1     Completed   1          12d    run=13nginx
+17shell                  0/1     Error       0          12d    run=17shell
+19bb                     0/1     Completed   0          12d    run=19bb
+21bb                     0/1     Completed   0          12d    run=21bb
+29mc                     0/3     Completed   0          10d    run=29mc
+34mc                     0/2     Error       0          10d    run=34mc
+37-ng-1                  0/1     Error       0          5d1h   app=nginx
+37-ng-2                  0/1     Error       0          5d1h   app=red
+37-ng-3                  0/1     Error       0          5d1h   env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6w85b   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-7vjvd   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          68m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-drbcw   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhnph   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gxmhz   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-hxv2l   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jmk6z   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jqnz4   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-kbktk   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-mvl49   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-n5wmc   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-rhx25   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tczrs   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-w4sqh   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-wr477   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels scale deployment 67dep --replicas=4[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kkubectl get pod --show-labels hpa[Ksa[Kautoscale deploy 67dep --max=20 --min=19 --cpu-percent=85[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Error from server (AlreadyExists): horizontalpodautoscalers.autoscaling "67dep" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ky[Kubectl delete hpa 67dep 
+horizontalpodautoscaler.autoscaling "67dep" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete hpa 67dep autoscale deploy 67dep --max=20 --min=19 --cpu-percent=85[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[35Pget pod --show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE    LABELS
+06nginx                  0/1     Error       0          12d    run=06nginx
+07nginx                  0/1     Error       0          12d    run=07nginx
+13nginx                  0/1     Completed   1          12d    run=13nginx
+17shell                  0/1     Error       0          12d    run=17shell
+19bb                     0/1     Completed   0          12d    run=19bb
+21bb                     0/1     Completed   0          12d    run=21bb
+29mc                     0/3     Completed   0          10d    run=29mc
+34mc                     0/2     Error       0          10d    run=34mc
+37-ng-1                  0/1     Error       0          5d1h   app=nginx
+37-ng-2                  0/1     Error       0          5d1h   app=red
+37-ng-3                  0/1     Error       0          5d1h   env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6w85b   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-7vjvd   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          69m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-drbcw   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhnph   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gxmhz   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-hxv2l   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jmk6z   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jqnz4   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-kbktk   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-mvl49   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-n5wmc   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-rhx25   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tczrs   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-w4sqh   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-wr477   1/1     Running     0          54m    app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl scale deploy 67dep --replicas=4
+deployment.extensions/67dep scaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl scale deploy 67dep --replicas=4[9Pget pod --show-labels 
+NAME                     READY   STATUS        RESTARTS   AGE    LABELS
+06nginx                  0/1     Error         0          12d    run=06nginx
+07nginx                  0/1     Error         0          12d    run=07nginx
+13nginx                  0/1     Completed     1          12d    run=13nginx
+17shell                  0/1     Error         0          12d    run=17shell
+19bb                     0/1     Completed     0          12d    run=19bb
+21bb                     0/1     Completed     0          12d    run=21bb
+29mc                     0/3     Completed     0          10d    run=29mc
+34mc                     0/2     Error         0          10d    run=34mc
+37-ng-1                  0/1     Error         0          5d1h   app=nginx
+37-ng-2                  0/1     Error         0          5d1h   app=red
+37-ng-3                  0/1     Error         0          5d1h   env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running       0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-6w85b   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-7vjvd   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running       0          69m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-drbcw   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-fhnph   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-gxmhz   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running       0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-hxv2l   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jmk6z   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-jqnz4   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-kbktk   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running       0          64m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-mvl49   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-n5wmc   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-rhx25   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-tczrs   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-w4sqh   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-wr477   1/1     Terminating   0          55m    app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels 
+NAME                     READY   STATUS      RESTARTS   AGE    LABELS
+06nginx                  0/1     Error       0          12d    run=06nginx
+07nginx                  0/1     Error       0          12d    run=07nginx
+13nginx                  0/1     Completed   1          12d    run=13nginx
+17shell                  0/1     Error       0          12d    run=17shell
+19bb                     0/1     Completed   0          12d    run=19bb
+21bb                     0/1     Completed   0          12d    run=21bb
+29mc                     0/3     Completed   0          10d    run=29mc
+34mc                     0/2     Error       0          10d    run=34mc
+37-ng-1                  0/1     Error       0          5d1h   app=nginx
+37-ng-2                  0/1     Error       0          5d1h   app=red
+37-ng-3                  0/1     Error       0          5d1h   env=prod
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          72m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          76m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          72m    app=67dep,pod-template-hash=7db4cf66f7
+67dep-7db4cf66f7-m2269   1/1     Running     0          72m    app=67dep,pod-template-hash=7db4cf66f7
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create nodever[K[K[K[K[K[K[K82job --image [K=node[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kjob 82job --image=node -- no de-v
+job.batch/82job created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get jobs.batch [K[K[K[K[K[K[K[K
+NAME    COMPLETIONS   DURATION   AGE
+82job   0/1           10s        10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job -w
+NAME    COMPLETIONS   DURATION   AGE
+82job   0/1           14s        14s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job -w
+NAME    COMPLETIONS   DURATION   AGE
+82job   0/1           5m6s       5m6s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 82job-97d5j 
+Error from server (BadRequest): container "82job" in pod "82job-97d5j" is waiting to start: ContainerCreating
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ki[Kubectl get po 
+NAME                     READY   STATUS              RESTARTS   AGE
+06nginx                  0/1     Error               0          12d
+07nginx                  0/1     Error               0          12d
+13nginx                  0/1     Completed           1          12d
+17shell                  0/1     Error               0          12d
+19bb                     0/1     Completed           0          12d
+21bb                     0/1     Completed           0          12d
+29mc                     0/3     Completed           0          11d
+34mc                     0/2     Error               0          11d
+37-ng-1                  0/1     Error               0          5d3h
+37-ng-2                  0/1     Error               0          5d3h
+37-ng-3                  0/1     Error               0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running             0          161m
+67dep-7db4cf66f7-9wrj7   1/1     Running             0          165m
+67dep-7db4cf66f7-h5g7f   1/1     Running             0          161m
+67dep-7db4cf66f7-m2269   1/1     Running             0          161m
+82job-97d5j              0/1     ContainerCreating   0          5m28s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po [10@logs 82job-97d5j[C[7Pget job -w[K -w
+NAME    COMPLETIONS   DURATION   AGE
+82job   0/1           5m33s      5m33s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create 84job [Kj84jobo84jobb84job 84job[C[C[C[C[C --image=busybox -- dry-run -o yaml -- echo " Hello I am Ho[K[Kfrom Job"
+apiVersion: batch/v1
+kind: Job
+metadata:
+  creationTimestamp: null
+  name: 84job
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - command:
+        - echo
+        - ' Hello I am from Job'
+        image: busybox
+        name: 84job
+        resources: {}
+      restartPolicy: Never
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create job 84job --image=busybox --ddry-run -o yaml -- echo " Hello I am from Job" .[K> 84.[Kjob.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 6[K84job.yaml 
+job.batch/84job created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kib[K[Kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+82job   0/1           9m2s       9m2s
+84job   0/1           7s         7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get [K[K[K[Klogs job[K[K[K[K hel[K[K[K84job-9gkc8 
+Error from server (BadRequest): container "84job" in pod "84job-9gkc8" is waiting to start: ContainerCreating
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 84job-9gkc8 [10Pget job
+NAME    COMPLETIONS   DURATION   AGE
+82job   0/1           9m27s      9m27s
+84job   0/1           32s        32s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job[K[K[Kpod
+NAME                     READY   STATUS              RESTARTS   AGE
+06nginx                  0/1     Error               0          12d
+07nginx                  0/1     Error               0          12d
+13nginx                  0/1     Completed           1          12d
+17shell                  0/1     Error               0          12d
+19bb                     0/1     Completed           0          12d
+21bb                     0/1     Completed           0          12d
+29mc                     0/3     Completed           0          11d
+34mc                     0/2     Error               0          11d
+37-ng-1                  0/1     Error               0          5d3h
+37-ng-2                  0/1     Error               0          5d3h
+37-ng-3                  0/1     Error               0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running             0          165m
+67dep-7db4cf66f7-9wrj7   1/1     Running             0          169m
+67dep-7db4cf66f7-h5g7f   1/1     Running             0          165m
+67dep-7db4cf66f7-m2269   1/1     Running             0          165m
+82job-97d5j              0/1     ContainerCreating   0          9m34s
+84job-9gkc8              0/1     ContainerCreating   0          39s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod
+NAME                     READY   STATUS               RESTARTS   AGE
+06nginx                  0/1     Error                0          12d
+07nginx                  0/1     Error                0          12d
+13nginx                  0/1     Completed            1          12d
+17shell                  0/1     Error                0          12d
+19bb                     0/1     Completed            0          12d
+21bb                     0/1     Completed            0          12d
+29mc                     0/3     Completed            0          11d
+34mc                     0/2     Error                0          11d
+37-ng-1                  0/1     Error                0          5d3h
+37-ng-2                  0/1     Error                0          5d3h
+37-ng-3                  0/1     Error                0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running              0          167m
+67dep-7db4cf66f7-9wrj7   1/1     Running              0          172m
+67dep-7db4cf66f7-h5g7f   1/1     Running              0          167m
+67dep-7db4cf66f7-m2269   1/1     Running              0          167m
+82job-97d5j              0/1     ContainerCannotRun   0          11m
+82job-b9tbb              0/1     ContainerCannotRun   0          101s
+82job-bxznt              0/1     ContainerCannotRun   0          2m12s
+82job-nkz82              0/1     ContainerCreating    0          1s
+82job-pn68x              0/1     ContainerCannotRun   0          81s
+84job-9gkc8              0/1     Completed            0          2m52s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get podjoblogs 84job-9gkc8 
+ Hello I am from Job
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 84job-9gkc8 [K[K[K[K[K[K[K[K[K[K[K2job-[K-
+82job-97d5j  82job-b9tbb  82job-bxznt  82job-nkz82  82job-pn68x
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 82job-97d5j 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete 82[K[Kjobs.batch [K[K[K[K[K[K[K[K 82job [K*
+Error from server (NotFound): jobs.batch "82job*" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete job 82job*[K-*
+Error from server (NotFound): jobs.batch "82job-*" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete job 82job-*[K[K-{*)[K}
+Error from server (NotFound): jobs.batch "82job-{*}" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete job 82job-{*}[K[K9[K[K97[K[K
+Error from server (NotFound): jobs.batch "82job-" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete job 82job-[K[K[K[K[K[K[Ks.batch 82job 
+job.batch "82job" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete jobs.batch 82job [7P 82job-{*}[2P*[1P*logs 82job-97d5j 4job-9gkc8[C[10Pget pod
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          169m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          174m
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          169m
+67dep-7db4cf66f7-m2269   1/1     Running     0          169m
+84job-9gkc8              0/1     Completed   0          4m51s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubc[Kectl create job 88job --omag[K[K[K[Kimage=busybox -- dry-run -o yaml -- echo "Helo[Klo" > 88.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ catt[K[K[K[Knano 88.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    88.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: batch/v1[4dkind: Job[5dmetadata:[6;3HcreationTimestamp: null[7;3Hname: 88job[8dspec:[9;3Htemplate:[10;5Hmetadata:[11;7HcreationTimestamp: null[12;5Hspec:[13;7Hcontainers:[14;7H- command:[15;9H- echo[16;9H- Hello[17;9Himage: busybox[18;9Hname: 88job[19;9Hresources: {}[20;7HrestartPolicy: Never[21dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[12;10H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[13;35r[13;1HM[1;38r[13;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36d[K[13;7H[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25ly[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l [?12l[?25h[?25l2[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 88.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 20 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 88.yaml 
+error: error validating "88.yaml": error validating data: ValidationError(Job.spec.template.spec): unknown field "completions" in io.k8s.api.core.v1.PodSpec; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 88.yaml [13Pnano[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 20 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    88.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: batch/v1[4dkind: Job[5dmetadata:[6;3HcreationTimestamp: null[7;3Hname: 88job[8dspec:[9;3Htemplate:[10;5Hmetadata:[11;7HcreationTimestamp: null[12;5Hspec:[13;7Hcompletions: 2[14;7Hcontainers:[15;7H- command:[16;9H- echo[17;9H- Hello[18;9Himage: busybox[19;9Hname: 88job[20;9Hresources: {}[21;7HrestartPolicy: Never[22dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[A[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[13;35r[35;1H
+[1;38r[13;1H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[8;6H[?12l[?25h[?25l7[9;35r8[9dM[1;38r[9;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25ll[36d[K[9;8H[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l2[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 88.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 20 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 88.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C
+job.batch/88job created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create [K[K[K[K[K[K[Kget jb[Kob
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        9m53s
+88job   1/2           9s         9s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        9m56s
+88job   1/2           12s        12s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        9m57s
+88job   1/2           13s        13s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        9m58s
+88job   1/2           14s        14s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job -w
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        10m
+88job   2/2           15s        17s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job -w
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        11m
+88job   2/2           15s        97s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          176m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          3h
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          176m
+67dep-7db4cf66f7-m2269   1/1     Running     0          176m
+84job-9gkc8              0/1     Completed   0          11m
+88job-46bhf              0/1     Completed   0          102s
+88job-bx58m              0/1     Completed   0          95s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete jobs.batch [K[K[K[K[K[K[K[K 88job [K-4[K[K[K[K[K[K[K[K[K[K[K[K pod 88job-46bhf 
+pod "88job-46bhf" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete pod 88job-46bhf get po[K
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          176m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          3h1m
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          176m
+67dep-7db4cf66f7-m2269   1/1     Running     0          176m
+84job-9gkc8              0/1     Completed   0          11m
+88job-bx58m              0/1     Completed   0          2m7s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          176m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          3h1m
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          176m
+67dep-7db4cf66f7-m2269   1/1     Running     0          176m
+84job-9gkc8              0/1     Completed   0          12m
+88job-bx58m              0/1     Completed   0          2m14s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          176m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          3h1m
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          176m
+67dep-7db4cf66f7-m2269   1/1     Running     0          176m
+84job-9gkc8              0/1     Completed   0          12m
+88job-bx58m              0/1     Completed   0          2m16s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          176m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          3h1m
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          176m
+67dep-7db4cf66f7-m2269   1/1     Running     0          176m
+84job-9gkc8              0/1     Completed   0          12m
+88job-bx58m              0/1     Completed   0          2m17s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          176m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          3h1m
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          176m
+67dep-7db4cf66f7-m2269   1/1     Running     0          176m
+84job-9gkc8              0/1     Completed   0          12m
+88job-bx58m              0/1     Completed   0          2m18s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl get podelete pod 88job-46bhf get po[Kjob -w[Kcreate -f 88.yaml [13Pnano[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[Ckubectl create job 88job --image=busybox --ddry-run -o yaml -- echo "Hello" > 88.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjob --image=busybox --dr[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjob --image=busybox --dry[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C9job --image=busybox --dr[1@y[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0job --image=busybox --d[1@r[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P.yaml[1P.yaml9.yaml0.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 90.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    90.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: batch/v1[4dkind: Job[5dmetadata:[6;3HcreationTimestamp: null[7;3Hname: 90job[8dspec:[9;3Htemplate:[10;5Hmetadata:[11;7HcreationTimestamp: null[12;5Hspec:[13;7Hcontainers:[14;7H- command:[15;9H- echo[16;9H- Hello[17;9Himage: busybox[18;9Hname: 90job[19;9Hresources: {}[20;7HrestartPolicy: Never[21dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[8;6H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[9;35r[9;1HM[1;38r[9;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lm[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l3[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 90.yaml                                  (B[m[36;28H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 20 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl ce[Kreate -f 90.yaml 
+job.batch/90job created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 90.yaml [13Pnano[C[C[C[C[C[C[C[C[Ckubectl create job 90job --image=busybox --ddry-run -o yaml -- echo "Hello" > 90.yaml[Acc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d3h
+37-ng-2                  0/1     Error       0          5d3h
+37-ng-3                  0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb   1/1     Running     0          3h5m
+67dep-7db4cf66f7-9wrj7   1/1     Running     0          3h9m
+67dep-7db4cf66f7-h5g7f   1/1     Running     0          3h5m
+67dep-7db4cf66f7-m2269   1/1     Running     0          3h5m
+84job-9gkc8              0/1     Completed   0          20m
+88job-bx58m              0/1     Completed   0          10m
+90job-frm98              0/1     Completed   0          4m26s
+90job-h5r5c              0/1     Completed   0          4m26s
+90job-l8zp2              0/1     Completed   0          4m26s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po[K[Kjob
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        20m
+88job   2/2           15s        10m
+90job   3/1 of 3      45s        4m29s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        20m
+88job   2/2           15s        10m
+90job   3/1 of 3      45s        4m34s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get job
+NAME    COMPLETIONS   DURATION   AGE
+84job   1/1           48s        20m
+88job   2/2           15s        10m
+90job   3/1 of 3      45s        4m36s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create cronjob 92cj --image=busyboc [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cx  --schedule="1 * * * *" --dry[K[K[K[K[K-o yaml > 91.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 91.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 37 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    91.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: batch/v1beta1[4dkind: CronJob[5dmetadata:[6;3HcreationTimestamp: "2020-02-28T18:48:42Z"[7;3Hname: 92cj[8;3Hnamespace: default[9;3HresourceVersion: "89169"[10;3HselfLink: /apis/batch/v1beta1/namespaces/default/cronjobs/92cj[11;3Huid: 653a5e89-aa8d-486d-831a-79b6d9cfa35d[12dspec:[13;3HconcurrencyPolicy: Allow[14;3HfailedJobsHistoryLimit: 1[15;3HjobTemplate:[16;5Hmetadata:[17;7HcreationTimestamp: null[18;7Hname: 92cj[19;5Hspec:[20;7Htemplate:[21;9Hmetadata:[22;11HcreationTimestamp: null[23;9Hspec:[24;11Hcontainers:[25;11H- image: busybox[26;13HimagePullPolicy: Always[27;13Hname: 92cj[28;13Hresources: {}[29;13HterminationMessagePath: /dev/termination-log[30;13HterminationMessagePolicy: File[31;11HdnsPolicy: ClusterFirst[32;11HrestartPolicy: OnFailure[33;11HschedulerName: default-scheduler[34;11HsecurityContext: {}[35;11HterminationGracePeriodSeconds: 30[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[28d[?12l[?25h[?25l[36d[K[29d[?12l[?25h[?25l[30d[?12l[?25h[?25l[31d[?12l[?25h[?25l[32d[?12l[?25h[?25l[33d[?12l[?25h[?25l[34d[?12l[?25h[?25l[35d[?12l[?25h[?25l7[3;36r8[36d[17S[1;38r[19;3Hschedule: 1 * * * *[20;3HsuccessfulJobsHistoryLimit: 3[21;3Hsuspend: false[22dstatus: {}[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[?12l[?25h[?25l[37d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 91.yaml kubectl create cronjob 92cj --image=busybox  --schedule="1 * * * *" -o yaml > 91.yaml[1@*[1@/[C[C[C[C[C[C[C[C[C[C[C[1@ [1@-[1@-[1@b[1P[C[1@ [1@b[1@i[1@n[1@/[1@s[1@h[C[1@ [1@-[1@c[C[1@ [1@"[1@d[1@a[1@t[1@e[1@;[C[1@ [1@e[1@c[1@h[1@o[C[1@ [1@H[1@e[1@l[1@lo -o yaml > 91.yaml [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cw -o yaml > 91.yamll[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o yaml > 91.yaml [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o yaml > 91.yamll[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CC -o yaml > 91.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CJ -o yaml > 91.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" -o yaml > 91.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o yaml > 91.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+error: failed to create cronjob: cronjobs.batch "92cj" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create cronjob 92cj --image=busybox  --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 91..yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[Cc.yaml[Cj.yaml[C[C
+error: failed to create cronjob: cronjobs.batch "92cj" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create cronjob 92cj --image=busybox  --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 91ccj.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[2P.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 91.yaml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 91.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;36H(B[0;7m 1 line ](B[m[K[H(B[0;7m  GNU nano 2.9.3                    91.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mcronjob.batch/92-cj created[?12l[?25h[?25l[36;13H(B[0;7m[ line 1/2 (50%), col 1/28 (3%), char 0/28 (0%) ](B[m[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl gre[Kt[K[Ket cj
+NAME    SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+92-cj   */1 * * * *   False     0        <none>          15s
+92cj    1 * * * *     False     0        <none>          108s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete 92c
+error: resource(s) were provided, but no name, label selector, or --all flag specified
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete 92cc92cj92c 92c[C[C[Cj
+cronjob.batch "92cj" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete cj 92cj[C-cj
+cronjob.batch "92-cj" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl delete cj 92-cj[1Pcj[4P92c[4Pget cj[1Pnano 91.yaml kubectl create cronjob 92-cj --image=busyboxx --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 911.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ku[K[Knano 91
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                       91                                 [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 91
+91cj.yaml  91.yaml    
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 91.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;36H(B[0;7m 1 line ](B[m[K[H(B[0;7m  GNU nano 2.9.3                    91.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mcronjob.batch/92-cj created[?12l[?25h[?25l[36;13H(B[0;7m[ line 1/2 (50%), col 1/28 (3%), char 0/28 (0%) ](B[m[3d[?12l[?25h[?25l[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 91.yaml [Kkubectl create cronjob 92-cj --image=busyboxx --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 911.yaml[1P.yaml2.yaml[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.[1Pyaml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[Ccronjob 92-cj --image=busybox -[Cschedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.y[1Paml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[Ccronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.ya[1Pml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[Ccronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yam[1Pl[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[Ccronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yaml[K[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[Ccronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yaml [K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cronjob 92-cj --image=busybox --sche[1P
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crcronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yaml [A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[Cicronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yamll[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[Ccronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yaml [K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cucronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yamll[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[Cncronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yaml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C cronjob 92-cj --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 92.yaml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o yaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-  -o yaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-  -o yaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd  -o yaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr  -o yaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cy  -o yaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-  -o yaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr  -o yaml[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu  -o yam[1@l[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn  -o ya[1@m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+kubectl run --generator=cronjob/v1beta1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+The CronJob "cronjob" is invalid: spec.jobTemplate.spec.template.spec.restartPolicy: Unsupported value: "Always": supported values: "OnFailure", "Never"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run cronjob 92-cj --image=busybox ---schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ" --dry-run  -o yaaml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-o yam[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+kubectl run --generator=cronjob/v1beta1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+The CronJob "cronjob" is invalid: spec.jobTemplate.spec.template.spec.restartPolicy: Unsupported value: "Always": supported values: "OnFailure", "Never"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 92.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;36H(B[0;7m 0 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    92.yaml                               [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[36;13H(B[0;7m[ line 1/1 (100%), col 1/1 (100%), char 0/0 (0%) ](B[m[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 92.yaml kubectl run cronjob 92-cj --image=busybox ---schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ" --dry-run -o yamml > 92.yaml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -o ya[1@m[C[C[C[C[C[C[C[C[C[C[C[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 91.yaml [K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kkubectl create cronjob 92-cj --image=busyboxx --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ"  -o yaml > 911.yaml[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K -o yaml > 92 cj.yml
+error: failed to create cronjob: cronjobs.batch "92-cj" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create cronjob 92-cj --image=busyboxx --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ" -o yaml > 92ccj.yml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Anano 92.yaml [K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl create cronjob 92-cj --image=busyboxx --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ" -o yaml > 92ccj.yml[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ" -o yaml > 92cj.yml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1 --image=busybox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ" -o yaml > 92cj.yml[A[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 92cj.yml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;36H(B[0;7m 1 line ](B[m[K[H(B[0;7m  GNU nano 2.9.3                    92cj.yml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mcronjob.batch/92-cjs1 created[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get cj
+NAME      SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+92-cj     */1 * * * *   False     1        17s             2m8s
+92-cjs1   */1 * * * *   False     0        <none>          11s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl get cjnano 92cj.yml kubectl create cronjob 92-cjs1 --image=busybbox --schedule="*/1 * * * *" -- bin/sh -c "date; echo Hello CJ" -o yaml > 992cj.yml[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=busybo[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=busybox[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=busybox [1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr --image=busybox[1@ [A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co --image=busybo[1@x[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn --image=busyb[1@o[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cj --image=busy[1@b[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Co --image=bus[1@y[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cb --image=bu[1@s[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+cronjob.batch/92-cronjob created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get cj
+NAME         SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+92-cj        */1 * * * *   False     0        43s             2m34s
+92-cjs1      */1 * * * *   False     0        <none>          37s
+92-cronjob   */1 * * * *   False     0        <none>          4s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get cj 92-cronjob -o yaml
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  creationTimestamp: "2020-02-28T18:53:39Z"
+  name: 92-cronjob
+  namespace: default
+  resourceVersion: "89572"
+  selfLink: /apis/batch/v1beta1/namespaces/default/cronjobs/92-cronjob
+  uid: 4dcf5931-4724-40af-bf91-219e71964444
+spec:
+  concurrencyPolicy: Allow
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    metadata:
+      creationTimestamp: null
+      name: 92-cronjob
+    spec:
+      template:
+        metadata:
+          creationTimestamp: null
+        spec:
+          containers:
+          - command:
+            - bin/sh
+            - -c
+            - date; echo Hello CJ
+            image: busybox
+            imagePullPolicy: Always
+            name: 92-cronjob
+            resources: {}
+            terminationMessagePath: /dev/termination-log
+            terminationMessagePolicy: File
+          dnsPolicy: ClusterFirst
+          restartPolicy: OnFailure
+          schedulerName: default-scheduler
+          securityContext: {}
+          terminationGracePeriodSeconds: 30
+  schedule: '*/1 * * * *'
+  successfulJobsHistoryLimit: 3
+  suspend: false
+status: {}
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs [K[K[K[K[K[K get po
+NAME                          READY   STATUS              RESTARTS   AGE
+06nginx                       0/1     Error               0          12d
+07nginx                       0/1     Error               0          12d
+13nginx                       0/1     Completed           1          12d
+17shell                       0/1     Error               0          12d
+19bb                          0/1     Completed           0          12d
+21bb                          0/1     Completed           0          12d
+29mc                          0/3     Completed           0          11d
+34mc                          0/2     Error               0          11d
+37-ng-1                       0/1     Error               0          5d3h
+37-ng-2                       0/1     Error               0          5d3h
+37-ng-3                       0/1     Error               0          5d3h
+67dep-7db4cf66f7-2hfgb        1/1     Running             0          3h12m
+67dep-7db4cf66f7-9wrj7        1/1     Running             0          3h16m
+67dep-7db4cf66f7-h5g7f        1/1     Running             0          3h12m
+67dep-7db4cf66f7-m2269        1/1     Running             0          3h12m
+84job-9gkc8                   0/1     Completed           0          27m
+88job-bx58m                   0/1     Completed           0          17m
+90job-frm98                   0/1     Completed           0          11m
+90job-h5r5c                   0/1     Completed           0          11m
+90job-l8zp2                   0/1     Completed           0          11m
+92-cj-1582915920-djqfl        0/1     Completed           0          2m12s
+92-cj-1582915980-7lzcf        0/1     Completed           0          72s
+92-cj-1582916040-lzds6        0/1     Completed           0          12s
+92-cjs1-1582916040-w7m6n      0/1     Completed           0          12s
+92-cronjob-1582916040-jrx7b   0/1     ContainerCreating   0          12s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                          READY   STATUS      RESTARTS   AGE
+06nginx                       0/1     Error       0          12d
+07nginx                       0/1     Error       0          12d
+13nginx                       0/1     Completed   1          12d
+17shell                       0/1     Error       0          12d
+19bb                          0/1     Completed   0          12d
+21bb                          0/1     Completed   0          12d
+29mc                          0/3     Completed   0          11d
+34mc                          0/2     Error       0          11d
+37-ng-1                       0/1     Error       0          5d3h
+37-ng-2                       0/1     Error       0          5d3h
+37-ng-3                       0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb        1/1     Running     0          3h12m
+67dep-7db4cf66f7-9wrj7        1/1     Running     0          3h17m
+67dep-7db4cf66f7-h5g7f        1/1     Running     0          3h12m
+67dep-7db4cf66f7-m2269        1/1     Running     0          3h12m
+84job-9gkc8                   0/1     Completed   0          27m
+88job-bx58m                   0/1     Completed   0          17m
+90job-frm98                   0/1     Completed   0          11m
+90job-h5r5c                   0/1     Completed   0          11m
+90job-l8zp2                   0/1     Completed   0          11m
+92-cj-1582915920-djqfl        0/1     Completed   0          2m22s
+92-cj-1582915980-7lzcf        0/1     Completed   0          82s
+92-cj-1582916040-lzds6        0/1     Completed   0          22s
+92-cjs1-1582916040-w7m6n      0/1     Completed   0          22s
+92-cronjob-1582916040-jrx7b   0/1     Completed   0          22s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 92-cronjob-1582916040-jrx7b 
+Fri Feb 28 18:54:25 UTC 2020
+Hello CJ
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 92-cronjob-1582916040-jrx7b 
+Fri Feb 28 18:54:25 UTC 2020
+Hello CJ
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl logs 92-cronjob-1582916040-jrx7b get po[Kcc[Kkubectl get po
+NAME                          READY   STATUS      RESTARTS   AGE
+06nginx                       0/1     Error       0          12d
+07nginx                       0/1     Error       0          12d
+13nginx                       0/1     Completed   1          12d
+17shell                       0/1     Error       0          12d
+19bb                          0/1     Completed   0          12d
+21bb                          0/1     Completed   0          12d
+29mc                          0/3     Completed   0          11d
+34mc                          0/2     Error       0          11d
+37-ng-1                       0/1     Error       0          5d3h
+37-ng-2                       0/1     Error       0          5d3h
+37-ng-3                       0/1     Error       0          5d3h
+67dep-7db4cf66f7-2hfgb        1/1     Running     0          3h12m
+67dep-7db4cf66f7-9wrj7        1/1     Running     0          3h17m
+67dep-7db4cf66f7-h5g7f        1/1     Running     0          3h12m
+67dep-7db4cf66f7-m2269        1/1     Running     0          3h12m
+84job-9gkc8                   0/1     Completed   0          28m
+88job-bx58m                   0/1     Completed   0          18m
+90job-frm98                   0/1     Completed   0          12m
+90job-h5r5c                   0/1     Completed   0          12m
+90job-l8zp2                   0/1     Completed   0          12m
+92-cj-1582915920-djqfl        0/1     Completed   0          2m38s
+92-cj-1582915980-7lzcf        0/1     Completed   0          98s
+92-cj-1582916040-lzds6        0/1     Completed   0          38s
+92-cjs1-1582916040-w7m6n      0/1     Completed   0          38s
+92-cronjob-1582916040-jrx7b   0/1     Completed   0          38s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                          READY   STATUS              RESTARTS   AGE
+06nginx                       0/1     Error               0          12d
+07nginx                       0/1     Error               0          12d
+13nginx                       0/1     Completed           1          12d
+17shell                       0/1     Error               0          12d
+19bb                          0/1     Completed           0          12d
+21bb                          0/1     Completed           0          12d
+29mc                          0/3     Completed           0          11d
+34mc                          0/2     Error               0          11d
+37-ng-1                       0/1     Error               0          5d3h
+37-ng-2                       0/1     Error               0          5d3h
+37-ng-3                       0/1     Error               0          5d3h
+67dep-7db4cf66f7-2hfgb        1/1     Running             0          3h13m
+67dep-7db4cf66f7-9wrj7        1/1     Running             0          3h17m
+67dep-7db4cf66f7-h5g7f        1/1     Running             0          3h13m
+67dep-7db4cf66f7-m2269        1/1     Running             0          3h13m
+84job-9gkc8                   0/1     Completed           0          28m
+88job-bx58m                   0/1     Completed           0          18m
+90job-frm98                   0/1     Completed           0          12m
+90job-h5r5c                   0/1     Completed           0          12m
+90job-l8zp2                   0/1     Completed           0          12m
+92-cj-1582915980-7lzcf        0/1     Completed           0          2m15s
+92-cj-1582916040-lzds6        0/1     Completed           0          75s
+92-cj-1582916100-lskqs        0/1     Completed           0          15s
+92-cjs1-1582916040-w7m6n      0/1     Completed           0          75s
+92-cjs1-1582916100-ps2v8      0/1     ContainerCreating   0          15s
+92-cronjob-1582916040-jrx7b   0/1     Completed           0          75s
+92-cronjob-1582916100-zc8q7   0/1     Completed           0          14s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                          READY   STATUS      RESTARTS   AGE
+06nginx                       0/1     Error       0          12d
+07nginx                       0/1     Error       0          12d
+13nginx                       0/1     Completed   1          12d
+17shell                       0/1     Error       0          12d
+19bb                          0/1     Completed   0          12d
+21bb                          0/1     Completed   0          12d
+29mc                          0/3     Completed   0          11d
+34mc                          0/2     Error       0          11d
+37-ng-1                       0/1     Error       0          5d4h
+37-ng-2                       0/1     Error       0          5d4h
+37-ng-3                       0/1     Error       0          5d4h
+67dep-7db4cf66f7-2hfgb        1/1     Running     0          3h30m
+67dep-7db4cf66f7-9wrj7        1/1     Running     0          3h35m
+67dep-7db4cf66f7-h5g7f        1/1     Running     0          3h30m
+67dep-7db4cf66f7-m2269        1/1     Running     0          3h30m
+84job-9gkc8                   0/1     Completed   0          46m
+88job-bx58m                   0/1     Completed   0          36m
+90job-frm98                   0/1     Completed   0          30m
+90job-h5r5c                   0/1     Completed   0          30m
+90job-l8zp2                   0/1     Completed   0          30m
+92-cj-1582917000-78fnz        0/1     Completed   0          2m45s
+92-cj-1582917060-789gh        0/1     Completed   0          105s
+92-cj-1582917120-crs6r        0/1     Completed   0          45s
+92-cjs1-1582917000-mnh9h      0/1     Completed   0          2m45s
+92-cjs1-1582917060-rf2k9      0/1     Completed   0          105s
+92-cjs1-1582917120-zjlx7      0/1     Completed   0          45s
+92-cronjob-1582917000-sfx2c   0/1     Completed   0          2m45s
+92-cronjob-1582917060-svvsw   0/1     Completed   0          105s
+92-cronjob-1582917120-tp5nf   0/1     Completed   0          45s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pv
+No resources found.
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl [K[K[K[K[K[K[K[Kkubectl create -f task-pv-volume.yaml
+error: the path "task-pv-volume.yaml" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 111[K[K[K97pv.yaml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                   97pv.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3da[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25lV[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25l1[?12l[?25h[?25l[4d[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lP[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[36d[K[4;12H[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lV[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[5d[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l:[?12l[?25h[?25l[6d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25l[K  [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25lk[?12l[?25h[?25l-[?12l[?25h[?25lp[?12l[?25h[?25lv[?12l[?25h[?25l-[?12l[?25h[?25lp[?12l[?25h[?25l [?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[7d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25ll[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[8d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25ly[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l[9d[?12l[?25h[?25ls[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25l:[?12l[?25h[?25l[10d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lg[?12l[?25h[?25le[?12l[?25h[?25lC[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25lN[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lu[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l[11d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25ly[?12l[?25h[?25l:[?12l[?25h[?25l[12d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lg[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l0[?12l[?25h[?25lG[?12l[?25h[?25li[?12l[?25h[?25l[13d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[14d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lR[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25lW[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lO[?12l[?25h[?25ln[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l[15d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lP[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l[16d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l"[?12l[?25h[?25l/[?12l[?25h[?25lm[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l/[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l"[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 97pv.yaml                                (B[m[36;30H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 14 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 7[K97pv.yaml 
+error: error validating "97pv.yaml": error validating data: ValidationError(PersistentVolume.spec): unknown field "accessMoes" in io.k8s.api.core.v1.PersistentVolumeSpec; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 97pv.yaml [14Pnano 97pv.yaml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 14 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                         97pv.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: PersistentVolume[5dmetadata:[6;3Hname: task-pv-volume[7;3Hlabels:[8;5Htype: local[9dspec:[10;3HstorageClassName: manual[11;3Hcapacity:[12;5Hstorage: 10Gi[13;3HaccessMoes:[14;5H- ReadWriteOnce[15;3HhostPath:[16;5Hpath: "/mnt/data"[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[13;14H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[13;11Hdes:[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 97pv.yaml                                (B[m[36;30H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 14 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 97pv.yamlkubectl create -f 97pv.yaml 
+persistentvolume/task-pv-volume created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 97pv.yaml [14Pnano 97pv.yamlkubectl create -f 97pv.yaml [14Pnano 97pv.yamlcc[Knano 97pv.yamlc.yaml[1Ppvc.yaml8pvc.yaml
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                   98pvc.yaml                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[3da[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25lV[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ls[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25li[36d[K[3;9H[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25l1[?12l[?25h[?25l[4d[?12l[?25h[?25lk[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25ld[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lP[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lV[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25le[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lC[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25l[5d[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25l:[?12l[?25h[?25l[6d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25lk[?12l[?25h[?25l-[?12l[?25h[?25lp[?12l[?25h[?25lv[?12l[?25h[?25l-[?12l[?25h[?25lc[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25l[7d[?12l[?25h[?25ls[?12l[?25h[?25lp[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25l[8d[?12l[?25h[?25l[Aspec[?12l[?25h[?25l:[?12l[?25h[?25l[8d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lg[?12l[?25h[?25le[?12l[?25h[?25lC[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25lN[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25ln[?12l[?25h[?25lu[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25l[9d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25ld[?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[10d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[9;15H[?12l[?25h[?25l[10d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lR[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25lW[?12l[?25h[?25lr[?12l[?25h[?25li[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25lO[?12l[?25h[?25ln[?12l[?25h[?25lc[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25l[11d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25lr[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[12d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lq[?12l[?25h[?25lu[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25ly[?12l[?25h[?25l [?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[13d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25la[?12l[?25h[?25lg[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l3[?12l[?25h[?25lG[?12l[?25h[?25li[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 98pvc.yaml                               (B[m[36;31H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 11 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 98pvc.yaml 
+persistentvolumeclaim/task-pv-claim created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl pv,[K
+Error: unknown command "pv" for "kubectl"
+
+Did you mean this?
+	cp
+
+Run 'kubectl --help' for usage.
+unknown command "pv" for "kubectl"
+
+Did you mean this?
+	cp
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pv
+NAME             CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                   STORAGECLASS   REASON   AGE
+task-pv-volume   10Gi       RWO            Retain           Bound    default/task-pv-claim   manual                  19m
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pvc
+NAME            STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+task-pv-claim   Bound    task-pv-volume   10Gi       RWO            manual         29s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ exit
+exit
+
+Script done on 2020-02-29 01:38:02+0500

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 100vol
+  name: 100vol
+spec:
+  volumes:
+  - name: ed
+    emptyDir: {}
+  containers:
+  - image: redis
+    name: 100vol
+    volumeMounts: 
+    - name: ed
+      mountPath: /var/log
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

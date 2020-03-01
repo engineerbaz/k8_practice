@@ -1,0 +1,489 @@
+Script started on 2020-02-29 10:48:28+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po
+NAME                          READY   STATUS      RESTARTS   AGE
+06nginx                       0/1     Error       0          12d
+07nginx                       0/1     Error       0          12d
+13nginx                       0/1     Completed   1          12d
+17shell                       0/1     Error       0          12d
+19bb                          0/1     Completed   0          12d
+21bb                          0/1     Completed   0          12d
+29mc                          0/3     Completed   0          11d
+34mc                          0/2     Error       0          11d
+37-ng-1                       0/1     Error       0          5d14h
+37-ng-2                       0/1     Error       0          5d14h
+37-ng-3                       0/1     Error       0          5d14h
+67dep-7db4cf66f7-2hfgb        1/1     Running     1          14h
+67dep-7db4cf66f7-9wrj7        1/1     Running     1          14h
+67dep-7db4cf66f7-h5g7f        1/1     Running     1          14h
+67dep-7db4cf66f7-m2269        1/1     Running     1          14h
+84job-9gkc8                   0/1     Completed   0          11h
+88job-bx58m                   0/1     Completed   0          11h
+90job-frm98                   0/1     Completed   0          11h
+90job-h5r5c                   0/1     Completed   0          11h
+90job-l8zp2                   0/1     Completed   0          11h
+92-cj-1582922160-g5x92        0/1     Completed   0          9h
+92-cj-1582922220-fmnsx        0/1     Completed   0          9h
+92-cj-1582922280-lbh6w        0/1     Completed   0          9h
+92-cjs1-1582922160-thtw2      0/1     Completed   0          9h
+92-cjs1-1582922220-hjgv5      0/1     Completed   0          9h
+92-cjs1-1582922280-9scx4      0/1     Completed   0          9h
+92-cronjob-1582922160-qkthh   0/1     Completed   0          9h
+92-cronjob-1582922220-6vc9c   0/1     Completed   0          9h
+92-cronjob-1582922280-wt2rr   0/1     Completed   0          9h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete [K j [K[Kch[Kj 89[K[K92
+92cj.yml  92.yaml   
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete cj 92[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl del[K[K[Kge[K[K[K[K[K[K[K[K[K[Kkubectl get pocc[Kscript 202002281936cc[Kss[1Pcsource <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete cj 92-cronjob 
+cronjob.batch "92-cronjob" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete cj 92-cronjob source <(kubectl completion bash)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[19Pkubectl get po
+NAME                       READY   STATUS      RESTARTS   AGE
+06nginx                    0/1     Error       0          12d
+07nginx                    0/1     Error       0          12d
+13nginx                    0/1     Completed   1          12d
+17shell                    0/1     Error       0          12d
+19bb                       0/1     Completed   0          12d
+21bb                       0/1     Completed   0          12d
+29mc                       0/3     Completed   0          11d
+34mc                       0/2     Error       0          11d
+37-ng-1                    0/1     Error       0          5d14h
+37-ng-2                    0/1     Error       0          5d14h
+37-ng-3                    0/1     Error       0          5d14h
+67dep-7db4cf66f7-2hfgb     1/1     Running     1          14h
+67dep-7db4cf66f7-9wrj7     1/1     Running     1          14h
+67dep-7db4cf66f7-h5g7f     1/1     Running     1          14h
+67dep-7db4cf66f7-m2269     1/1     Running     1          14h
+84job-9gkc8                0/1     Completed   0          11h
+88job-bx58m                0/1     Completed   0          11h
+90job-frm98                0/1     Completed   0          11h
+90job-h5r5c                0/1     Completed   0          11h
+90job-l8zp2                0/1     Completed   0          11h
+92-cj-1582922160-g5x92     0/1     Completed   0          9h
+92-cj-1582922220-fmnsx     0/1     Completed   0          9h
+92-cj-1582922280-lbh6w     0/1     Completed   0          9h
+92-cjs1-1582922160-thtw2   0/1     Completed   0          9h
+92-cjs1-1582922220-hjgv5   0/1     Completed   0          9h
+92-cjs1-1582922280-9scx4   0/1     Completed   0          9h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get podelete cj 92-cronjob [K[K[K[K[K[K[K[Kcjs1 
+cronjob.batch "92-cjs1" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete cj 92-cjs1 [12Pget po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d14h
+37-ng-2                  0/1     Error       0          5d14h
+37-ng-3                  0/1     Error       0          5d14h
+67dep-7db4cf66f7-2hfgb   1/1     Running     1          14h
+67dep-7db4cf66f7-9wrj7   1/1     Running     1          14h
+67dep-7db4cf66f7-h5g7f   1/1     Running     1          14h
+67dep-7db4cf66f7-m2269   1/1     Running     1          14h
+84job-9gkc8              0/1     Completed   0          11h
+88job-bx58m              0/1     Completed   0          11h
+90job-frm98              0/1     Completed   0          11h
+90job-h5r5c              0/1     Completed   0          11h
+90job-l8zp2              0/1     Completed   0          11h
+92-cj-1582922160-g5x92   0/1     Completed   0          9h
+92-cj-1582922220-fmnsx   0/1     Completed   0          9h
+92-cj-1582922280-lbh6w   0/1     Completed   0          9h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get podelete cj 92-cjs1 [K[K[K
+cronjob.batch "92-cj" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl delete cj 92-cj[9Pget po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d14h
+37-ng-2                  0/1     Error       0          5d14h
+37-ng-3                  0/1     Error       0          5d14h
+67dep-7db4cf66f7-2hfgb   1/1     Running     1          14h
+67dep-7db4cf66f7-9wrj7   1/1     Running     1          14h
+67dep-7db4cf66f7-h5g7f   1/1     Running     1          14h
+67dep-7db4cf66f7-m2269   1/1     Running     1          14h
+84job-9gkc8              0/1     Completed   0          11h
+88job-bx58m              0/1     Completed   0          11h
+90job-frm98              0/1     Completed   0          11h
+90job-h5r5c              0/1     Completed   0          11h
+90job-l8zp2              0/1     Completed   0          11h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get po[K[Kdelete cj 92-cj[K[K[K[K[K[K[K[Kjob 90job 
+job.batch "90job" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 100vol --image=redis --restart= Never -d-[K[K-r[Kdry-run -o yaml -- bin/sh[K[K[K[K[K[K[K[K[K> 100vol.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nana[Ko 100vol.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                  100vol.yaml                             [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 100vol[9;3Hname: 100vol[10dspec:[11;3Hcontainers:[12;3H- image: redis[13;5Hname: 100vol[14;5Hresources: {}[15;3HdnsPolicy: ClusterFirst[16;3HrestartPolicy: Never[17dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[11;35r[11;1HM[1;38r[11;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[12;35r8[12dM[1;38r[12;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25le[36d[K[12;6H[?12l[?25h[?25lm[?12l[?25h[?25lp[?12l[?25h[?25lt[?12l[?25h[?25ly[?12l[?25h[?25lD[?12l[?25h[?25li[?12l[?25h[?25lr[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l{[?12l[?25h[?25l}[?12l[?25h[?25l[13;14H[?12l[?25h[?25l[14;17H[?12l[?25h[?25l[15d[?12l[?25h[?25l7[16;36r8[16dM[1;38r[16;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25lnemptyDir: {}[6G[?12l[?25h[?25laemptyDir: {}[7G[?12l[?25h[?25lmemptyDir: {}[8G[?12l[?25h[?25leemptyDir: {}[12;9H[?12l[?25h[?25l emptyDir: {}[12;10H[?12l[?25h[?25l[1P[?12l[?25h[?25l:emptyDir: {}[12;10H[?12l[?25h[?25l emptyDir: {}[12;11H[?12l[?25h[?25leemptyDir: {}[12;12H[?12l[?25h[?25ldemptyDir: {}[12;13H[?12l[?25h[?25l7[13;36r8[13dM[1;38r[12;13H[K[13demptyDir: {}[?12l[?25h[?25l emptyDir: {} [?12l[?25h[?25l  emptyDir: {}  [?12l[?25h[?25l   emptyDir: {}   [?12l[?25h[?25l    emptyDir: {}[5G[?12l[?25h[?25l     emptyDir: {}[6G[?12l[?25h[?25l[1P    [?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l7[18;36r8[18dM[1;38r[18;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25ld[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lP[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25la[?12l[?25h[?25lv[?12l[?25h[?25lr[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25la[?12l[?25h[?25lr[?12l[?25h[?25l/[?12l[?25h[?25ll[?12l[?25h[?25lo[?12l[?25h[?25lg[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[7G[?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25lmPath: /var/log[8G[?12l[?25h[?25loPath: /var/log[19;9H[?12l[?25h[?25luPath: /var/log[19;10H[?12l[?25h[?25lnPath: /var/log[19;11H[?12l[?25h[?25ltPath: /var/log[19;12H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 100vol.yaml                              (B[m[36;32H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 21 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 1000[Kvol.yaml 
+pod/100vol created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod
+NAME                     READY   STATUS              RESTARTS   AGE
+06nginx                  0/1     Error               0          12d
+07nginx                  0/1     Error               0          12d
+100vol                   0/1     ContainerCreating   0          4s
+13nginx                  0/1     Completed           1          12d
+17shell                  0/1     Error               0          12d
+19bb                     0/1     Completed           0          12d
+21bb                     0/1     Completed           0          12d
+29mc                     0/3     Completed           0          11d
+34mc                     0/2     Error               0          11d
+37-ng-1                  0/1     Error               0          5d14h
+37-ng-2                  0/1     Error               0          5d14h
+37-ng-3                  0/1     Error               0          5d14h
+67dep-7db4cf66f7-2hfgb   1/1     Running             1          14h
+67dep-7db4cf66f7-9wrj7   1/1     Running             1          14h
+67dep-7db4cf66f7-h5g7f   1/1     Running             1          14h
+67dep-7db4cf66f7-m2269   1/1     Running             1          14h
+84job-9gkc8              0/1     Completed           0          11h
+88job-bx58m              0/1     Completed           0          11h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod 100vol 
+NAME     READY   STATUS              RESTARTS   AGE
+100vol   0/1     ContainerCreating   0          14s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod 100vol 
+NAME     READY   STATUS              RESTARTS   AGE
+100vol   0/1     ContainerCreating   0          19s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod 100vol 
+NAME     READY   STATUS    RESTARTS   AGE
+100vol   1/1     Running   0          33s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod 100vol 
+NAME     READY   STATUS    RESTARTS   AGE
+100vol   1/1     Running   0          5m39s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 100vol .[Kbin[K[K[K/bin/sh
+# ls
+# ca	  ls
+# cd /var/log
+# ls
+# echo "li" > file.txt
+# exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 100vol /bin/sh[K[K[K[K[K[K[K-- [Ksh
+Error: unknown flag: --sh
+
+
+Examples:
+  # Get output from running 'date' command from pod mypod, using the first container by default
+  kubectl exec mypod date
+  
+  # Get output from running 'date' command in ruby-container from pod mypod
+  kubectl exec mypod -c ruby-container date
+  
+  # Switch to raw terminal mode, sends stdin to 'bash' in ruby-container from pod mypod
+  # and sends stdout/stderr from 'bash' back to the client
+  kubectl exec mypod -c ruby-container -i -t -- bash -il
+  
+  # List contents of /usr from the first container of pod mypod and sort by modification time.
+  # If the command you want to execute in the pod has any flags in common (e.g. -i),
+  # you must use two dashes (--) to separate your command's flags/arguments.
+  # Also note, do not surround your command and its flags/arguments with quotes
+  # unless that is how you would execute it normally (i.e., do ls -t /usr, not "ls -t /usr").
+  kubectl exec mypod -i -t -- ls -t /usr
+  
+  # Get output from running 'date' command from the first pod of the deployment mydeployment, using the first container by default
+  kubectl exec deploy/mydeployment date
+  
+  # Get output from running 'date' command from the first pod of the service myservice, using the first container by default
+  kubectl exec svc/myservice date
+
+Options:
+  -c, --container='': Container name. If omitted, the first container in the pod will be chosen
+      --pod-running-timeout=1m0s: The length of time (like 5s, 2m, or 3h, higher than zero) to wait until at least one pod is running
+  -i, --stdin=false: Pass stdin to the container
+  -t, --tty=false: Stdin is a TTY
+
+Usage:
+  kubectl exec (POD | TYPE/NAME) [-c CONTAINER] [flags] -- COMMAND [args...] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --sh
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -it 100vol --sh[K[K[K[K[K sh
+# ls
+# cd  l  s /var/log
+file.txt
+# ^[[A    exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pv, pvc
+error: arguments in resource/name form must have a single resource and name
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pv, pvc[1Ppvc
+NAME                              CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                   STORAGECLASS   REASON   AGE
+persistentvolume/task-pv-volume   10Gi       RWO            Retain           Bound    default/task-pv-claim   manual                  10h
+
+NAME                                  STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+persistentvolumeclaim/task-pv-claim   Bound    task-pv-volume   10Gi       RWO            manual         10h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 104pod [K[K[Kvc --image=nginx --restart= Never --dry-run -o yaml > 104,[K.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano [K[K[K[K[Kvi 104.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"104.yaml" 15L, 234C[1;1HapiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 104pvc
+  name: 104pvc
+spec:
+  containers:
+  - image: nginx
+    name: 104pvc
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+[94m~                                                                         [17;1H~                                                                         [18;1H~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [1;1H[?25h
+
+
+
+
+
+
+
+
+
+[m    name: 104pv[?25l[38;1H[1m-- INSERT --[m[38;13H[K[11;16H[?25hc[?25l[12;37r[12;1H[L[1;38r[12;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lp[?25h[?25lo[?25h[?25lr[?25h[?25lt[?25h[?25ls[?25h[?25l:[?25h[?25l[13;37r[13;1H[L[1;38r[13;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l-[?25h[?25l [?25h[?25lc[?25h[?25lo[?25h[?25ln[?25h[?25lt[?25h[?25la[?25h[?25li[?25h[?25ln[?25h[?25le[?25h[?25lr[?25h[?25lP[?25h[?25lo[?25h[?25lr[?25h[?25lt[?25h[?25l:[?25h[?25l [?25h[?25l8[?25h[?25l0[?25h[?25l[14;37r[14;1H[L[1;38r[14;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lv[?25h[?25lo[?25h[?25ll[?25h[?25lu[?25h[?25lm[?25h[?25le[?25h[?25lM[?25h[?25lo[?25h[?25lu[?25h[?25ln[?25h[?25lt[?25h[?25ls[?25h[?25l:[?25h[?25l[15;37r[15;1H[L[1;38r[15;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l-[?25h[?25l [?25h[?25ln[?25h[?25la[?25h[?25lm[?25h[?25l [?25h[?25l[?25h[?25le[?25h[?25l [?25h[?25lp[?25h[?25lv[?25h[?25ls[?25h[?25l[15;14H[K[15;14H[?25h[?25lc[?25h[?25l[16;37r[16;1H[L[1;38r[16;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lh[?25h[?25lo[?25h[?25ls[?25h[?25lt[?25h[?25lP[?25h[?25la[?25h[?25lt[?25h[?25lh[?25h[?25l:[?25h[?25l [?25h[?25l/[?25h[?25lu[?25h[?25ls[?25h[?25lr[?25h[?25l.[?25h[?25l[16;21H[K[16;21H[?25h[?25l/[?25h[?25ls[?25h[?25lh[?25h[?25la[?25h[?25lr[?25h[?25le[?25h[?25l/[?25h[?25ln[?25h[?25lg[?25h[?25li[?25h[?25ln[?25h[?25l/[?25h[?25lh[?25h[?25lt[?25h[?25lm[?25h[?25ll[?25h[38;1H[K[16;36H[?25l[?25h[?25l[38;1H:[?2004h[?25hwq[?25l[?2004l"104.yaml" 20L, 339C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ vi 104.yaml kubectl run 104pvc --image=nginx --restart=NNever --dry-run -o yaml > 104.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 104pvc --image=nginx --restart=NNever --dry-run -o yaml > 104.yaml[Avi 104.yaml [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"104.yaml" 15L, 234C[1;1HapiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 104pvc
+  name: 104pvc
+spec:
+  containers:
+  - image: nginx
+    name: 104pvc
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+[94m~                                                                         [17;1H~                                                                         [18;1H~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [1;1H[?25h[?25l[m[38;1H[1m-- INSERT --[m[38;13H[K[1;1H[?25h
+
+
+
+
+
+
+
+
+
+[10;1H[9;1H  [?25lvcontainers:  v[?25h[?25locontainers:  vo[?25h[?25lcontainers:[9;15H[K[9;4H[?25h[?25lcontainers:[9;14H[K[9;3H[?25h[?25l[10;37r[10;1H[L[1;38r[9;3H[K[10;1Hcontainers:[?25h[?25l[34m^Z[mcontainers:[10;3H[?25h[38;1H[K[10;2H[?25l[?25h[?25l[38;1H:[?2004h[?25hq![?25l[?2004l[38;1H[K[38;1H[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ vi 104.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"104.yaml" 15L, 234C[1;1HapiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 104pvc
+  name: 104pvc
+spec:
+  containers:
+  - image: nginx
+    name: 104pvc
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+[94m~                                                                         [17;1H~                                                                         [18;1H~                                                                         [19;1H~                                                                         [20;1H~                                                                         [21;1H~                                                                         [22;1H~                                                                         [23;1H~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [1;1H[?25h
+
+
+
+
+
+[m  
+sp
+  c[8;4Hc[?25l[38;1H[1m-- INSERT --[m[38;13H[K[8;5H[?25h:[?25l[9;37r[9;1H[L[1;38r[9;1H[?25h[?25l [?25h[?25l [?25h[?25lv[?25h[?25lo[?25h[?25lu[?25h[?25lm[?25h[?25le[?25h[?25ls[?25h[?25l[9;8H[K[9;8H[?25h[?25l[9;7H[K[9;7H[?25h[?25l[9;6H[K[9;6H[?25h[?25l[9;5H[K[9;5H[?25h[?25ll[?25h[?25li[?25h[?25l[9;6H[K[9;6H[?25h[?25lu[?25h[?25lm[?25h[?25le[?25h[?25ls[?25h[?25l:[?25h[?25l[10;37r[10;1H[L[1;38r[10;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l[?25h[?25l-[?25h[?25l [?25h[?25la[?25h[?25ln[?25h[?25lm[?25h[?25le[?25h[?25l [?25h[?25l[?25h[?25l[10;8H[K[10;8H[?25h[?25l[10;7H[K[10;7H[?25h[?25l[10;6H[K[10;6H[?25h[?25l[10;5H[K[10;5H[?25h[?25ln[?25h[?25la[?25h[?25lm[?25h[?25le[?25h[?25l:[?25h[?25l [?25h[?25l1[?25h[?25l[10;11H[K[10;11H[?25h[?25l9[?25h[?25l8[?25h[?25l[11;37r[11;1H[L[1;38r[11;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lp[?25h[?25lr[?25h[?25le[?25h[?25ls[?25h[?25le[?25h[?25l[11;9H[K[11;9H[?25h[?25li[?25h[?25ls[?25h[?25lt[?25h[?25le[?25h[?25ln[?25h[?25lt[?25h[?25lV[?25h[?25lo[?25h[?25ll[?25h[?25lu[?25h[?25le[?25h[?25l[11;19H[K[11;19H[?25h[?25lm[?25h[?25le[?25h[?25lC[?25h[?25ll[?25h[?25la[?25h[?25li[?25h[?25lm[?25h[?25l:[?25h[?25l[12;37r[12;1H[L[1;38r[12;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l[?25h
+  co
+  - 
+    
+    r[15;1H    name: 104pvc[?25l[16;37r[16;1H[L[1;38r[16;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lv[?25h[?25lo[?25h[?25ll[?25h[?25lu[?25h[?25lm[?25h[?25le[?25h[?25lM[?25h[?25lo[?25h[?25lu[?25h[?25ln[?25h[?25lt[?25h[?25ls[?25h[?25l:[?25h[?25l[17;37r[17;1H[L[1;38r[17;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l-[?25h[?25l [?25h[?25la[?25h[?25ln[?25h[?25lm[?25h[?25le[?25h[?25l[17;10H[K[17;10H[?25h[?25l[17;9H[K[17;9H[?25h[?25l[17;8H[K[17;8H[?25h[?25l[17;7H[K[17;7H[?25h[?25ln[?25h[?25la[?25h[?25lm[?25h[?25le[?25h[?25l:[?25h[?25l [?25h[?25l[18;37r[18;1H[L[1;38r[18;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lh[?25h[?25lo[?25h[?25ls[?25h[?25lt[?25h[?25lP[?25h[?25la[?25h[?25lt[?25h[?25lh[?25h[?25l:[?25h[?25l [?25h[?25l/[?25h[?25lu[?25h[?25ls[?25h[?25lr[?25h[?25l/[?25h[?25ls[?25h[?25lh[?25h[?25la[?25h[?25lr[?25h[?25le[?25h[?25l/[?25h[?25ln[?25h[?25lg[?25h[?25li[?25h[?25ln[?25h[?25lz[?25h[?25l[18;32H[K[18;32H[?25h[?25lx[?25h[?25l/[?25h[?25lh[?25h[?25lt[?25h[?25lm[?25h[?25ll[?25h[38;1H[K[18;37H[?25l[?25h[?25l[38;1H:[?2004h[?25hwq[?25l[?2004l"104.yaml" 22L, 359C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ vi 104.yaml kubectl run 104pvc --image=nginx --restart=NNever --dry-run -o yaml > 104.yaml[Avi 104.yaml [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl run 104pvc --image=nginx --restart=NNever --dry-run -o yaml > 104.yaml[Acc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl get pv,pvc
+NAME                              CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                   STORAGECLASS   REASON   AGE
+persistentvolume/task-pv-volume   10Gi       RWO            Retain           Bound    default/task-pv-claim   manual                  10h
+
+NAME                                  STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+persistentvolumeclaim/task-pv-claim   Bound    task-pv-volume   10Gi       RWO            manual         10h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pv,pvc[K[K[K[K
+NAME             CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                   STORAGECLASS   REASON   AGE
+task-pv-volume   10Gi       RWO            Retain           Bound    default/task-pv-claim   manual                  10h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pv,pvc[6Pvi 104.yaml kubectl run 104pvc --image=nginx --restart=NNever --dry-run -o yaml > 104.yaml[Avi 104.yaml [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"104.yaml" 22L, 359C[1;1HapiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 104pvc
+  name: 104pvc
+spec:
+  volumes:
+  - name: 98
+    presistentVolumeClaim:
+
+  containers:
+  - image: nginx
+    name: 104pvc
+    volumeMounts:
+    - name:[18;7HhostPath: /usr/share/nginx/html
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+[94m~                                                                         [24;1H~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+[12;1H[11;1H[10;1H[m  - name: 9[?25l[38;1H[1m-- INSERT --[m[38;13H[K[10;12H[?25h8[11;13H[10;13H[?25l8[10;12H[K[10;11H[?25h[?25l[10;11H[K[10;11H[?25h[?25lt[?25h[?25la[?25h[?25ls[?25h[?25lk[?25h[?25l-[?25h[?25lp[?25h[?25lv[?25h[?25l-[?25h[?25ls[?25h[?25lt[?25h[?25lo[?25h[?25lr[?25h[?25la[?25h[?25lg[?25h[?25le[?25h[11;26H:[?25l[12;37r[12;1H[L[1;38r[12;1H[?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25l [?25h[?25lc[?25h[?25ll[?25h[?25la[?25h[?25li[?25h[?25lm[?25h[?25lN[?25h[?25la[?25h[?25lm[?25h[?25le[?25h[?25l:[?25h[?25l [?25h[?25lt[?25h[?25la[?25h[?25ls[?25h[?25lk[?25h[?25l-[?25h[?25lp[?25h[?25lv[?25h[?25l-[?25h[?25lc[?25h[?25ll[?25h[?25la[?25h[?25li[?25h[?25lm[?25h
+    [38;1H[K[13;4H[?25l[?25h[?25l[?25h[12;30H
+  [?25l[38;1H[1m-- INSERT --[13;3H[?25h[?25l[?25h[?25l[?25h[?25l[?25h
+
+
+
+
+[m    - name: [?25lt[?25h[?25la[?25h[?25ls[?25h[?25lk[?25h[?25l-[?25h[?25lp[?25h[?25lv[?25h[?25l-[?25h[?25ls[?25h[?25lt[?25h[?25lo[?25h[?25lr[?25h[?25la[?25h[?25lg[?25h[?25le[?25h[19;28H[?25l"/usr/share/nginx/html[19;18H[?25h/usr/share/nginx/html[?25l"[?25h[38;1H[K[19;39H[?25l[?25h[?25l[38;1H:[?2004h[?25hwq[?25l[?2004l"104.yaml" 23L, 416C written
+[?2004l[?1l>[?25h[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ vi 104.yaml 
+[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;38r[?12h[?12l[27m[23m[29m[m[H[2J[?25l[38;1H"104.yaml" 23L, 416C[1;1HapiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: 104pvc
+  name: 104pvc
+spec:
+  volumes:
+  - name: task-pv-storage
+    presistentVolumeClaim:[12;7HclaimName: task-pv-claim
+
+  containers:
+  - image: nginx
+    name: 104pvc
+    volumeMounts:
+    - name: task-pv-storage[19;7HhostPath: "/usr/share/nginx/html"
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+[94m~                                                                         [25;1H~                                                                         [26;1H~                                                                         [27;1H~                                                                         [28;1H~                                                                         [29;1H~                                                                         [30;1H~                                                                         [31;1H~                                                                         [32;1H~                                                                         [33;1H~                                                                         [34;1H~                                                                         [35;1H~                                                                         [36;1H~                                                                         [37;1H~                                                                         [1;1H[?25h
+
+
+
+
+
+
+
+
+
+
+
+[38;1H[?2004l[m[38;1H[K[38;1H[?2004l[?1l>[?1049l[23;0;0t]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create 104.yaml [1@-[1@f[1@ 
+error: error validating "104.yaml": error validating data: [ValidationError(Pod.spec.containers[0].volumeMounts[0]): unknown field "hostPath" in io.k8s.api.core.v1.VolumeMount, ValidationError(Pod.spec.containers[0].volumeMounts[0]): missing required field "mountPath" in io.k8s.api.core.v1.VolumeMount, ValidationError(Pod.spec.volumes[0]): unknown field "presistentVolumeClaim" in io.k8s.api.core.v1.Volume]; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [15Pvi[C[C[C[C[C[C[C[C[C[C[1P[1P[1@n[1@a[1@n[1@o
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 23 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;3H- name: task-pv-storage[13;5HpresistentVolumeClaim:[14;7HclaimName: task-pv-claim[16;3Hcontainers:[17;3H- image: nginx[18;5Hname: 104pvc[19;5HvolumeMounts:[20;5H- name: task-pv-storage[21;7HhostPath: "/usr/share/nginx/html"[22;5Hresources: {}[23;3HdnsPolicy: ClusterFirst[24;3HrestartPolicy: Never[25dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[15;35r[35;1H
+[1;38r[14;31H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 22 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+error: error validating "104.yaml": error validating data: [ValidationError(Pod.spec.containers[0].volumeMounts[0]): unknown field "hostPath" in io.k8s.api.core.v1.VolumeMount, ValidationError(Pod.spec.containers[0].volumeMounts[0]): missing required field "mountPath" in io.k8s.api.core.v1.VolumeMount, ValidationError(Pod.spec.volumes[0]): unknown field "presistentVolumeClaim" in io.k8s.api.core.v1.Volume]; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 22 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;3H- name: task-pv-storage[13;5HpresistentVolumeClaim:[14;7HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5HvolumeMounts:[19;5H- name: task-pv-storage[20;7HhostPath: "/usr/share/nginx/html"[21;5Hresources: {}[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l[20d[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25l[36d[K[20;10H[?12l[?25h[?25lt[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[20;10H[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25l[1P[?12l[?25h[?25lmPath: "/usr/share/nginx/html"[8G[?12l[?25h[?25loPath: "/usr/share/nginx/html"[20;9H[?12l[?25h[?25luPath: "/usr/share/nginx/html"[20;10H[?12l[?25h[?25lnPath: "/usr/share/nginx/html"[20;11H[?12l[?25h[?25ltPath: "/usr/share/nginx/html"[20;12H[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l0[?12l[?25h[?25l4[?12l[?25h[?25lp[?12l[?25h[?25lv[?12l[?25h[?25lc[?12l[?25h[?25l7[18;36r8[18dM[1;38r[18;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l-[?12l[?25h[?25l[K[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25lP[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 24 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+error: error validating "104.yaml": error validating data: [ValidationError(Pod.spec.containers[0].ports[0]): unknown field "conatinerPort" in io.k8s.api.core.v1.ContainerPort, ValidationError(Pod.spec.containers[0].ports[0]): missing required field "containerPort" in io.k8s.api.core.v1.ContainerPort, ValidationError(Pod.spec.volumes[0]): unknown field "presistentVolumeClaim" in io.k8s.api.core.v1.Volume]; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;3H- name: task-pv-storage[13;5HpresistentVolumeClaim:[14;7HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;5H- conatinerPort: 80[20;5HvolumeMounts:[21;5H- name: task-pv-storage[22;7HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[A[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25l[36d[K[19;9H[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[19;10H[1P[?12l[?25h[?25lt[?12l[?25h[?25lainerPort: 80[19;12H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 24 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+error: error validating "104.yaml": error validating data: ValidationError(Pod.spec.volumes[0]): unknown field "presistentVolumeClaim" in io.k8s.api.core.v1.Volume; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;3H- name: task-pv-storage[13;5HpresistentVolumeClaim:[14;7HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;5H- containerPort: 80[20;5HvolumeMounts:[21;5H- name: task-pv-storage[22;7HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;3H- name: task-pv-storage[13;5HpresistentVolumeClaim:[14;7HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;5H- containerPort: 80[20;5HvolumeMounts:[21;5H- name: task-pv-storage[22;7HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[36;67H(B[0;7m[ Read 2[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[12d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;3H- name: task-pv-storage[13;5HpresistentVolumeClaim:[14;7HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;5H- containerPort: 80[20;5HvolumeMounts:[21;5H- name: task-pv-storage[22;7HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[37d[1;37H(B[0;7m104.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[12d[?12l[?25h[?25l[?12l[?25h[?25l[13d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lV[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lC[?12l[?25h[?25ll[?12l[?25h[?25la[?12l[?25h[?25li[?12l[?25h[?25lm[?12l[?25h[?25l:[?12l[?25h[?25l[14d[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[13;27H[?12l[?25h[?25l[14d[?12l[?25h[?25l[13;27H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[13;26H [?12l[?25h[?25l:[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 24 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+error: error validating "104.yaml": error validating data: ValidationError(Pod.spec.volumes[0]): unknown field "presistentVolumeClaim" in io.k8s.api.core.v1.Volume; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    104.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;3H- name: task-pv-storage[13;5HpresistentVolumeClaim:[14;7HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;5H- containerPort: 80[20;5HvolumeMounts:[21;5H- name: task-pv-storage[22;7HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[A[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[12d   - name: task-pv-storage   [?12l[?25h[?25l    - name: task-pv-storage[5G[?12l[?25h[?25l[13d[?12l[?25h[?25l     presistentVolumeClaim:[6G[?12l[?25h[?25l      presistentVolumeClaim:[7G[?12l[?25h[?25l[14d[?12l[?25h[?25l[7G claimName: task-pv-claim[8G[?12l[?25h[?25l[8G claimName: task-pv-claim[14;9H[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[36d[K[17;9H[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l     - containerPort: 80[6G[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[?12l[?25h[?25l     - name: task-pv-storage[6G[?12l[?25h[?25l      - name: task-pv-storage[7G[?12l[?25h[?25l[22d[?12l[?25h[?25l[7G mountPath: "/usr/share/nginx/html"[8G[?12l[?25h[?25l[8G mountPath: "/usr/share/nginx/html"[22;9H[?12l[?25h[?25l[22;9H mountPath: "/usr/share/nginx/html"[22;10H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 24 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+error: error parsing 104.yaml: error converting YAML to JSON: yaml: line 20: mapping values are not allowed in this context
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpresistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;10HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[36d[K[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[26;11H[?12l[?25h[?25l[37d[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ y[Knano 104.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpresistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;10HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[23d[?12l[?25h[?25l[24d[?12l[?25h[?25l[25d[?12l[?25h[?25l[26d[?12l[?25h[?25l[27d[?12l[?25h[?25l[?12l[?25h[?25l[36d[K[27d[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpresistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;10HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[22d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpresistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;10HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[37d[1;37H(B[0;7m104.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[22d[?12l[?25h[?25l[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[22d[1P[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 24 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+error: error validating "104.yaml": error validating data: ValidationError(Pod.spec.volumes[0]): unknown field "presistentVolumeClaim" in io.k8s.api.core.v1.Volume; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpresistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;9HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>[?1049h[22;0;0t[1;38r[?12l[?25h[39;49m]104(B[m[4l[?7h[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpresistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;9HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[36;67H(B[0;7m[ Read 2[37;1H^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[38;1H(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spe[?7ll[?7h[3d[?1h=[?1h=[?1h=[H[2J(B[0;7m  GNU nano 2.9.3                                                          [3;1H(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpresistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;9HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[37d[1;37H(B[0;7m104.yaml[73G(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[?25l[3d[?12l[?25h[?25l[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[13d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[13;8HeresistentVolumeClaim:[13;9H[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25l[1P[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 24 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+pod/104pvc created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl pv
+Error: unknown command "pv" for "kubectl"
+
+Did you mean this?
+	cp
+
+Run 'kubectl --help' for usage.
+unknown command "pv" for "kubectl"
+
+Did you mean this?
+	cp
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl pv[Cgpvepvtpv pv
+NAME             CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                   STORAGECLASS   REASON   AGE
+task-pv-volume   10Gi       RWO            Retain           Bound    default/task-pv-claim   manual                  10h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pvc
+NAME            STATUS   VOLUME           CAPACITY   ACCESS MODES   STORAGECLASS   AGE
+task-pv-claim   Bound    task-pv-volume   10Gi       RWO            manual         10h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pvc[K[Kod
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0          12d
+100vol                   1/1     Running     0          22m
+104pvc                   1/1     Running     0          25s
+13nginx                  0/1     Completed   1          12d
+17shell                  0/1     Error       0          12d
+19bb                     0/1     Completed   0          12d
+21bb                     0/1     Completed   0          12d
+29mc                     0/3     Completed   0          11d
+34mc                     0/2     Error       0          11d
+37-ng-1                  0/1     Error       0          5d15h
+37-ng-2                  0/1     Error       0          5d15h
+37-ng-3                  0/1     Error       0          5d15h
+67dep-7db4cf66f7-2hfgb   1/1     Running     1          14h
+67dep-7db4cf66f7-9wrj7   1/1     Running     1          14h
+67dep-7db4cf66f7-h5g7f   1/1     Running     1          14h
+67dep-7db4cf66f7-m2269   1/1     Running     1          14h
+84job-9gkc8              0/1     Completed   0          11h
+88job-bx58m              0/1     Completed   0          11h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -ti 104pvc -- /bin/sh
+# ls
+bin  boot  dev	etc  home  lib	lib64  media  mnt  opt	proc  root  run  sbin  srv  sys  tmp  usr  var
+# touch	/us	r/share/nginx/html ^[[D     ^[[D     l                            cd /usr/share/nginx/html
+# ls
+# touch     exch "from 104 pvc    od in pvc  and pv v" > file104.txt
+/bin/sh: 4: exch: not found
+# echo "from 104 pod in pvc  and pv" > file104.txt
+# ls
+file104.txt
+# exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl ge[K[Kdelete pod 104pvc 
+pod "104pvc" deleted
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ^C
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl [K[K[K[K[K[K[K[Knano 104.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpersistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvc[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;9HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l0[?12l[?25h[?25l4[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l1[?12l[?25h[?25l0[?12l[?25h[?25l4[?12l[?25h[?25l[36d[K[9;13H[?12l[?25h[?25lv[?12l[?25h[?25lc[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[9;15H-[?12l[?25h[?25lB[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[12;17H[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15;14H[?12l[?25h[?25l[16;17H[?12l[?25h[?25l[17d[?12l[?25h[?25l[18;11H[?12l[?25h[?25l[17;17H[?12l[?25h[?25lB[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 24 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 105[K4.yaml 
+The Pod "104pvc-B" is invalid: 
+* metadata.name: Invalid value: "104pvc-B": a DNS-1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*')
+* spec.containers[0].name: Invalid value: "104pvcB": a DNS-1123 label must consist of lower case alphanumeric characters or '-', and must start and end with an alphanumeric character (e.g. 'my-name',  or '123-abc', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?')
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvc-B[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpersistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvcB[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;9HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25li[?12l[?25h[?25lV[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25ls[?12l[?25h[?25li[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l[4;10H[?12l[?25h[?25l[5d[?12l[?25h[?25l[6;13H[?12l[?25h[?25l[7;10H[?12l[?25h[?25l[8;13H[?12l[?25h[?25l[9d[?12l[?25h[?25lv[?12l[?25h[?25lc[?12l[?25h[?25l-[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[9;15HB[K[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[12;15H[?12l[?25h[?25l[36d[K[13;15H[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16di[?12l[?25h[?25l[17d[?12l[?25h[?25lv[?12l[?25h[?25lc[?12l[?25h[?25lB[?12l[?25h[?25l1[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 24 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+The Pod "104pvcB" is invalid: 
+* metadata.name: Invalid value: "104pvcB": a DNS-1123 subdomain must consist of lower case alphanumeric characters, '-' or '.', and must start and end with an alphanumeric character (e.g. 'example.com', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?(\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*')
+* spec.containers[0].name: Invalid value: "104pvcB1": a DNS-1123 label must consist of lower case alphanumeric characters or '-', and must start and end with an alphanumeric character (e.g. 'my-name',  or '123-abc', regex used for validation is '[a-z0-9]([-a-z0-9]*[a-z0-9])?')
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 24 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                          104.yaml                                                                    [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 104pvc[9;3Hname: 104pvcB[10dspec:[11;3Hvolumes:[12;5H- name: task-pv-storage[13;7HpersistentVolumeClaim:[14;9HclaimName: task-pv-claim[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 104pvcB1[18;5Hports:[19;6H- containerPort: 80[20;5HvolumeMounts:[21;7H- name: task-pv-storage[22;9HmountPath: "/usr/share/nginx/html"[23;5Hresources: {}[24;3HdnsPolicy: ClusterFirst[25;3HrestartPolicy: Never[26dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l[12d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[10d[?12l[?25h[?25l[36d[K[10ds[?12l[?25h[?25l[?12l[?25h[?25l[9;16H[?12l[?25h[?25l[1;141H(B[0;7mModified(B[m[9;15H [?12l[?25h[?25l2[?12l[?25h[?25lb[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[11;11H[?12l[?25h[?25l[12;17H[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15;14H[?12l[?25h[?25l[16;17H[?12l[?25h[?25l[17d[?12l[?25h[?25l[18;11H[?12l[?25h[?25l[19;17H[?12l[?25h[?25l[20d[?12l[?25h[?25l[21d[?12l[?25h[?25l[22d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[18;11H[?12l[?25h[?25l[19d[?12l[?25h[?25l[18;11H[?12l[?25h[?25l[?12l[?25h[?25l[A[?12l[?25h[?25l [?12l[?25h[?25l1[?12l[?25h[?25l0[?12l[?25h[?25l4[?12l[?25h[?25lp[?12l[?25h[?25lv[?12l[?25h[?25lc[?12l[?25h[?25lB[?12l[?25h[?25l1[K[?12l[?25h[?25l1[?12l[?25h[?25l[18d[?12l[?25h[?25l[17;18H[?12l[?25h[?25l [?12l[?25h[?25l3[?12l[?25h[?25lb[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)                                                                                         [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [38;18H(B[0;7mC(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[37;38H(B[0;7mM-D(B[m DOS Format[37;75H(B[0;7mM-A(B[m Append[37;112H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G         [38;38H(B[0;7mM-M(B[m Mac Format[38;75H(B[0;7mM-P(B[m Prepend[38;112H(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 104.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;149H[1;141H(B[0;7m        (B[m[36;67H(B[0;7m[ Wrote 24 lines ](B[m[J[38;150H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 104.yaml [13@kubectl create -f[C[C[C[C[C[C[C[C[C[C
+pod/104pvc2b created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[12@kubectl delete pod 104pvc[Cexec -ti 104pvc -- /bin/sh
+Error from server (NotFound): pods "104pvc" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -ti 104pvc -- /bin/sh[7Pcreate -f 104.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[13@kubectl create -f[C[C[C[C[C[C[C[C[C[C[13Pnano[C[C[C[C[C[C[C[C[C[C[12@kubectl delete pod 104pvc[Cexec -ti 104pvc -- /bin/sh[8Pdelete pod 104pvc [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kget pod
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          12d
+07nginx                  0/1     Error       0 

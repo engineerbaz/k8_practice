@@ -1,0 +1,134 @@
+Script started on 2020-02-28 16:02:50+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get[K[Ket po
+NAME                      READY   STATUS      RESTARTS   AGE
+06nginx                   0/1     Error       0          11d
+07nginx                   0/1     Error       0          11d
+13nginx                   0/1     Completed   1          11d
+17shell                   0/1     Error       0          11d
+19bb                      0/1     Completed   0          11d
+21bb                      0/1     Completed   0          11d
+29mc                      0/3     Completed   0          10d
+34mc                      0/2     Error       0          10d
+37-ng-1                   0/1     Error       0          4d19h
+37-ng-2                   0/1     Error       0          4d19h
+37-ng-3                   0/1     Error       0          4d19h
+55-dep-5b9d6b4479-6rlkf   1/1     Running     1          41h
+55-dep-5b9d6b4479-9mlxn   1/1     Running     1          41h
+55-dep-5b9d6b4479-fjqjk   1/1     Running     1          41h
+55-dep-5b9d6b4479-qstjj   1/1     Running     1          41h
+55-dep-5b9d6b4479-rbrr9   1/1     Running     1          41h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl ge[K[K[K[K[K[K[K[K[K[Kkubectl get po[1Pminikube stopatus[1Pkubectl get poddeploy sd[Kkubectl get deplcc[Kat file55.yaml [K55.yaml c[K[K[Khistory | grep 1962
+ [01;31m[K1962[m[K  source <(kubectl completion bash)
+ 1990  history | grep [01;31m[K1962[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ !1962
+source <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pso
+error: the server doesn't have a resource type "pso"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pso[K[Kod
+NAME                      READY   STATUS      RESTARTS   AGE
+06nginx                   0/1     Error       0          11d
+07nginx                   0/1     Error       0          11d
+13nginx                   0/1     Completed   1          11d
+17shell                   0/1     Error       0          11d
+19bb                      0/1     Completed   0          11d
+21bb                      0/1     Completed   0          11d
+29mc                      0/3     Completed   0          10d
+34mc                      0/2     Error       0          10d
+37-ng-1                   0/1     Error       0          4d19h
+37-ng-2                   0/1     Error       0          4d19h
+37-ng-3                   0/1     Error       0          4d19h
+55-dep-5b9d6b4479-6rlkf   1/1     Running     1          41h
+55-dep-5b9d6b4479-9mlxn   1/1     Running     1          41h
+55-dep-5b9d6b4479-fjqjk   1/1     Running     1          41h
+55-dep-5b9d6b4479-qstjj   1/1     Running     1          41h
+55-dep-5b9d6b4479-rbrr9   1/1     Running     1          41h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get deployments.[K[K[K[K[K[K 
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+55-dep   5/5     5            5           41h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get deploy 55-dep - [Ko yaml
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    deployment.kubernetes.io/revision: "1"
+  creationTimestamp: "2020-02-26T17:51:46Z"
+  generation: 1
+  labels:
+    run: 55-dep
+  name: 55-dep
+  namespace: default
+  resourceVersion: "67109"
+  selfLink: /apis/extensions/v1beta1/namespaces/default/deployments/55-dep
+  uid: acf302a4-3131-44e5-beba-9db2d7410ca3
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 5
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      run: 55-dep
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        run: 55-dep
+    spec:
+      containers:
+      - image: nginx
+        imagePullPolicy: Always
+        name: 55-dep
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+status:
+  availableReplicas: 5
+  conditions:
+  - lastTransitionTime: "2020-02-26T17:51:46Z"
+    lastUpdateTime: "2020-02-26T17:52:24Z"
+    message: ReplicaSet "55-dep-5b9d6b4479" has successfully progressed.
+    reason: NewReplicaSetAvailable
+    status: "True"
+    type: Progressing
+  - lastTransitionTime: "2020-02-28T10:49:03Z"
+    lastUpdateTime: "2020-02-28T10:49:03Z"
+    message: Deployment has minimum availability.
+    reason: MinimumReplicasAvailable
+    status: "True"
+    type: Available
+  observedGeneration: 1
+  readyReplicas: 5
+  replicas: 5
+  updatedReplicas: 5
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get deploy 55-dep -o yaml[K--show-labels 
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE   LABELS
+55-dep   5/5     5            5           41h   run=55-dep
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl scale deo[Kployment [K[K[K[K[K 55-dep --replicas=3
+deployment.extensions/55-dep scaled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl scale deploy 55-dep --replicas=3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl get deploy --show-labels 55-dep -o yaml[K
+NAME     READY   UP-TO-DATE   AVAILABLE   AGE
+55-dep   3/3     3            3           41h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rollout status deployment [K[K[K[K[K 55-dep 
+deployment "55-dep" successfully rolled out
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl rs[K[Kget rs -l 55-dep-5b9d6b4479 
+No resources found.
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get rs -l 55-dep-5b9d6b4479 [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+NAME                DESIRED   CURRENT   READY   AGE
+55-dep-5b9d6b4479   3         3         3       41h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get rs -l 55-dep-5b9d6b4479 55-dep-55b9d6b4479 [K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K5-dep-5b9d6b4479 
+No resources found.
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get rs -l 55-dep-5b9d6b4479 [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-show-labels 
+NAME                DESIRED   CURRENT   READY   AGE   LABELS
+55-dep-5b9d6b4479   3         3         3       

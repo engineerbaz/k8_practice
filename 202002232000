@@ -1,0 +1,851 @@
+Script started on 2020-02-23 19:58:27+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ hi
+hipercdecode  hipstopgm     history       
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ history | grep bash
+ 1238  tail .[01;31m[Kbash[m[K_history
+ 1239  cat .[01;31m[Kbash[m[K_history > commands-20191229-a
+ 1496  history | grep [01;31m[Kbash[m[K
+ 1498  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1689  history | grep [01;31m[Kbash[m[K
+ 1690  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1699  history | grep [01;31m[Kbash[m[K
+ 1700  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1745  history | grep [01;31m[Kbash[m[Ki
+ 1746  history | grep [01;31m[Kbash[m[K
+ 1747  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1935  history | grep [01;31m[Kbash[m[K
+ 1936  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1946  history | grep [01;31m[Kbash[m[K
+ 1947  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1989  history | grep [01;31m[Kbash[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ !1936
+source <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pods --show-labels 
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d3h    run=06nginx
+07nginx   0/1     Error       0          7d3h    run=07nginx
+13nginx   0/1     Completed   1          7d3h    run=13nginx
+17shell   0/1     Error       0          7d3h    run=17shell
+19bb      0/1     Completed   0          7d2h    run=19bb
+21bb      0/1     Completed   0          7d1h    run=21bb
+29mc      0/3     Completed   0          5d21h   run=29mc
+34mc      0/2     Error       0          5d21h   run=34mc
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run [K[K[K[Krun 37-ng-1 --image=nginx --restart==[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ct==Never --labels=dev
+error: unexpected label spec: dev
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 37-ng-1 --image=nginx --restart==Never --labels=devedevndevvdev=dev
+pod/37-ng-1 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 37-ng-1 --image=nginx --restart==Never --labels=env=dev[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=nginx --restart=N[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 --image=nginx --restart=[1@N[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pod/37-ng-2 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 37-ng-2 --image=nginx --restart==Never --labels=env=dev[C[C[C[K[K[Kprod
+Error from server (AlreadyExists): pods "37-ng-2" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 37-ng-2 --image=nginx --restart==Never --labels=env=prod[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --image=nginx --restart=N[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3 --image=nginx --restart=[1@N[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pod/37-ng-3 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels 
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d3h    run=06nginx
+07nginx   0/1     Error       0          7d3h    run=07nginx
+13nginx   0/1     Completed   1          7d3h    run=13nginx
+17shell   0/1     Error       0          7d3h    run=17shell
+19bb      0/1     Completed   0          7d2h    run=19bb
+21bb      0/1     Completed   0          7d1h    run=21bb
+29mc      0/3     Completed   0          5d21h   run=29mc
+34mc      0/2     Error       0          5d21h   run=34mc
+37-ng-1   1/1     Running     0          23s     env=dev
+37-ng-2   1/1     Running     0          18s     env=dev
+37-ng-3   1/1     Running     0          9s      env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl get pod --show-labels [K[K[K[K[K[K[K[K[K[K[K[K[K[K-l env=dev
+NAME      READY   STATUS    RESTARTS   AGE
+37-ng-1   1/1     Running   0          48s
+37-ng-2   1/1     Running   0          43s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod -l env=dev[K[K[Kprod
+NAME      READY   STATUS    RESTARTS   AGE
+37-ng-3   1/1     Running   0          38s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod -l env=dev
+NAME      READY   STATUS    RESTARTS   AGE
+37-ng-1   1/1     Running   0          2m6s
+37-ng-2   1/1     Running   0          2m1s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod -l env=dev --show-labels 
+NAME      READY   STATUS    RESTARTS   AGE     LABELS
+37-ng-1   1/1     Running   0          2m33s   env=dev
+37-ng-2   1/1     Running   0          2m28s   env=dev
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label 37[K[K
+apiservices.apiregistration.k8s.io
+certificatesigningrequests.certificates.k8s.io
+clusterrolebindings.rbac.authorization.k8s.io
+clusterroles.rbac.authorization.k8s.io
+componentstatuses
+configmaps
+controllerrevisions.apps
+cronjobs.batch
+csidrivers.storage.k8s.io
+csinodes.storage.k8s.io
+customresourcedefinitions.apiextensions.k8s.io
+daemonsets.apps
+daemonsets.extensions
+deployments.apps
+deployments.extensions
+endpoints
+events
+events.events.k8s.io
+horizontalpodautoscalers.autoscaling
+ingresses.extensions
+ingresses.networking.k8s.io
+jobs.batch
+leases.coordination.k8s.io
+limitranges
+mutatingwebhookconfigurations.admissionregistration.k8s.io
+namespaces
+networkpolicies.extensions
+networkpolicies.networking.k8s.io
+nodes
+persistentvolumeclaims
+persistentvolumes
+poddisruptionbudgets.policy
+pods
+podsecuritypolicies.extensions
+podsecuritypolicies.policy
+podtemplates
+priorityclasses.scheduling.k8s.io
+--More--[Kreplicasets.apps
+replicasets.extensions
+replicationcontrollers
+resourcequotas
+rolebindings.rbac.authorization.k8s.io
+roles.rbac.authorization.k8s.io
+runtimeclasses.node.k8s.io
+secrets
+serviceaccounts
+services
+statefulsets.apps
+storageclasses.storage.k8s.io
+validatingwebhookconfigurations.admissionregistration.k8s.io
+volumeattachments.storage.k8s.io
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label --h
+Error: unknown flag: --h
+
+
+Examples:
+  # Update pod 'foo' with the label 'unhealthy' and the value 'true'.
+  kubectl label pods foo unhealthy=true
+  
+  # Update pod 'foo' with the label 'status' and the value 'unhealthy', overwriting any existing value.
+  kubectl label --overwrite pods foo status=unhealthy
+  
+  # Update all pods in the namespace
+  kubectl label pods --all status=unhealthy
+  
+  # Update a pod identified by the type and name in "pod.json"
+  kubectl label -f pod.json status=unhealthy
+  
+  # Update pod 'foo' only if the resource is unchanged from version 1.
+  kubectl label pods foo status=unhealthy --resource-version=1
+  
+  # Update pod 'foo' by removing a label named 'bar' if it exists.
+  # Does not require the --overwrite flag.
+  kubectl label pods foo bar-
+
+Options:
+      --all=false: Select all resources, including uninitialized ones, in the namespace of the specified resource types
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to update the labels
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+      --list=false: If true, display the labels for a given resource.
+      --local=false: If true, label will NOT contact api-server but run locally.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overwrite=false: If true, allow labels to be overwritten, otherwise reject label updates that overwrite existing labels.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --resource-version='': If non-empty, the labels update will only succeed if this is the current resource-version for the object. Only valid when specifying a single resource.
+  -l, --selector='': Selector (label query) to filter on, not including uninitialized ones, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2).
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+
+Usage:
+  kubectl label [--overwrite] (-f FILENAME | TYPE NAME) KEY_1=VAL_1 ... KEY_N=VAL_N [--resource-version=version] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label --h[K[K[K[K 37-ng-2 app=red
+error: resource(s) were provided, but no name, label selector, or --all flag specified
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label 37-ng-2 app=red--h[K
+Error: unknown flag: --h
+
+
+Examples:
+  # Update pod 'foo' with the label 'unhealthy' and the value 'true'.
+  kubectl label pods foo unhealthy=true
+  
+  # Update pod 'foo' with the label 'status' and the value 'unhealthy', overwriting any existing value.
+  kubectl label --overwrite pods foo status=unhealthy
+  
+  # Update all pods in the namespace
+  kubectl label pods --all status=unhealthy
+  
+  # Update a pod identified by the type and name in "pod.json"
+  kubectl label -f pod.json status=unhealthy
+  
+  # Update pod 'foo' only if the resource is unchanged from version 1.
+  kubectl label pods foo status=unhealthy --resource-version=1
+  
+  # Update pod 'foo' by removing a label named 'bar' if it exists.
+  # Does not require the --overwrite flag.
+  kubectl label pods foo bar-
+
+Options:
+      --all=false: Select all resources, including uninitialized ones, in the namespace of the specified resource types
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in the template. Only applies to golang and jsonpath output formats.
+      --dry-run=false: If true, only print the object that would be sent, without sending it.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to update the labels
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+      --list=false: If true, display the labels for a given resource.
+      --local=false: If true, label will NOT contact api-server but run locally.
+  -o, --output='': Output format. One of: json|yaml|name|go-template|go-template-file|template|templatefile|jsonpath|jsonpath-file.
+      --overwrite=false: If true, allow labels to be overwritten, otherwise reject label updates that overwrite existing labels.
+      --record=false: Record current kubectl command in the resource annotation. If set to false, do not record the command. If set to true, record the command. If not set, default to updating the existing annotation value only if one already exists.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage related manifests organized within the same directory.
+      --resource-version='': If non-empty, the labels update will only succeed if this is the current resource-version for the object. Only valid when specifying a single resource.
+  -l, --selector='': Selector (label query) to filter on, not including uninitialized ones, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2).
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+
+Usage:
+  kubectl label [--overwrite] (-f FILENAME | TYPE NAME) KEY_1=VAL_1 ... KEY_N=VAL_N [--resource-version=version] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+
+unknown flag: --h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label --h37-ng-2 app=red[C[C[1@p[1@o[1@d[1@s[1@ 
+pod/37-ng-2 labeled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label pods 37-ng-2 app=red--h[K[K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label --h37-ng-2 app=red--h[K37-ng-2 app=red--h[Kget pod -l env=dev --show-labels [K --show-labels 
+NAME      READY   STATUS    RESTARTS   AGE     LABELS
+37-ng-1   1/1     Running   0          4m13s   env=dev
+37-ng-2   1/1     Running   0          4m8s    app=red,env=dev
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ rr[K[Kkubectl port-forward [K[K[K[K[K[K[K[K[K[K[K[Kd[K[Kget pod -L eb[Knv
+NAME      READY   STATUS      RESTARTS   AGE     ENV
+06nginx   0/1     Error       0          7d3h    
+07nginx   0/1     Error       0          7d3h    
+13nginx   0/1     Completed   1          7d3h    
+17shell   0/1     Error       0          7d3h    
+19bb      0/1     Completed   0          7d2h    
+21bb      0/1     Completed   0          7d2h    
+29mc      0/3     Completed   0          5d21h   
+34mc      0/2     Error       0          5d21h   
+37-ng-1   1/1     Running     0          8m45s   dev
+37-ng-2   1/1     Running     0          8m40s   dev
+37-ng-3   1/1     Running     0          8m31s   prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod -L env[K[K[K[K[Kh
+Display one or many resources
+
+ Prints a table of the most important information about the specified resources. You can filter the list using a label
+selector and the --selector flag. If the desired resource type is namespaced you will only see results in your current
+namespace unless you pass --all-namespaces.
+
+ Uninitialized objects are not shown unless --include-uninitialized is passed.
+
+ By specifying the output as 'template' and providing a Go template as the value of the --template flag, you can filter
+the attributes of the fetched resources.
+
+Use "kubectl api-resources" for a complete list of supported resources.
+
+Examples:
+  # List all pods in ps output format.
+  kubectl get pods
+  
+  # List all pods in ps output format with more information (such as node name).
+  kubectl get pods -o wide
+  
+  # List a single replication controller with specified NAME in ps output format.
+  kubectl get replicationcontroller web
+  
+  # List deployments in JSON output format, in the "v1" version of the "apps" API group:
+  kubectl get deployments.v1.apps -o json
+  
+  # List a single pod in JSON output format.
+  kubectl get -o json pod web-pod-13je7
+  
+  # List a pod identified by type and name specified in "pod.yaml" in JSON output format.
+  kubectl get -f pod.yaml -o json
+  
+  # List resources from a directory with kustomization.yaml - e.g. dir/kustomization.yaml.
+  kubectl get -k dir/
+  
+  # Return only the phase value of the specified pod.
+  kubectl get -o template pod/web-pod-13je7 --template={{.status.phase}}
+  
+  # List resource information in custom columns.
+  kubectl get pod test-pod -o custom-columns=CONTAINER:.spec.containers[0].name,IMAGE:.spec.containers[0].image
+  
+  # List all replication controllers and services together in ps output format.
+  kubectl get rc,services
+  
+  # List one or more resources by their type and names.
+  kubectl get rc/web service/frontend pods/web-pod-13je7
+
+Options:
+  -A, --all-namespaces=false: If present, list the requested object(s) across all namespaces. Namespace in current
+context is ignored even if specified with --namespace.
+      --allow-missing-template-keys=true: If true, ignore any errors in templates when a field or map key is missing in
+the template. Only applies to golang and jsonpath output formats.
+      --chunk-size=500: Return large lists in chunks rather than all at once. Pass 0 to disable. This flag is beta and
+may change in the future.
+      --field-selector='': Selector (field query) to filter on, supports '=', '==', and '!='.(e.g. --field-selector
+key1=value1,key2=value2). The server only supports a limited number of field queries per type.
+  -f, --filename=[]: Filename, directory, or URL to files identifying the resource to get from a server.
+      --ignore-not-found=false: If the requested object does not exist the command will return exit code 0.
+  -k, --kustomize='': Process the kustomization directory. This flag can't be used together with -f or -R.
+  -L, --label-columns=[]: Accepts a comma separated list of labels that are going to be presented as columns. Names are
+case-sensitive. You can also use multiple flag options like -L label1 -L label2...
+      --no-headers=false: When using the default or custom-column output format, don't print headers (default print
+headers).
+  -o, --output='': Output format. One of:
+json|yaml|wide|name|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...
+See custom columns [http://kubernetes.io/docs/user-guide/kubectl-overview/#custom-columns], golang template
+[http://golang.org/pkg/text/template/#pkg-overview] and jsonpath template
+[http://kubernetes.io/docs/user-guide/jsonpath].
+      --raw='': Raw URI to request from the server.  Uses the transport specified by the kubeconfig file.
+  -R, --recursive=false: Process the directory used in -f, --filename recursively. Useful when you want to manage
+related manifests organized within the same directory.
+  -l, --selector='': Selector (label query) to filter on, supports '=', '==', and '!='.(e.g. -l key1=value1,key2=value2)
+      --server-print=true: If true, have the server return the appropriate table output. Supports extension APIs and
+CRDs.
+      --show-kind=false: If present, list the resource type for the requested object(s).
+      --show-labels=false: When printing, show all labels as the last column (default hide labels column)
+      --sort-by='': If non-empty, sort list types using this field specification.  The field specification is expressed
+as a JSONPath expression (e.g. '{.metadata.name}'). The field in the API resource specified by this JSONPath expression
+must be an integer or a string.
+      --template='': Template string or path to template file to use when -o=go-template, -o=go-template-file. The
+template format is golang templates [http://golang.org/pkg/text/template/#pkg-overview].
+  -w, --watch=false: After listing/getting the requested object, watch for changes. Uninitialized objects are excluded
+if no object name is provided.
+      --watch-only=false: Watch for changes to the requested object(s), without listing/getting first.
+
+Usage:
+  kubectl get
+[(-o|--output=)json|yaml|wide|custom-columns=...|custom-columns-file=...|go-template=...|go-template-file=...|jsonpath=...|jsonpath-file=...]
+(TYPE[.VERSION][.GROUP] [NAME | -l label] | TYPE[.VERSION][.GROUP]/NAME ...) [flags] [options]
+
+Use "kubectl options" for a list of global command-line options (applies to all commands).
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kcckubectl get pod -h[K[K[K -l 'env in (dev,prod)'
+NAME      READY   STATUS    RESTARTS   AGE
+37-ng-1   1/1     Running   0          9m24s
+37-ng-2   1/1     Running   0          9m19s
+37-ng-3   1/1     Running   0          9m10s
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod -l 'env in (dev,prod)' --sh ow-labels 
+NAME      READY   STATUS    RESTARTS   AGE     LABELS
+37-ng-1   1/1     Running   0          9m39s   env=dev
+37-ng-2   1/1     Running   0          9m34s   app=red,env=dev
+37-ng-3   1/1     Running   0          9m25s   env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ubuntu-[K[K[K[K[K[K[Kkubectl g[Klabel pod ng-[K[K[K37-ng-1 env=hep[K[K[Kdown --ow[Kverwriite 
+pod/37-ng-1 labeled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label pod 37-ng-1 env=down --overwriite [A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[Cget pod -l 'env in (dev,prod)' --sho[6@w-labels[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-l[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-la[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-lab[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-labe[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-label[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-labels[1P [A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-labels [K[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C --show-labels  [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P
+Error from server (BadRequest): Unable to find "/v1, Resource=pods" that match label selector "--show-labels", field selector "": unable to parse requirement: invalid label key "--show-labels": name part must consist of alphanumeric characters, '-', '_' or '.', and must start and end with an alphanumeric character (e.g. 'MyName',  or 'my.name',  or '123-abc', regex used for validation is '([A-Za-z0-9][-A-Za-z0-9_.]*)?[A-Za-z0-9]')
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod -l  --show-labels [1P[1P[1P
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d3h    run=06nginx
+07nginx   0/1     Error       0          7d3h    run=07nginx
+13nginx   0/1     Completed   1          7d3h    run=13nginx
+17shell   0/1     Error       0          7d3h    run=17shell
+19bb      0/1     Completed   0          7d2h    run=19bb
+21bb      0/1     Completed   0          7d2h    run=21bb
+29mc      0/3     Completed   0          5d21h   run=29mc
+34mc      0/2     Error       0          5d21h   run=34mc
+37-ng-1   1/1     Running     0          11m     env=down
+37-ng-2   1/1     Running     0          11m     app=red,env=dev
+37-ng-3   1/1     Running     0          11m     env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod  --show-labels [3@-l [C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clabel pod 37-ng-1 env=down --overwriite [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C env=down --overwrit[1P[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2 env=down --overwri[1@t[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+pod/37-ng-2 labeled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label pod 37-ng-2 env=down --overwriite [A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[12Pget pod  --show-labels 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d3h    run=06nginx
+07nginx   0/1     Error       0          7d3h    run=07nginx
+13nginx   0/1     Completed   1          7d3h    run=13nginx
+17shell   0/1     Error       0          7d3h    run=17shell
+19bb      0/1     Completed   0          7d2h    run=19bb
+21bb      0/1     Completed   0          7d2h    run=21bb
+29mc      0/3     Completed   0          5d21h   run=29mc
+34mc      0/2     Error       0          5d21h   run=34mc
+37-ng-1   1/1     Running     0          11m     env=down
+37-ng-2   1/1     Running     0          11m     app=red,env=down
+37-ng-3   1/1     Running     0          11m     env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label pos[Kd [K 37-ng-{1..2} env-
+pod/37-ng-1 labeled
+pod/37-ng-2 labeled
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl gete [K[K pd[Kod
+NAME      READY   STATUS      RESTARTS   AGE
+06nginx   0/1     Error       0          7d4h
+07nginx   0/1     Error       0          7d3h
+13nginx   0/1     Completed   1          7d3h
+17shell   0/1     Error       0          7d3h
+19bb      0/1     Completed   0          7d2h
+21bb      0/1     Completed   0          7d2h
+29mc      0/3     Completed   0          5d22h
+34mc      0/2     Error       0          5d21h
+37-ng-1   1/1     Running     0          16m
+37-ng-2   1/1     Running     0          16m
+37-ng-3   1/1     Running     0          16m
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --shho[K[Kow-labels 
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d4h    run=06nginx
+07nginx   0/1     Error       0          7d3h    run=07nginx
+13nginx   0/1     Completed   1          7d3h    run=13nginx
+17shell   0/1     Error       0          7d3h    run=17shell
+19bb      0/1     Completed   0          7d2h    run=19bb
+21bb      0/1     Completed   0          7d2h    run=21bb
+29mc      0/3     Completed   0          5d22h   run=29mc
+34mc      0/2     Error       0          5d21h   run=34mc
+37-ng-1   1/1     Running     0          17m     <none>
+37-ng-2   1/1     Running     0          17m     app=red
+37-ng-3   1/1     Running     0          16m     env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels [Klabel pod 37-ng-{1..2} env-[K[K[K[Kapp=nginx
+pod/37-ng-1 labeled
+error: 'app' already has a value (red), and --overwrite is false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl label pod 37-ng-{1..2} app=nginx[10Pget pod --show-labels 
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d4h    run=06nginx
+07nginx   0/1     Error       0          7d3h    run=07nginx
+13nginx   0/1     Completed   1          7d3h    run=13nginx
+17shell   0/1     Error       0          7d3h    run=17shell
+19bb      0/1     Completed   0          7d2h    run=19bb
+21bb      0/1     Completed   0          7d2h    run=21bb
+29mc      0/3     Completed   0          5d22h   run=29mc
+34mc      0/2     Error       0          5d21h   run=34mc
+37-ng-1   1/1     Running     0          17m     app=nginx
+37-ng-2   1/1     Running     0          17m     app=red
+37-ng-3   1/1     Running     0          17m     env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ c
+c: command not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc[Kkubectl get pod --show-labels 
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d4h    run=06nginx
+07nginx   0/1     Error       0          7d4h    run=07nginx
+13nginx   0/1     Completed   1          7d3h    run=13nginx
+17shell   0/1     Error       0          7d3h    run=17shell
+19bb      0/1     Completed   0          7d2h    run=19bb
+21bb      0/1     Completed   0          7d2h    run=21bb
+29mc      0/3     Completed   0          5d22h   run=29mc
+34mc      0/2     Error       0          5d21h   run=34mc
+37-ng-1   1/1     Running     0          20m     app=nginx
+37-ng-2   1/1     Running     0          20m     app=red
+37-ng-3   1/1     Running     0          20m     env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get nodes --show-labels 
+NAME       STATUS   ROLES    AGE   VERSION   LABELS
+minikube   Ready    master   8d    v1.15.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=minikube,kubernetes.io/os=linux,node-role.kubernetes.io/master=
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe pod n[K37-ng-{1..2} a[Kne[Kame=app
+Name:         37-ng-1
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:50 +0500
+Labels:       app=nginx
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.5
+Containers:
+  37-ng-1:
+    Container ID:   docker://a1e73665a4f5a5ea98df27d96d12863dd2db0f5677e085a41c018eb8601cd22a
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:11:56 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+
+
+Name:         37-ng-2
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:55 +0500
+Labels:       app=red
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.6
+Containers:
+  37-ng-2:
+    Container ID:   docker://98b077a4c2ba1477d5979c698be096006e5e2dbdd34e4677f11c098c43e4ed02
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:12:01 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+Error from server (NotFound): pods "name=app" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cckubectl describe pod 37-ng-{1..2} name=app
+Name:         37-ng-1
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:50 +0500
+Labels:       app=nginx
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.5
+Containers:
+  37-ng-1:
+    Container ID:   docker://a1e73665a4f5a5ea98df27d96d12863dd2db0f5677e085a41c018eb8601cd22a
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:11:56 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+
+
+Name:         37-ng-2
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:55 +0500
+Labels:       app=red
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.6
+Containers:
+  37-ng-2:
+    Container ID:   docker://98b077a4c2ba1477d5979c698be096006e5e2dbdd34e4677f11c098c43e4ed02
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:12:01 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+Error from server (NotFound): pods "name=app" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe pod 37-ng-{1..2} name=app[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl describe pod 37-ng-{1..2} name=app[10Pget nodes --show-labels 
+NAME       STATUS   ROLES    AGE   VERSION   LABELS
+minikube   Ready    master   8d    v1.15.2   beta.kubernetes.io/arch=amd64,beta.kubernetes.io/os=linux,kubernetes.io/arch=amd64,kubernetes.io/hostname=minikube,kubernetes.io/os=linux,node-role.kubernetes.io/master=
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get nodes --show-labels describe pod 37-ng-{1..2} name=app[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccc[Kkubectl describe pod 37-ng-{1..2} name=app[10Pget nodes --show-labels [2Ppod[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+NAME      READY   STATUS      RESTARTS   AGE     LABELS
+06nginx   0/1     Error       0          7d7h    run=06nginx
+07nginx   0/1     Error       0          7d7h    run=07nginx
+13nginx   0/1     Completed   1          7d7h    run=13nginx
+17shell   0/1     Error       0          7d7h    run=17shell
+19bb      0/1     Completed   0          7d6h    run=19bb
+21bb      0/1     Completed   0          7d5h    run=21bb
+29mc      0/3     Completed   0          6d1h    run=29mc
+34mc      0/2     Error       0          6d1h    run=34mc
+37-ng-1   1/1     Running     0          3h52m   app=nginx
+37-ng-2   1/1     Running     0          3h52m   app=red
+37-ng-3   1/1     Running     0          3h52m   env=prod
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod --show-labels [2@nodes[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdescribe pod 37-ng-{1..2} name=app[K[K[K[K[K[K[K[Kenv=prod
+Name:         37-ng-1
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:50 +0500
+Labels:       app=nginx
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.5
+Containers:
+  37-ng-1:
+    Container ID:   docker://a1e73665a4f5a5ea98df27d96d12863dd2db0f5677e085a41c018eb8601cd22a
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:11:56 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+
+
+Name:         37-ng-2
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:55 +0500
+Labels:       app=red
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.6
+Containers:
+  37-ng-2:
+    Container ID:   docker://98b077a4c2ba1477d5979c698be096006e5e2dbdd34e4677f11c098c43e4ed02
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:12:01 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+Error from server (NotFound): pods "env=prod" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe pod 37-ng-{1..2} env=prod[C[1P[1@3
+Name:         37-ng-1
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:50 +0500
+Labels:       app=nginx
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.5
+Containers:
+  37-ng-1:
+    Container ID:   docker://a1e73665a4f5a5ea98df27d96d12863dd2db0f5677e085a41c018eb8601cd22a
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:11:56 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+
+
+Name:         37-ng-2
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:11:55 +0500
+Labels:       app=red
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.6
+Containers:
+  37-ng-2:
+    Container ID:   docker://98b077a4c2ba1477d5979c698be096006e5e2dbdd34e4677f11c098c43e4ed02
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:12:01 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+
+
+Name:         37-ng-3
+Namespace:    default
+Priority:     0
+Node:         minikube/10.0.2.15
+Start Time:   Sun, 23 Feb 2020 20:12:04 +0500
+Labels:       env=prod
+Annotations:  <none>
+Status:       Running
+IP:           172.17.0.7
+Containers:
+  37-ng-3:
+    Container ID:   docker://32a3c52ec63b91995bde2c06fb282242b7eaa274ae0b056aa1ca4003d59b7066
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:ad5552c786f128e389a0263104ae39f3d3c7895579d45ae716f528185b36bc6f
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Sun, 23 Feb 2020 20:12:10 +0500
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-k8lrh (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-k8lrh:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-k8lrh
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:          <none>
+Error from server (NotFound): pods "env=prod" not found
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl ab[Knnn[Kotate pod n[K37-ng-1 name=app
+pod/37-ng-1 annotated
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl describe pod 37-ng-2[K1 | grep -i anno tations
+[01;31m[KAnnotations[m[K:  name: app
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ exit
+exit
+
+Script done on 2020-02-24 00:45:15+0500

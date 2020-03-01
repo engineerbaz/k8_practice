@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: "111"
+  name: "111a"
+spec:
+  containers:
+  - image: nginx
+    name: "111a"
+    resources: {}
+    envFrom:
+    - configMapRef:
+        name: 106cm
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

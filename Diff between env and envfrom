@@ -1,0 +1,33 @@
+111. Create an nginx pod and load environment values from the above configmap keyvalcfgmap and exec into the pod and verify the environment variables and delete the pod
+
+    envFrom:
+    - configMapRef:
+        name: keyvalcfgmap
+
+--
+
+cat >> config.txt << EOF
+key1=value1
+key2=value2
+EOF
+cat config.txt
+
+kubectl create cm keyvalcfgmap --from-file=config.txt
+
+=====
+
+113. Create an nginx pod and load environment values from the above configmap envcfgmap and exec into the pod and verify the environment variables and delete the pod
+
+    env:
+    - name: ENVIRONMENT
+      valueFrom:
+        configMapKeyRef:
+          name: envcfgmap
+          key: var1
+
+--
+
+echo var1=val1 > file.env
+cat file.env
+
+kubectl create cm envcfgmap --from-env-file=file.env
