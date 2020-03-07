@@ -1,0 +1,93 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: "2020-03-01T16:33:46Z"
+  labels:
+    run: nginx
+  name: nginx
+  namespace: default
+  resourceVersion: "205448"
+  selfLink: /api/v1/namespaces/default/pods/nginx
+  uid: 01029d24-56cb-456f-9588-1b6c1f33c689
+spec:
+  containers:
+  - env:
+    - name: PCName
+      valueFrom:
+        configMapKeyRef:
+          key: var1
+          name: env2
+    image: nginx
+    imagePullPolicy: Always
+    name: nginx
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: default-token-k8lrh
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: minikube
+  priority: 0
+  restartPolicy: Never
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - name: default-token-k8lrh
+    secret:
+      defaultMode: 420
+      secretName: default-token-k8lrh
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2020-03-01T16:33:46Z"
+    reason: PodCompleted
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2020-03-01T17:06:15Z"
+    reason: PodCompleted
+    status: "False"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2020-03-01T17:06:15Z"
+    reason: PodCompleted
+    status: "False"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2020-03-01T16:33:46Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: docker://c65048d706b0ed4f4be3d7e6a5e2c3a9455f64dfe988827ffa9f4b16e12bdcc5
+    image: nginx:latest
+    imageID: docker-pullable://nginx@sha256:380eb808e2a3b0dd954f92c1cae2f845e6558a15037efefcabc5b4e03d666d03
+    lastState: {}
+    name: nginx
+    ready: false
+    restartCount: 0
+    state:
+      terminated:
+        containerID: docker://c65048d706b0ed4f4be3d7e6a5e2c3a9455f64dfe988827ffa9f4b16e12bdcc5
+        exitCode: 0
+        finishedAt: "2020-03-01T17:04:32Z"
+        reason: Completed
+        startedAt: "2020-03-01T16:34:11Z"
+  hostIP: 10.0.2.15
+  phase: Succeeded
+  qosClass: BestEffort
+  startTime: "2020-03-01T16:33:46Z"

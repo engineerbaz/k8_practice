@@ -1,0 +1,498 @@
+Script started on 2020-03-04 20:31:17+0500
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ hi
+hipercdecode  hipstopgm     history       
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ hids[Kt[K[Kstory | grep bashir
+ 1991  history | grep [01;31m[Kbashir[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ history | grep bashir[K[K[Kh
+ 1076  history | grep [01;31m[Kbash[m[K
+ 1077  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1086  history | grep [01;31m[Kbash[m[K
+ 1087  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1132  history | grep [01;31m[Kbash[m[Ki
+ 1133  history | grep [01;31m[Kbash[m[K
+ 1134  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1322  history | grep [01;31m[Kbash[m[K
+ 1323  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1333  history | grep [01;31m[Kbash[m[K
+ 1334  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1376  history | grep [01;31m[Kbash[m[K
+ 1377  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1437  history | grep [01;31m[Kbash[m[K
+ 1438  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1466  history | grep [01;31m[Kbash[m[K
+ 1467  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1472  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1492  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1656  history | grep [01;31m[Kbash[m[K
+ 1657  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1663  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1701  history | grep [01;31m[Kbash[m[K
+ 1702  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1713  history | grep [01;31m[Kbash[m[K
+ 1714  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1911  history | grep [01;31m[Kbash[m[K 
+ 1912  source <(kubectl completion [01;31m[Kbash[m[K)
+ 1991  history | grep [01;31m[Kbash[m[Kir
+ 1992  history | grep [01;31m[Kbash[m[K
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ !1912
+source <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ source <(kubectl completion bash)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ lls[K
+total 972
+drwxr-xr-x  3 baz baz   4096 Mar  4 20:31  [0m[01;34m.[0m/
+drwxrwxr-x 10 baz baz   4096 Feb 12 21:07  [01;34m..[0m/
+-rw-r--r--  1 baz baz    237 Feb 16 16:28  07nginx.yaml
+-rw-r--r--  1 baz baz    335 Feb 29 10:54  100vol.yaml
+-rw-r--r--  1 baz baz    466 Feb 29 11:20  104.yaml
+-rw-r--r--  1 baz baz     24 Feb 29 20:29  109config.txt
+-rw-r--r--  1 baz baz    286 Mar  1 02:24  111b.yaml
+-rw-r--r--  1 baz baz    286 Mar  1 02:24  111.yaml
+-rw-r--r--  1 baz baz    352 Mar  1 17:54  113.yaml
+-rw-r--r--  1 baz baz    332 Mar  1 21:33  114check.yaml
+-rw-r--r--  1 baz baz    387 Mar  1 22:17  114nginx.yaml
+-rw-r--r--  1 baz baz    360 Mar  2 00:04  115.yaml
+-rw-r--r--  1 baz baz    311 Mar  2 00:52  117.yaml
+-rw-r--r--  1 baz baz    324 Mar  2 01:01  118.yaml
+-rw-r--r--  1 baz baz    337 Mar  2 01:49  125.yaml
+-rw-r--r--  1 baz baz   1198 Feb 16 16:37  13nginx.txt
+-rw-r--r--  1 baz baz 118784 Mar  2 01:50  2003012355
+-rw-r--r--  1 baz baz   2555 Feb 15 14:26  202002151420
+-rw-r--r--  1 baz baz  64987 Feb 17 23:11  202002172223
+-rw-r--r--  1 baz baz  51934 Feb 24 00:45  202002232000
+-rw-r--r--  1 baz baz  45056 Feb 26 23:23  202002262250
+-rw-r--r--  1 baz baz   8192 Feb 28 16:11  202002281600
+-rw-r--r--  1 baz baz 180224 Feb 29 01:38  202002281936
+-rw-r--r--  1 baz baz  94208 Feb 29 11:20  202002291046
+-rw-r--r--  1 baz baz  56745 Mar  1 02:41  202002292000
+-rw-r--r--  1 baz baz 204800 Mar  1 22:17  202003011055
+-rw-r--r--  1 baz baz      0 Mar  4 20:31  202003042031
+-rw-r--r--  1 baz baz    513 Feb 16 21:23  29mc.yaml
+-rw-r--r--  1 baz baz    623 Feb 17 22:45  34mc.yaml
+-rw-r--r--  1 baz baz    399 Feb 26 22:56  55.yaml
+-rw-r--r--  1 baz baz    424 Feb 28 19:45  67-dep.yaml
+-rw-r--r--  1 baz baz    339 Feb 28 23:26  84job.yaml
+-rw-r--r--  1 baz baz    339 Feb 28 23:36  88.yaml
+-rw-r--r--  1 baz baz    339 Feb 28 23:42  90.yaml
+-rw-r--r--  1 baz baz      0 Feb 28 23:50  91cj.yaml
+-rw-r--r--  1 baz baz     28 Feb 28 23:51  91.yaml
+-rw-r--r--  1 baz baz     30 Feb 28 23:53  92cj.yml
+-rw-r--r--  1 baz baz      0 Feb 28 23:52  92.yaml
+-rw-r--r--  1 baz baz    229 Feb 29 00:21  97pv.yaml
+-rw-r--r--  1 baz baz    189 Feb 29 00:41  98pvc.yaml
+-rw-r--r--  1 baz baz    752 Mar  1 11:09 'Diff between env and envfrom'
+-rw-r--r--  1 baz baz     10 Mar  1 19:50  env.env
+-rw-r--r--  1 baz baz   1657 Feb 26 22:58  file55.yaml
+-rw-r--r--  1 baz baz     10 Mar  1 19:57  file.env
+-rw-r--r--  1 baz baz      0 Feb 17 22:28  file.log
+drwxr-xr-x  8 baz baz   4096 Mar  2 01:51  [01;34m.git[0m/
+-rw-r--r--  1 baz baz    363 Mar  1 20:03  test114.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get secrets 
+NAME                  TYPE                                  DATA   AGE
+122                   Opaque                                2      2d19h
+default-token-k8lrh   kubernetes.io/service-account-token   3      18d
+mysec122              Opaque                                2      2d18h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ j[Kkubectl run 12 [K6 --image=nginx --restart=Nev er --[K-dry-run -o yaml > 126.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nana[Ko 12
+125.yaml  126.yaml  
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 12
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                       12                                 [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 126.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    126.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: "126"[9;3Hname: "126"[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: "126"[14;5Hresources: {}[15;3HdnsPolicy: ClusterFirst[16;3HrestartPolicy: Never[17dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[14;18H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[15;35r[15;1HM[1;38r[15;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lF[?12l[?25h[?25lr[?12l[?25h[?25lo[36d[K[15;11H[?12l[?25h[?25lm[?12l[?25h[?25l:[?12l[?25h[?25l7[16;36r8[16dM[1;38r[16;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25lr[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25l [?12l[?25h[?25lF[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lm[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25lR[?12l[?25h[?25le[?12l[?25h[?25lf[?12l[?25h[?25l:[?12l[?25h[?25l7[17;36r8[17dM[1;38r[17;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25l[K[17;9H[?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lm[?12l[?25h[?25lu[?12l[?25h[?25l [?12l[?25h[?25ly[?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25lc[?12l[?25h[?25l1[?12l[?25h[?25l2[?12l[?25h[?25l2[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 126.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 18 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 126.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 18 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    126.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: "126"[9;3Hname: "126"[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: "126"[14;5Hresources: {}[15;5HenvFrom:[16;5H- secretRef:[17;9Hname: mysec122[18;3HdnsPolicy: ClusterFirst[19;3HrestartPolicy: Never[20dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 126.yaml 
+pod/126 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl 126 [K[K[K[Kr[Kexec 126 
+06nginx                 13nginx                 67dep-7db4cf66f7-9wrj7
+07nginx                 17shell                 67dep-7db4cf66f7-h5g7f
+100vol                  19bb                    67dep-7db4cf66f7-m2269
+104pvc2b                21bb                    84job-9gkc8
+111                     29mc                    88job-bx58m
+113                     34mc                    mysec
+114nginx                37-ng-1                 nginx
+117                     37-ng-2                 secbusybox
+118                     37-ng-3                 test114
+126                     67dep-7db4cf66f7-2hfgb  
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec 126 -- env
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=126
+password=mypassword
+username=user
+KUBERNETES_SERVICE_HOST=10.96.0.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_SERVICE_PORT_HTTPS=443
+KUBERNETES_PORT=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_PORT=443
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+NGINX_VERSION=1.17.8
+NJS_VERSION=0.3.8
+PKG_RELEASE=1~buster
+HOME=/root
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ ls
+ 07nginx.yaml    2003012355     84job.yaml
+ 100vol.yaml     202002151420   88.yaml
+ 104.yaml        202002172223   90.yaml
+ 109config.txt   202002232000   91cj.yaml
+ 111b.yaml       202002262250   91.yaml
+ 111.yaml        202002281600   92cj.yml
+ 113.yaml        202002281936   92.yaml
+ 114check.yaml   202002291046   97pv.yaml
+ 114nginx.yaml   202002292000   98pvc.yaml
+ 115.yaml        202003011055  'Diff between env and envfrom'
+ 117.yaml        202003042031   env.env
+ 118.yaml        29mc.yaml      file55.yaml
+ 125.yaml        34mc.yaml      file.env
+ 126.yaml        55.yaml        file.log
+ 13nginx.txt     67-dep.yaml    test114.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ m[Kkubectl get po
+NAME                     READY   STATUS      RESTARTS   AGE
+06nginx                  0/1     Error       0          17d
+07nginx                  0/1     Error       0          17d
+100vol                   0/1     Error       0          4d12h
+104pvc2b                 0/1     Error       0          4d12h
+111                      0/1     Error       0          3d21h
+113                      0/1     Completed   0          3d5h
+114nginx                 0/1     Completed   0          3d1h
+117                      0/1     Error       0          2d22h
+118                      0/1     Error       0          2d22h
+126                      1/1     Running     0          177m
+13nginx                  0/1     Completed   1          17d
+17shell                  0/1     Error       0          17d
+19bb                     0/1     Completed   0          17d
+21bb                     0/1     Completed   0          17d
+29mc                     0/3     Completed   0          16d
+34mc                     0/2     Error       0          16d
+37-ng-1                  0/1     Error       0          10d
+37-ng-2                  0/1     Error       0          10d
+37-ng-3                  0/1     Error       0          10d
+67dep-7db4cf66f7-2hfgb   1/1     Running     6          5d2h
+67dep-7db4cf66f7-9wrj7   1/1     Running     6          5d3h
+67dep-7db4cf66f7-h5g7f   1/1     Running     6          5d2h
+67dep-7db4cf66f7-m2269   1/1     Running     6          5d2h
+84job-9gkc8              0/1     Completed   0          5d
+88job-bx58m              0/1     Completed   0          5d
+mysec                    0/1     Error       0          2d21h
+nginx                    0/1     Completed   0          3d2h
+secbusybox               0/1     Error       0          2d23h
+test114                  0/1     Completed   0          3d2h
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get sa
+NAME      SECRETS   AGE
+default   1         18d
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create sa admin
+serviceaccount/admin created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl gecreate sa admin -o yaml
+Error from server (AlreadyExists): serviceaccounts "admin" already exists
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run sa[K[K[K[K[K[K[K[K[K[K[K[K[K[Kkubectl create sa admin -o yaml[1@1
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  creationTimestamp: "2020-03-04T18:43:49Z"
+  name: admin1
+  namespace: default
+  resourceVersion: "232248"
+  selfLink: /api/v1/namespaces/default/serviceaccounts/admin1
+  uid: 789467d6-3388-4261-bf6b-6ce914239088
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl 1[Krun 131 --image=busybox --restart=N ever --dry-run -o yaml -- [K /bin/sh -c "sleep 3600" > busybo[K[K[K[K[K[K131.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 131.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 19 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    131.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: "131"[9;3Hname: "131"[10dspec:[11;3Hcontainers:[12;3H- args:[13;5H- /bin/sh[14;5H- -c[15;5H- sleep 3600[16;5Himage: busybox[17;5Hname: "131"[18;5Hresources: {}[19;3HdnsPolicy: ClusterFirst[20;3HrestartPolicy: Never[21dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[11;14H[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[11;35r[11;1HM[1;38r[11;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25le[?12l[?25h[?25lr[?12l[?25h[?25lc[?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lc[?12l[?25h[?25l [?12l[?25h[?25li[?12l[?25h[?25lc[?12l[?25h[?25le[?12l[?25h[?25l[36d[K[11;11H[?12l[?25h[?25la[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25la[?12l[?25h[?25la[?12l[?25h[?25lc[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lA[?12l[?25h[?25lc[?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25lN[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25lm[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l7[12;36r8[12dM[1;38r[12;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[12;36r[36;1H
+[1;38r[11;28H[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 131.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 20 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create 131[K[K[K-f 131.yaml 
+pod/131 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -ti 131 -- sh
+/ # / # [Jls
+[1;34mbin[m   [1;34mdev[m   [1;34metc[m   [1;34mhome[m  [1;34mproc[m  [1;34mroot[m  [1;34msys[m   [1;34mtmp[m   [1;34musr[m   [1;34mvar[m
+/ # o[Jusers
+
+/ # exit
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 132 --image=nginx --restart=Nev er --port=9[K80 --dry-run -o yaml > 132.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 132
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;32H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 2.9.3                      132                                 [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[m[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 132,[K.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    132.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: "132"[9;3Hname: "132"[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: "132"[14;5Hports:[15;5H- containerPort: 80[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[3d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 132.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    132.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: "132"[9;3Hname: "132"[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: "132"[14;5Hports:[15;5H- containerPort: 80[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[36d[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explain .pod.[K[K[K[K[K
+07nginx.yaml                  202002291046
+100vol.yaml                   202002292000
+104.yaml                      202003011055
+109config.txt                 202003042031
+111b.yaml                     29mc.yaml
+111.yaml                      34mc.yaml
+113.yaml                      55.yaml
+114check.yaml                 67-dep.yaml
+114nginx.yaml                 84job.yaml
+115.yaml                      88.yaml
+117.yaml                      90.yaml
+118.yaml                      91cj.yaml
+125.yaml                      91.yaml
+126.yaml                      92cj.yml
+131.yaml                      92.yaml
+132.yaml                      97pv.yaml
+13nginx.txt                   98pvc.yaml
+2003012355                    Diff between env and envfrom
+202002151420                  env.env
+202002172223                  file55.yaml
+202002232000                  file.env
+202002262250                  file.log
+202002281600                  .git/
+202002281936                  test114.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explain pod.co[K[Kspec.containers
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: containers <[]Object>
+
+DESCRIPTION:
+     List of containers belonging to the pod. Containers cannot currently be
+     added or removed. There must be at least one container in a Pod. Cannot be
+     updated.
+
+     A single application container that you want to run within a pod.
+
+FIELDS:
+   args	<[]string>
+     Arguments to the entrypoint. The docker image's CMD is used if this is not
+     provided. Variable references $(VAR_NAME) are expanded using the
+     container's environment. If a variable cannot be resolved, the reference in
+     the input string will be unchanged. The $(VAR_NAME) syntax can be escaped
+     with a double $$, ie: $$(VAR_NAME). Escaped references will never be
+     expanded, regardless of whether the variable exists or not. Cannot be
+     updated. More info:
+     https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+
+   command	<[]string>
+     Entrypoint array. Not executed within a shell. The docker image's
+     ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME)
+     are expanded using the container's environment. If a variable cannot be
+     resolved, the reference in the input string will be unchanged. The
+     $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME).
+     Escaped references will never be expanded, regardless of whether the
+     variable exists or not. Cannot be updated. More info:
+     https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
+
+   env	<[]Object>
+     List of environment variables to set in the container. Cannot be updated.
+
+   envFrom	<[]Object>
+     List of sources to populate environment variables in the container. The
+     keys defined within a source must be a C_IDENTIFIER. All invalid keys will
+     be reported as an event when the container is starting. When a key exists
+     in multiple sources, the value associated with the last source will take
+     precedence. Values defined by an Env with a duplicate key will take
+     precedence. Cannot be updated.
+
+   image	<string>
+     Docker image name. More info:
+     https://kubernetes.io/docs/concepts/containers/images This field is
+     optional to allow higher level config management to default or override
+     container images in workload controllers like Deployments and StatefulSets.
+
+   imagePullPolicy	<string>
+     Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always
+     if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated.
+     More info:
+     https://kubernetes.io/docs/concepts/containers/images#updating-images
+
+   lifecycle	<Object>
+     Actions that the management system should take in response to container
+     lifecycle events. Cannot be updated.
+
+   livenessProbe	<Object>
+     Periodic probe of container liveness. Container will be restarted if the
+     probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   name	<string> -required-
+     Name of the container specified as a DNS_LABEL. Each container in a pod
+     must have a unique name (DNS_LABEL). Cannot be updated.
+
+   ports	<[]Object>
+     List of ports to expose from the container. Exposing a port here gives the
+     system additional information about the network connections a container
+     uses, but is primarily informational. Not specifying a port here DOES NOT
+     prevent that port from being exposed. Any port which is listening on the
+     default "0.0.0.0" address inside a container will be accessible from the
+     network. Cannot be updated.
+
+   readinessProbe	<Object>
+     Periodic probe of container service readiness. Container will be removed
+     from service endpoints if the probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   resources	<Object>
+     Compute Resources required by this container. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
+
+   securityContext	<Object>
+     Security options the pod should run with. More info:
+     https://kubernetes.io/docs/concepts/policy/security-context/ More info:
+     https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+
+   stdin	<boolean>
+     Whether this container should allocate a buffer for stdin in the container
+     runtime. If this is not set, reads from stdin in the container will always
+     result in EOF. Default is false.
+
+   stdinOnce	<boolean>
+     Whether the container runtime should close the stdin channel after it has
+     been opened by a single attach. When stdin is true the stdin stream will
+     remain open across multiple attach sessions. If stdinOnce is set to true,
+     stdin is opened on container start, is empty until the first client
+     attaches to stdin, and then remains open and accepts data until the client
+     disconnects, at which time stdin is closed and remains closed until the
+     container is restarted. If this flag is false, a container processes that
+     reads from stdin will never receive an EOF. Default is false
+
+   terminationMessagePath	<string>
+     Optional: Path at which the file to which the container's termination
+     message will be written is mounted into the container's filesystem. Message
+     written is intended to be brief final status, such as an assertion failure
+     message. Will be truncated by the node if greater than 4096 bytes. The
+     total message length across all containers will be limited to 12kb.
+     Defaults to /dev/termination-log. Cannot be updated.
+
+   terminationMessagePolicy	<string>
+     Indicate how the termination message should be populated. File will use the
+     contents of terminationMessagePath to populate the container status message
+     on both success and failure. FallbackToLogsOnError will use the last chunk
+     of container log output if the termination message file is empty and the
+     container exited with an error. The log output is limited to 2048 bytes or
+     80 lines, whichever is smaller. Defaults to File. Cannot be updated.
+
+   tty	<boolean>
+     Whether this container should allocate a TTY for itself, also requires
+     'stdin' to be true. Default is false.
+
+   volumeDevices	<[]Object>
+     volumeDevices is the list of block devices to be used by the container.
+     This is a beta feature.
+
+   volumeMounts	<[]Object>
+     Pod volumes to mount into the container's filesystem. Cannot be updated.
+
+   workingDir	<string>
+     Container's working directory. If not specified, the container runtime's
+     default will be used, which might be configured in the container image.
+     Cannot be updated.
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explain pod.spec.containers.readins[Kess [KProbe
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: readinessProbe <Object>
+
+DESCRIPTION:
+     Periodic probe of container service readiness. Container will be removed
+     from service endpoints if the probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+     Probe describes a health check to be performed against a container to
+     determine whether it is alive or ready to receive traffic.
+
+FIELDS:
+   exec	<Object>
+     One and only one of the following should be specified. Exec specifies the
+     action to take.
+
+   failureThreshold	<integer>
+     Minimum consecutive failures for the probe to be considered failed after
+     having succeeded. Defaults to 3. Minimum value is 1.
+
+   httpGet	<Object>
+     HTTPGet specifies the http request to perform.
+
+   initialDelaySeconds	<integer>
+     Number of seconds after the container has started before liveness probes
+     are initiated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   periodSeconds	<integer>
+     How often (in seconds) to perform the probe. Default to 10 seconds. Minimum
+     value is 1.
+
+   successThreshold	<integer>
+     Minimum consecutive successes for the probe to be considered successful
+     after having failed. Defaults to 1. Must be 1 for liveness. Minimum value
+     is 1.
+
+   tcpSocket	<Object>
+     TCPSocket specifies an action involving a TCP port. TCP hooks not yet
+     supported
+
+   timeoutSeconds	<integer>
+     Number of seconds after which the probe times out. Defaults to 1 second.
+     Minimum value is 1. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explain pod.spec.containers.readinesssProbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pnano 132.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    132.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: "132"[9;3Hname: "132"[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: "132"[14;5Hports:[15;5H- containerPort: 80[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[A[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[15;24H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[16;35r[16;1HM[1;38r[16;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lr[36d[K[16;6H[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ld[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25ls[?12l[?25h[?25lP[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l7[17;36r8[17dM[1;38r[17;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lt[?12l[?25h[?25lt[?12l[?25h[?25lp[?12l[?25h[?25lG[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l7[18;36r8[18dM[1;38r[18;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25lo[?12l[?25h[?25lr[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l8[?12l[?25h[?25l0[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 132.yaml                                 (B[m[36;29H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 21 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 132.yaml 
+pod/132 created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 12[K33 --r[Kimage=nginx --restart=Nev er --c[Kport=80 --dry-run -o yaml > 133.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano [K[K[K[K[Kkubectl e[Kexplani[K[Kin containers.readinessProbe
+the server doesn't have a resource type "containers"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explan[Kin pod.cona[Ktainers.readinessPro be
+error: field "containers" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explain pod.containers.readinessProbbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pcontainers.readinessProbe
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun 133 --image=nginx --restart=Neveer --port=80 --dry-run -o yaml > 133.yaml[Acc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl create -f 132.yaml [13Pnano[C[C[C[C[C[C[C[C[C[Ckubectl explain pod.spec.containers.readinesssProbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.readinesssProbesss
+error: field "readinessProbesss" does not exist
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explain pod.spec.containers.readinesssProbesss[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccontainers.readinessProbe[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cscontainers.readinessProbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpcontainers.readinessProbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cecontainers.readinessProbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccontainers.readinessProbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.containers.readinessProbe[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+KIND:     Pod
+VERSION:  v1
+
+RESOURCE: readinessProbe <Object>
+
+DESCRIPTION:
+     Periodic probe of container service readiness. Container will be removed
+     from service endpoints if the probe fails. Cannot be updated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+     Probe describes a health check to be performed against a container to
+     determine whether it is alive or ready to receive traffic.
+
+FIELDS:
+   exec	<Object>
+     One and only one of the following should be specified. Exec specifies the
+     action to take.
+
+   failureThreshold	<integer>
+     Minimum consecutive failures for the probe to be considered failed after
+     having succeeded. Defaults to 3. Minimum value is 1.
+
+   httpGet	<Object>
+     HTTPGet specifies the http request to perform.
+
+   initialDelaySeconds	<integer>
+     Number of seconds after the container has started before liveness probes
+     are initiated. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+   periodSeconds	<integer>
+     How often (in seconds) to perform the probe. Default to 10 seconds. Minimum
+     value is 1.
+
+   successThreshold	<integer>
+     Minimum consecutive successes for the probe to be considered successful
+     after having failed. Defaults to 1. Must be 1 for liveness. Minimum value
+     is 1.
+
+   tcpSocket	<Object>
+     TCPSocket specifies an action involving a TCP port. TCP hooks not yet
+     supported
+
+   timeoutSeconds	<integer>
+     Number of seconds after which the probe times out. Defaults to 1 second.
+     Minimum value is 1. More info:
+     https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl explain pod.spec.containers.readinesssProbesss[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccontainers.readinessProbe[K[A]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Pcontainers.readinessProbe
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun 133 --image=nginx --restart=Neveer --port=80 --dry-run -o yaml > 133.yaml[Acc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl run 133 --image=nginx --restart=Neveer --port=80 --dry-run -o yaml > 133.yaml[A[2Pexplain containers.readinessProbe
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crun 133 --image=nginx --restart=Neveer --port=80 --dry-run -o yaml > 133.yaml[Acc[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Knano 133.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 17 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                    133.yaml                              [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: "133"[9;3Hname: "133"[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: "133"[14;5Hports:[15;5H- containerPort: 80[16;5Hresources: {}[17;3HdnsPolicy: ClusterFirst[18;3HrestartPolicy: Never[19dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[15;24H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[16;35r[16;1HM[1;38r[16;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ll[?12l[?25h[?25li[?12l[?25h[?25lv[?12l[?25h[?25le[?12l[?25h[?25ln[?12l[?25h[?25le[?12l[?25h[?25ls[36d[K[16;12H[?12l[?25h[?25ls[?12l[?25h[?25lP[?12l[?25h[?25lr[?12l[?25h[?25lo[?12l[?25h[?25lb[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l7[17;36r8[17dM[1;38r[17;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lt[?12l[?25h[?25lt[?12l[?25h[?25lp[?12l[?25h[?25lG[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25l:[?12l[?25h[?25l7[18;36r8[18dM[1;38r[18;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lp[?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25lh[?12l[?25h[?25le[?12l[?25h[?25la[?12l[?25h[?25ll[?12l[?25h[?25lt[?12l[?25h[?25lz[?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lz[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?

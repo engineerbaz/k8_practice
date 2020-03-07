@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: "117"
+  name: "117"
+spec:
+  containers:
+  - image: nginx
+    securityContext:
+      capabilities:
+        add: ["SYS_TIME", "NET_ADMIN"]
+    name: "117"
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

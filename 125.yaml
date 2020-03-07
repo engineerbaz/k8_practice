@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: "125"
+  name: mysec
+spec:
+  containers:
+  - image: nginx
+    name: mysec
+    env:
+    - name: USER_NAME
+      valueFrom:
+        secretKeyRef:
+          name: mysec122
+          key: username     
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

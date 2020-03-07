@@ -1669,4 +1669,179 @@ nginx   0/1     ContainerCreating   0          6s
 NAME    READY   STATUS              RESTARTS   AGE
 nginx   0/1     ContainerCreating   0          7s
 ]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod nginx -w
-NAME    READY   STATUS              R
+NAME    READY   STATUS              RESTARTS   AGE
+nginx   0/1     ContainerCreating   0          9s
+nginx   1/1     Running             0          26s
+^C]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod nginx -w[K[K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get pod nginxcreate -f 114check.yaml [8Pdelete pod nginxcreate -f 114check.yaml [11Pget pod nginx -w[Kkubectl get pod nginx -w[Kcreate -f 114check.yaml [8Pdelete pod nginx[5Pnano 114check.yaml kubectl get pod nginxexec -ti nginx -- env | grep var1
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl exec -ti nginx -- env | grep var1[K[K[K[K[K[K[K[K[K[K[K
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+HOSTNAME=nginx
+TERM=xterm
+PCName=val1
+KUBERNETES_PORT=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP=tcp://10.96.0.1:443
+KUBERNETES_PORT_443_TCP_PROTO=tcp
+KUBERNETES_PORT_443_TCP_PORT=443
+KUBERNETES_PORT_443_TCP_ADDR=10.96.0.1
+KUBERNETES_SERVICE_HOST=10.96.0.1
+KUBERNETES_SERVICE_PORT=443
+KUBERNETES_SERVICE_PORT_HTTPS=443
+NGINX_VERSION=1.17.8
+NJS_VERSION=0.3.8
+PKG_RELEASE=1~buster
+HOME=/root
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git statis[K[Kus
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m100vol.yaml[m
+	[31m104.yaml[m
+	[31m109config.txt[m
+	[31m111.yaml[m
+	[31m111b.yaml[m
+	[31m113.yaml[m
+	[31m114check.yaml[m
+	[31m202002232000[m
+	[31m202002262250[m
+	[31m202002281600[m
+	[31m202002281936[m
+	[31m202002291046[m
+	[31m202002292000[m
+	[31m202003011055[m
+	[31m55.yaml[m
+	[31m67-dep.yaml[m
+	[31m84job.yaml[m
+	[31m88.yaml[m
+	[31m90.yaml[m
+	[31m91.yaml[m
+	[31m91cj.yaml[m
+	[31m92.yaml[m
+	[31m92cj.yml[m
+	[31m97pv.yaml[m
+	[31m98pvc.yaml[m
+	[31mDiff between env and envfrom[m
+	[31menv.env[m
+	[31mfile.env[m
+	[31mfile55.yaml[m
+	[31mtest114.yaml[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git add 
+100vol.yaml                   67-dep.yaml
+104.yaml                      84job.yaml
+109config.txt                 88.yaml
+111b.yaml                     90.yaml
+111.yaml                      91cj.yaml
+113.yaml                      91.yaml
+114check.yaml                 92cj.yml
+202002232000                  92.yaml
+202002262250                  97pv.yaml
+202002281600                  98pvc.yaml
+202002281936                  Diff between env and envfrom
+202002291046                  env.env
+202002292000                  file55.yaml
+202003011055                  file.env
+55.yaml                       test114.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git add 90.yaml 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git add 90.yaml [K[K[K[K[K[K[K[K202000[K2232000 
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git add 202002232000 [K[K[K[K[K[K[K[K[K[K[K[K[K.
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git commit -,[Km p[K"r[Kto [K[K[Kpractice"
+[master 2e08ef2] practice
+ 30 files changed, 6526 insertions(+)
+ create mode 100644 100vol.yaml
+ create mode 100644 104.yaml
+ create mode 100644 109config.txt
+ create mode 100644 111.yaml
+ create mode 100644 111b.yaml
+ create mode 100644 113.yaml
+ create mode 100644 114check.yaml
+ create mode 100644 202002232000
+ create mode 100644 202002262250
+ create mode 100644 202002281600
+ create mode 100644 202002281936
+ create mode 100644 202002291046
+ create mode 100644 202002292000
+ create mode 100644 202003011055
+ create mode 100644 55.yaml
+ create mode 100644 67-dep.yaml
+ create mode 100644 84job.yaml
+ create mode 100644 88.yaml
+ create mode 100644 90.yaml
+ create mode 100644 91.yaml
+ create mode 100644 91cj.yaml
+ create mode 100644 92.yaml
+ create mode 100644 92cj.yml
+ create mode 100644 97pv.yaml
+ create mode 100644 98pvc.yaml
+ create mode 100644 Diff between env and envfrom
+ create mode 100644 env.env
+ create mode 100644 file.env
+ create mode 100644 file55.yaml
+ create mode 100644 test114.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git psug[K[K[Kush rem[K[K[Kremote orig[K[Kgin
+error: src refspec orgin does not match any.
+error: failed to push some refs to 'remote'
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git remote pus[K[K[K[K 
+add            remove         set-head       update 
+get-url        rename         set-url        
+prune          set-branches   show           
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ git remote [K[K[K[K[K[K[Kpush origin master 
+Counting objects: 29, done.
+Delta compression using up to 4 threads.
+Compressing objects:   4% (1/25)   Compressing objects:   8% (2/25)   Compressing objects:  12% (3/25)   Compressing objects:  16% (4/25)   Compressing objects:  20% (5/25)   Compressing objects:  24% (6/25)   Compressing objects:  28% (7/25)   Compressing objects:  32% (8/25)   Compressing objects:  36% (9/25)   Compressing objects:  40% (10/25)   Compressing objects:  44% (11/25)   Compressing objects:  48% (12/25)   Compressing objects:  52% (13/25)   Compressing objects:  56% (14/25)   Compressing objects:  60% (15/25)   Compressing objects:  64% (16/25)   Compressing objects:  68% (17/25)   Compressing objects:  72% (18/25)   Compressing objects:  76% (19/25)   Compressing objects:  80% (20/25)   Compressing objects:  84% (21/25)   Compressing objects:  88% (22/25)   Compressing objects:  92% (23/25)   Compressing objects:  96% (24/25)   Compressing objects: 100% (25/25)   Compressing objects: 100% (25/25), done.
+Writing objects:   3% (1/29)   Writing objects:   6% (2/29)   Writing objects:  10% (3/29)   Writing objects:  13% (4/29)   Writing objects:  17% (5/29)   Writing objects:  24% (7/29)   Writing objects:  31% (9/29)   Writing objects:  37% (11/29)   Writing objects:  41% (12/29)   Writing objects:  44% (13/29)   Writing objects:  48% (14/29)   Writing objects:  55% (16/29)   Writing objects:  62% (18/29)   Writing objects:  65% (19/29)   Writing objects:  68% (20/29)   Writing objects:  72% (21/29)   Writing objects:  75% (22/29)   Writing objects:  79% (23/29)   Writing objects:  82% (24/29)   Writing objects:  86% (25/29)   Writing objects:  89% (26/29)   Writing objects:  93% (27/29)   Writing objects:  96% (28/29)   Writing objects: 100% (29/29)   Writing objects: 100% (29/29), 62.92 KiB | 2.74 MiB/s, done.
+Total 29 (delta 11), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/11)[Kremote: Resolving deltas:   9% (1/11)[Kremote: Resolving deltas:  27% (3/11)[Kremote: Resolving deltas:  63% (7/11)[Kremote: Resolving deltas:  72% (8/11)[Kremote: Resolving deltas:  81% (9/11)[Kremote: Resolving deltas: 100% (11/11)[Kremote: Resolving deltas: 100% (11/11), done.[K
+To https://github.com/engineerbaz/k8_practice.git
+   63cb6d6..2e08ef2  master -> master
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ cc
+[3J[H[2J]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl b[Kcreate configmap cfgvou[Klume --from-l iteral=var1=val --fre[Kom-literal=var2=val2
+Unable to connect to the server: dial tcp 192.168.99.101:8443: connect: no route to host
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ minikube status
+host: Running
+kubelet: Running
+apiserver: Stopped
+kubectl: Misconfigured: pointing to stale minikube-vm.
+To fix the kubectl context, run minikube update-context
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ minikube sti[Kop
+✋  Stopping "minikube" in virtualbox ...
+🛑  "minikube" stopped.
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ minikube stop[K[K[Ktart
+😄  minikube v1.3.1 on Ubuntu 18.04
+💡  Tip: Use 'minikube start -p <name>' to create a new cluster, or 'minikube delete' to delete this one.
+🔄  Starting existing virtualbox VM for "minikube" ...
+⌛  Waiting for the host to be provisioned ...
+🐳  Preparing Kubernetes v1.15.2 on Docker 18.09.8 ...
+🔄  Relaunching Kubernetes using kubeadm ... 
+⌛  Waiting for: apiserver proxy etcd scheduler controller dns
+🏄  Done! kubectl is now configured to use "minikube"
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ minikube start[1Popatus[2Popatus
+host: Running
+kubelet: Running
+apiserver: Running
+kubectl: Correctly Configured: pointing to minikube-vm at 192.168.99.101
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ D[Kminikube status[1Prt[1Popatuskubectl create configmap cfgvolume --from-liiteral=var1=val --from-literal=var2=val2
+configmap/cfgvolume created
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl get [K[Kt configmaps 
+NAME        DATA   AGE
+106cm       1      26h
+110c        1      25h
+112env      1      11h
+cfgvolume   2      9s
+env2        1      126m
+envcfgmap   1      4h14m
+testenv     1      134m
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl run 114nginx --rest[K[Ksta[K[K[K[K[Kimage=nginx --restartt=Never --r[Kdry-run -o yaml > 112[K3[K4nginx [K.yaml
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 114
+114check.yaml  114nginx.yaml  
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ nano 114nginx.yaml 
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;30H(B[0;7m[ Reading File ](B[m[36;29H(B[0;7m[ Read 15 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                 114nginx.yaml                            [1;73H(B[m[37d(B[0;7m^G(B[m Get Help   (B[0;7m^O(B[m Write Out  (B[0;7m^W(B[m Where Is   (B[0;7m^K(B[m Cut Text   (B[0;7m^J(B[m Justify[38d(B[0;7m^X(B[m Exit[15G(B[0;7m^R(B[m Read File  (B[0;7m^\(B[m Replace    (B[0;7m^U(B[m Uncut Text (B[0;7m^T(B[m To Spell[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 114nginx[9;3Hname: 114nginx[10dspec:[11;3Hcontainers:[12;3H- image: nginx[13;5Hname: 114nginx[14;5Hresources: {}[15;3HdnsPolicy: ClusterFirst[16;3HrestartPolicy: Never[17dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[10;6H[?12l[?25h[?25l[1;65H(B[0;7mModified(B[m[11;35r[11;1HM[1;38r[11;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25ls[?12l[?25h[?25l [?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[12;35r8[12dM[1;38r[12;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l[36d[K[12;4H[?12l[?25h[?25l[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lf[?12l[?25h[?25lg[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l7[13;36r8[13dM[1;38r[13;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lo[?12l[?25h[?25ln[?12l[?25h[?25lf[?12l[?25h[?25li[?12l[?25h[?25lg[?12l[?25h[?25lm[?12l[?25h[?25la[?12l[?25h[?25lp[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l7[14;36r8[14dM[1;38r[14;1H[?12l[?25h[?25l[13;18H[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lap:[K[?12l[?25h[?25lMap:[?12l[?25h[?25l[14d[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l [?12l[?25h[?25l[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lf[?12l[?25h[?25lg[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[13;18H[?12l[?25h[?25l[Alume[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lpcfgvolume[12;14H[?12l[?25h[?25locfgvolume[12;15H[?12l[?25h[?25ldcfgvolume[12;16H[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16din[?12l[?25h[?25l[17d[?12l[?25h[?25l[18d[?12l[?25h[?25l[19d[?12l[?25h[?25l[A[?12l[?25h[?25l{[?12l[?25h[?25l}[?12l[?25h[?25l7[19;36r8[19dM[1;38r[19;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25lM[?12l[?25h[?25lo[?12l[?25h[?25lu[?12l[?25h[?25ln[?12l[?25h[?25lt[?12l[?25h[?25ls[?12l[?25h[?25l:[?12l[?25h[?25l7[20;36r8[20dM[1;38r[20;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l-[?12l[?25h[?25l [?12l[?25h[?25ln[?12l[?25h[?25la[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25lc[?12l[?25h[?25lf[?12l[?25h[?25lg[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25l[?12l[?25h[?25lpcfgvolume[20;14H[?12l[?25h[?25locfgvolume[20;15H[?12l[?25h[?25ldcfgvolume[20;16H[?12l[?25h[?25lc[?12l[?25h[?25lf[?12l[?25h[?25lg[?12l[?25h[?25lv[?12l[?25h[?25lo[?12l[?25h[?25ll[?12l[?25h[?25lu[?12l[?25h[?25lm[?12l[?25h[?25le[?12l[?25h[?25l7[21;36r8[21dM[1;38r[21;1H[?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25l [?12l[?25h[?25lh[?12l[?25h[?25lo[?12l[?25h[?25ls[?12l[?25h[?25lt[?12l[?25h[?25lP[?12l[?25h[?25lA[?12l[?25h[?25l [?12l[?25h[?25la[?12l[?25h[?25lt[?12l[?25h[?25lh[?12l[?25h[?25l:[?12l[?25h[?25l [?12l[?25h[?25l/[?12l[?25h[?25le[?12l[?25h[?25lt[?12l[?25h[?25lc[?12l[?25h[?25l/[?12l[?25h[?25lc[?12l[?25h[?25lf[?12l[?25h[?25lg[?12l[?25h[?25l[36d(B[0;7mSave modified buffer?  (Answering "No" will DISCARD changes.)             [37;1H Y(B[m Yes[K[38d(B[0;7m N(B[m No  [15G  (B[0;7m^C(B[m Cancel[K[36;63H[?12l[?25h[?25l[37d(B[0;7m^G(B[m Get Help[19G(B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append[37;55H(B[0;7mM-B(B[m Backup File[38d(B[0;7m^C(B[m Cancel[17G  (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend[55G(B[0;7m^T(B[m To Files[36d(B[0;7mFile Name to Write: 114nginx.yaml                            (B[m[36;34H[?12l[?25h[?25l[K[1;73H[1;65H(B[0;7m        (B[m[36;29H(B[0;7m[ Wrote 22 lines ](B[m[J[38;74H[?12l[?25h[38;1H[?1049l[23;0;0t[?1l>]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 114nginx.yaml 
+error: error validating "114nginx.yaml": error validating data: [ValidationError(Pod.spec.containers[0].volumeMounts[0]): unknown field "hostPath" in io.k8s.api.core.v1.VolumeMount, ValidationError(Pod.spec.containers[0].volumeMounts[0]): missing required field "mountPath" in io.k8s.api.core.v1.VolumeMount]; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ [K]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 114nginx.yaml 
+error: error validating "114nginx.yaml": error validating data: [ValidationError(Pod.spec.containers[0].volumeMounts[0]): unknown field "hostPath" in io.k8s.api.core.v1.VolumeMount, ValidationError(Pod.spec.containers[0].volumeMounts[0]): missing required field "mountPath" in io.k8s.api.core.v1.VolumeMount]; if you choose to ignore these errors, turn validation off with --validate=false
+]0;baz@baz-ubuntu: ~/Q1_CNC/ckad1[01;32mbaz@baz-ubuntu[00m:[01;34m~/Q1_CNC/ckad1[00m$ kubectl create -f 114nginx.yaml [13Pnano[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ckubectl run 114nginx --image=nginx --restart=Never --dry-run -o yaml > 114nginx.yaml[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cnano 114nginx.yaml [K
+[?1049h[22;0;0t[1;38r(B[m[4l[?7h[39;49m[?1h=[?1h=[?1h=[?25l[39;49m(B[m[H[2J[36;68H(B[0;7m[ Reading File ](B[m[36;67H(B[0;7m[ Read 22 lines ](B[m[H(B[0;7m  GNU nano 2.9.3                                                       114nginx.yaml                                                                  [1;149H(B[m[37d(B[0;7m^G(B[m Get Help     (B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut Text     (B[0;7m^J(B[m Justify[81G(B[0;7m^C(B[m Cur Pos[97G(B[0;7mM-U(B[m Undo[37;113H(B[0;7mM-A(B[m Mark Text   (B[0;7mM-](B[m To Bracket[38d(B[0;7m^X(B[m Exit[38;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Uncut Text   (B[0;7m^T(B[m To Spell     (B[0;7m^_(B[m Go To Line   (B[0;7mM-E(B[m Redo[38;113H(B[0;7mM-6(B[m Copy Text   (B[0;7mM-W(B[m WhereIs Next[36d[3d[39;49m(B[mapiVersion: v1[4dkind: Pod[5dmetadata:[6;3HcreationTimestamp: null[7;3Hlabels:[8;5Hrun: 114nginx[9;3Hname: 114nginx[10dspec:[11;3Hvolumes:[12;5H- name: podcfgvolume[13;7HconfigMap:[14;9Hname: cfgvolume[15;3Hcontainers:[16;3H- image: nginx[17;5Hname: 114nginx[18;5Hresources: {}[19;5HvolumeMounts:[20;5H- name: podcfgvolume[21;7HhostPath: /etc/cfg[22;3HdnsPolicy: ClusterFirst[23;3HrestartPolicy: Never[24dstatus: {}[3d[?12l[?25h[?25l[4d[?12l[?25h[?25l[5d[?12l[?25h[?25l[6d[?12l[?25h[?25l[7d[?12l[?25h[?25l[8d[?12l[?25h[?25l[9d[?12l[?25h[?25l[10d[?12l[?25h[?25l[11d[?12l[?25h[?25l[12d[?12l[?25h[?25l[13d[?12l[?25h[?25l[14d[?12l[?25h[?25l[15d[?12l[?25h[?25l[16d[?12l[?25h[?25l[17d[?12l[?25h[?25
