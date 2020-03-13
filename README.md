@@ -4,7 +4,7 @@
 
 Becoming a super hero is a fairly straight forward process:
 
-```
+```yaml
 $ give me super-powers
 ```
 
